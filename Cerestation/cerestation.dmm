@@ -5539,6 +5539,20 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"avf" = (
+/obj/structure/table/glass,
+/obj/item/paper_bin{
+	pixel_x = 1;
+	pixel_y = 9
+	},
+/obj/item/pen/fourcolor,
+/obj/structure/reagent_dispensers/virusfood{
+	pixel_y = 30
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "avg" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "CargoWarehouse"
@@ -17307,6 +17321,9 @@
 	dir = 5
 	},
 /obj/structure/closet/emcloset,
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -18892,38 +18909,51 @@
 	},
 /area/ai_monitored/storage/eva)
 "bcL" = (
-/obj/structure/table,
-/turf/open/floor/plating{
+/obj/machinery/camera{
+	c_tag = "Medbay Main Hallway 4";
+	dir = 4;
+	name = "hallway camera"
+	},
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
 "bcM" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
-/turf/open/floor/plasteel/grimy{
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
 "bcN" = (
 /obj/machinery/camera{
-	c_tag = "Medical SMES";
-	dir = 6;
-	icon_state = "camera"
+	c_tag = "Medbay - Center";
+	name = "Medbay PowerRoom Camera";
+	network = list("ss13","medbay")
 	},
-/obj/structure/chair/stool,
-/turf/open/floor/plasteel/grimy{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
-"bcO" = (
 /obj/machinery/computer/station_alert,
 /obj/structure/cable,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"bcO" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/engineering_electrical,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "bcP" = (
 /obj/structure/closet/secure_closet/chemical,
+/obj/machinery/button/door{
+	id = "chemisttop";
+	name = "Chemistry Shutter Control";
+	pixel_x = 26;
+	req_access_txt = "69"
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -19266,13 +19296,8 @@
 	},
 /area/space)
 "bdD" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable,
-/turf/open/floor/plasteel/grimy{
+/obj/machinery/status_display/evac,
+/turf/closed/wall{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -19285,11 +19310,6 @@
 	},
 /obj/structure/cable,
 /obj/structure/cable,
-/obj/effect/turf_decal/stripes/end{
-	dir = 8;
-	icon_state = "warn_end";
-	tag = "icon-warn_end (WEST)"
-	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -19476,6 +19496,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/crew_quarters/kitchen)
+"beb" = (
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	name = "Medbay Hallway 2 Camera";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "bec" = (
 /turf/closed/wall/mineral/wood,
 /area/crew_quarters{
@@ -19644,8 +19674,12 @@
 	},
 /area/ai_monitored/storage/eva)
 "bew" = (
-/obj/structure/closet/secure_closet/engineering_electrical,
-/turf/open/floor/plating{
+/obj/machinery/camera{
+	c_tag = "Medbay Main Hallway 3";
+	dir = 4;
+	name = "hallway camera"
+	},
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -19655,20 +19689,13 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plasteel/grimy{
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
 "bey" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/structure/cable,
-/turf/open/floor/plasteel/grimy{
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -19676,11 +19703,6 @@
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
-	},
-/obj/machinery/power/terminal{
-	dir = 4;
-	icon_state = "term";
-	tag = "icon-term (EAST)"
 	},
 /obj/structure/sign/warning/electricshock{
 	pixel_y = -32
@@ -19690,8 +19712,11 @@
 	},
 /area/space)
 "beA" = (
-/obj/machinery/power/smes/engineering,
-/obj/structure/cable,
+/obj/machinery/power/terminal{
+	dir = 8;
+	icon_state = "term";
+	tag = "icon-term (WEST)"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -21297,13 +21322,9 @@
 	},
 /area/ai_monitored/storage/eva)
 "bid" = (
-/obj/machinery/camera{
-	c_tag = "Medbay Asteroid Hallway 4";
-	dir = 1;
-	icon_state = "camera";
-	network = list("SS13")
-	},
-/turf/open/floor/plasteel/white{
+/obj/structure/cable,
+/obj/structure/chair/stool,
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -22767,6 +22788,11 @@
 	name = "Medbay Space 2 Apc";
 	pixel_y = 25
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	name = "Medbay Space Suit 2 Camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -23456,6 +23482,9 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/machinery/airalarm{
+	pixel_y = 22
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -23466,6 +23495,15 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"bnp" = (
+/obj/structure/bed/roller,
+/obj/item/radio/intercom{
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -23796,6 +23834,9 @@
 "bob" = (
 /obj/item/pet_carrier,
 /obj/item/clothing/neck/petcollar,
+/obj/machinery/keycard_auth{
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -54357,10 +54398,14 @@
 	name = "Port Asteroid Maintenance"
 	})
 "cMM" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/machinery/light{
+	dir = 1
 	},
-/turf/open/floor/plasteel/grimy{
+/obj/machinery/light_switch{
+	pixel_x = -26;
+	pixel_y = 26
+	},
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -54452,8 +54497,14 @@
 	},
 /area/crew_quarters/theatre)
 "cMU" = (
-/obj/structure/table,
-/turf/open/floor/plasteel/grimy{
+/obj/item/radio/intercom{
+	pixel_x = -26;
+	pixel_y = 26
+	},
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -59109,6 +59160,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"dAt" = (
+/obj/vehicle/ridden/wheelchair,
+/obj/machinery/firealarm{
+	pixel_x = 25
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "dBQ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -59295,6 +59355,12 @@
 "dPh" = (
 /obj/structure/table/glass,
 /obj/item/healthanalyzer,
+/obj/machinery/requests_console{
+	department = "Virology Lab";
+	name = "Virology RC";
+	pixel_y = 32;
+	receive_ore_updates = 1
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -59493,6 +59559,12 @@
 /obj/machinery/shower{
 	dir = 8
 	},
+/obj/machinery/light_switch{
+	pixel_x = 38
+	},
+/obj/machinery/vending/wallmed{
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -59585,6 +59657,9 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -59745,6 +59820,17 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/prison)
+"etv" = (
+/obj/machinery/light_switch{
+	pixel_x = 38
+	},
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "etS" = (
 /obj/structure/disposaloutlet{
 	dir = 8
@@ -59754,6 +59840,15 @@
 	},
 /obj/structure/lattice/catwalk,
 /turf/open/space,
+/area/space)
+"eua" = (
+/obj/structure/closet/secure_closet/medical2,
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
 /area/space)
 "evs" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -59977,6 +60072,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"eJm" = (
+/obj/machinery/camera{
+	c_tag = "Chemistry - Fore";
+	name = "medbay camera";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "eJP" = (
 /obj/structure/girder,
 /turf/open/floor/plasteel/grimy{
@@ -60044,6 +60149,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/holopad,
 /obj/structure/cable,
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"eRR" = (
+/obj/structure/closet/secure_closet/chemical,
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -60177,6 +60291,9 @@
 /obj/machinery/light,
 /obj/structure/bed/dogbed/runtime,
 /mob/living/simple_animal/pet/cat/runtime,
+/obj/machinery/airalarm{
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -61351,6 +61468,9 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/machinery/firealarm{
+	pixel_x = 25
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -61509,6 +61629,9 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/airalarm{
+	pixel_x = -30
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -61880,6 +62003,9 @@
 	icon_state = "4-8"
 	},
 /obj/structure/chair/sofa/left,
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
 /turf/open/floor/carpet/orange,
 /area/space)
 "hSE" = (
@@ -62027,6 +62153,19 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
+"ibk" = (
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	name = "Medbay Space Suit 1 Camera";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "ibC" = (
 /obj/structure/chair{
 	dir = 4
@@ -62409,6 +62548,20 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/brig)
+"iDX" = (
+/obj/structure/chair{
+	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Aft Starboard";
+	dir = 4;
+	name = "Medbay Hallway Camera";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "iEh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark{
@@ -62449,6 +62602,9 @@
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
+/obj/structure/sign/poster/official/help_others{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -62467,6 +62623,18 @@
 	name = "Security Post - Medical APC";
 	pixel_x = null;
 	pixel_y = 25
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_x = -32;
+	pixel_y = 32
+	},
+/obj/machinery/button/door{
+	desc = "A remote control switch for the medbay foyer.";
+	id = "MedbayFoyer";
+	name = "Medbay Doors Control";
+	normaldoorcontrol = 1;
+	pixel_x = 24;
+	pixel_y = 24
 	},
 /turf/open/floor/plasteel,
 /area/space)
@@ -62573,6 +62741,19 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/light_switch{
+	pixel_x = -30
+	},
+/obj/item/radio/intercom{
+	pixel_x = -28;
+	pixel_y = 30
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	dir = 4;
+	name = "Medbay Psychology Camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/carpet/orange,
 /area/space)
 "iXn" = (
@@ -62595,6 +62776,19 @@
 "iXZ" = (
 /obj/structure/bed/roller,
 /turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"iYx" = (
+/obj/machinery/airalarm{
+	pixel_y = -32
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	dir = 1;
+	name = "Medbay Atmospheric Camra"
+	},
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -62844,6 +63038,18 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
+"jue" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	dir = 8;
+	name = "Medbay Lobby Camra";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "juw" = (
 /turf/closed/wall{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -63447,6 +63653,17 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/tcommsat/server)
+"kvr" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "kwf" = (
 /obj/machinery/door/airlock/medical,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -63571,6 +63788,9 @@
 	red_alert_access = 1;
 	req_access_txt = "5"
 	},
+/obj/structure/sign/poster/official/help_others{
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -63596,6 +63816,23 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"kFM" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/obj/machinery/requests_console{
+	department = "Medbay Storage";
+	name = "Medbay Storage RC";
+	pixel_x = 28;
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -63710,6 +63947,9 @@
 	dir = 1
 	},
 /obj/machinery/stasis,
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -63762,6 +64002,9 @@
 /obj/machinery/iv_drip,
 /obj/machinery/iv_drip,
 /obj/machinery/iv_drip,
+/obj/structure/sign/poster/official/help_others{
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -64144,6 +64387,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/ai_monitored/turret_protected/ai)
+"lvF" = (
+/obj/machinery/camera{
+	c_tag = "Medbay Main Hallway 1";
+	dir = 4;
+	name = "hallway camera"
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "lwu" = (
 /obj/structure/grille,
 /obj/structure/window/shuttle,
@@ -64262,6 +64515,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 6
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	name = "Medbay Janitor Camra";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -64363,6 +64621,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"lKu" = (
+/obj/machinery/stasis,
+/obj/machinery/light_switch{
+	pixel_x = 38
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "lLn" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -64402,6 +64669,27 @@
 /turf/open/floor/plasteel/dark{
 	baseturf = /turf/open/floor/plating/asteroid/airless;
 	dir = 5
+	},
+/area/space)
+"lOU" = (
+/obj/machinery/button/door{
+	id = "chemisttop";
+	name = "Chemistry Shutter Control";
+	pixel_x = -26;
+	pixel_y = 7;
+	req_access_txt = "69"
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"lPa" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
 "lPD" = (
@@ -64465,6 +64753,14 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
+"lUg" = (
+/obj/effect/spawner/structure/window,
+/obj/structure/cable,
+/obj/structure/sign/warning/vacuum,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "lUl" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -64810,6 +65106,14 @@
 /obj/machinery/door/airlock/medical,
 /obj/structure/cable,
 /turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"muT" = (
+/obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/structure/cable,
+/obj/structure/sign/warning/vacuum,
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -65225,6 +65529,20 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"mVW" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = 11
+	},
+/obj/machinery/vending/wallmed{
+	name = "Emergency NanoMed";
+	pixel_x = 26;
+	use_power = 0
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "mWJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -65461,7 +65779,21 @@
 	icon_state = "4-8"
 	},
 /obj/structure/reagent_dispensers/water_cooler,
+/obj/structure/sign/poster/official/help_others{
+	pixel_y = 32
+	},
 /turf/open/floor/carpet/orange,
+/area/space)
+"nkx" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
 /area/space)
 "nkE" = (
 /obj/effect/turf_decal/stripes/line,
@@ -65508,6 +65840,9 @@
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#e8eaff"
+	},
+/obj/machinery/newscaster{
+	pixel_x = 32
 	},
 /turf/open/floor/carpet/orange,
 /area/space)
@@ -65556,6 +65891,20 @@
 	dir = 8
 	},
 /turf/open/floor/plating/grass,
+/area/space)
+"nsO" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 25
+	},
+/obj/machinery/light_switch{
+	pixel_x = 38
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
 /area/space)
 "ntb" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
@@ -65637,6 +65986,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 9
 	},
+/obj/item/radio/intercom{
+	pixel_x = 25
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -65690,6 +66042,9 @@
 /area/space)
 "nBy" = (
 /obj/structure/closet/secure_closet/medical3,
+/obj/machinery/newscaster{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -65793,6 +66148,12 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
+"nJh" = (
+/obj/machinery/airalarm{
+	pixel_y = 22
+	},
+/turf/open/floor/plating/grass,
+/area/space)
 "nJy" = (
 /obj/structure/showcase{
 	density = 0;
@@ -66221,6 +66582,18 @@
 /area/ai_monitored/turret_protected/ai)
 "oqd" = (
 /obj/machinery/vending/wardrobe/medi_wardrobe,
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"oql" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/item/radio/intercom{
+	pixel_x = -26;
+	pixel_y = 26
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -67019,6 +67392,12 @@
 	pixel_y = -23
 	},
 /obj/structure/cable,
+/obj/machinery/camera{
+	c_tag = "Medbay - Surgery A";
+	dir = 1;
+	name = "medbay camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -67084,6 +67463,14 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/ai_monitored/turret_protected/ai)
+"pwQ" = (
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "pxP" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -67413,6 +67800,10 @@
 	name = "Cryogenics Apc";
 	pixel_x = -25
 	},
+/obj/item/radio/intercom{
+	pixel_x = -26;
+	pixel_y = 26
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -67570,6 +67961,14 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
+"qij" = (
+/obj/machinery/airalarm{
+	pixel_y = 22
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "qkp" = (
 /obj/machinery/door/airlock/atmos{
 	name = "Medbay Atmospherics Checkpoint";
@@ -67598,6 +67997,14 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
+	},
+/obj/machinery/camera{
+	c_tag = "Virology - Lab";
+	name = "virology camera";
+	network = list("ss13","medbay")
+	},
+/obj/machinery/light_switch{
+	pixel_y = 25
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -68026,6 +68433,9 @@
 /obj/structure/table/glass,
 /obj/item/clothing/glasses/science,
 /obj/item/clothing/glasses/hud/health,
+/obj/item/radio/intercom{
+	pixel_y = 26
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -68471,6 +68881,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"rPr" = (
+/obj/machinery/camera{
+	c_tag = "Medbay Main Hallway 2";
+	dir = 4;
+	name = "hallway camera"
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "rQG" = (
 /obj/machinery/blackbox_recorder,
 /turf/open/floor/circuit{
@@ -68873,6 +69293,9 @@
 	},
 /obj/item/reagent_containers/syringe,
 /obj/item/reagent_containers/glass/bottle/formaldehyde,
+/obj/item/radio/intercom{
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -68964,6 +69387,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"sIF" = (
+/obj/structure/sign/poster/official/cleanliness{
+	pixel_x = 32
+	},
+/turf/closed/wall,
+/area/space)
 "sIR" = (
 /obj/structure/closet/secure_closet/detective,
 /obj/item/reagent_containers/food/drinks/bottle/whiskey,
@@ -69022,6 +69451,11 @@
 	pixel_y = -23
 	},
 /obj/structure/cable,
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	dir = 1;
+	name = "Medbay Morgue Camra"
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -69114,6 +69548,20 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"sWg" = (
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	dir = 8;
+	name = "Medbay Chemistry Storage Camra";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "sZf" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -69123,6 +69571,10 @@
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
+/area/space)
+"sZo" = (
+/obj/machinery/status_display/evac,
+/turf/closed/wall,
 /area/space)
 "sZN" = (
 /obj/effect/turf_decal/stripes/line,
@@ -69186,6 +69638,18 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"tcm" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/item/radio/intercom{
+	pixel_x = -26;
+	pixel_y = 26
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -69319,6 +69783,9 @@
 /obj/item/reagent_containers/glass/bottle/multiver{
 	pixel_x = 6
 	},
+/obj/structure/sign/poster/official/cleanliness{
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -69405,6 +69872,25 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
+"tzz" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 8
+	},
+/obj/machinery/light_switch{
+	pixel_y = 25
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"tAV" = (
+/obj/machinery/newscaster{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "tCc" = (
 /mob/living/simple_animal/chicken/rabbit,
 /turf/open/floor/grass{
@@ -69427,12 +69913,19 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/processing)
+"tFe" = (
+/obj/structure/extinguisher_cabinet{
+	dir = 4;
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "tGf" = (
-/obj/machinery/camera{
-	c_tag = "Medbay Asteroid Hallway 6";
-	dir = 8;
-	icon_state = "camera";
-	network = list("SS13","QM")
+/obj/machinery/light_switch{
+	pixel_x = -26;
+	pixel_y = 26
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -69460,6 +69953,12 @@
 /obj/machinery/light{
 	dir = 4;
 	light_color = "#e8eaff"
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	dir = 8;
+	name = "Medbay Pharmacy Camra";
+	network = list("ss13","medbay")
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -69637,6 +70136,14 @@
 /obj/structure/grille,
 /turf/open/space,
 /area/space)
+"tUm" = (
+/obj/structure/cable,
+/obj/effect/spawner/structure/window,
+/obj/structure/sign/warning/vacuum,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "tUD" = (
 /obj/structure/disposalpipe/sorting{
 	dir = 8;
@@ -69781,6 +70288,9 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 4
 	},
+/obj/machinery/firealarm{
+	pixel_y = -26
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -69921,6 +70431,19 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/fore)
+"ulT" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/camera{
+	c_tag = "Virology - Lab";
+	name = "Virology Bedroom Camera";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "umx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/door/airlock/glass{
@@ -69972,6 +70495,14 @@
 	dir = 10
 	},
 /obj/structure/cable,
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"uqX" = (
+/obj/item/radio/intercom{
+	pixel_x = 26
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -70188,6 +70719,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 9
 	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Surgery A";
+	dir = 1;
+	name = "Medbay Cryogenic Camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -70254,6 +70791,15 @@
 "uKL" = (
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/visible/layer2,
 /obj/structure/cable,
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"uMw" = (
+/obj/structure/bed/roller,
+/obj/structure/sign/warning/bodysposal{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -70721,6 +71267,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"vtd" = (
+/obj/machinery/camera{
+	c_tag = "Medbay - Center";
+	name = "Medbay Hallway 1 Camera";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "vtB" = (
 /obj/structure/disposalpipe/junction,
 /obj/effect/landmark/blobstart,
@@ -71029,12 +71585,22 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 25
+	},
+/obj/machinery/light_switch{
+	pixel_x = 38
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
 "vPW" = (
 /obj/item/kirbyplants/potty,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_x = -26
+	},
 /turf/open/floor/carpet/orange,
 /area/space)
 "vQo" = (
@@ -71167,6 +71733,9 @@
 	dir = 9
 	},
 /obj/structure/cable,
+/obj/machinery/firealarm{
+	pixel_x = 25
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -71368,6 +71937,12 @@
 	pixel_x = -25
 	},
 /obj/structure/cable,
+/obj/machinery/camera{
+	c_tag = "Medbay - Storage";
+	dir = 4;
+	name = "medbay camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -71636,6 +72211,14 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/detectives_office)
+"wBa" = (
+/obj/machinery/firealarm{
+	pixel_x = 25
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "wBf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -71922,6 +72505,21 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/awaymission/research/interior/gateway)
+"wXm" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/shower{
+	pixel_y = 24
+	},
+/obj/machinery/light_switch{
+	pixel_x = -26;
+	pixel_y = 26
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "wXo" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -72001,6 +72599,27 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/detectives_office)
+"xbq" = (
+/obj/structure/chair/office/light{
+	dir = 1
+	},
+/obj/machinery/requests_console{
+	department = "Medbay Storage";
+	name = "Medbay Storage RC";
+	pixel_x = -30
+	},
+/obj/item/radio/intercom{
+	pixel_x = -26;
+	pixel_y = 26
+	},
+/obj/machinery/firealarm{
+	pixel_x = -25;
+	pixel_y = -25
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "xcH" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/grimy,
@@ -72045,6 +72664,18 @@
 /obj/structure/closet/secure_closet/atmospherics,
 /obj/item/pickaxe/mini,
 /turf/open/floor/plasteel/dark{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"xhl" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/door/airlock/command{
+	name = "Chief Medical Officer's Office";
+	req_access_txt = "40"
+	},
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -72472,6 +73103,14 @@
 	})
 "xMI" = (
 /obj/machinery/stasis,
+/obj/machinery/newscaster{
+	pixel_y = 32
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay - Treatment Center";
+	name = "medbay camera";
+	network = list("ss13","medbay")
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -72552,6 +73191,10 @@
 "xXE" = (
 /obj/structure/girder,
 /turf/open/space/basic,
+/area/space)
+"xXY" = (
+/obj/machinery/status_display/evac,
+/turf/closed/wall/r_wall,
 /area/space)
 "xZc" = (
 /obj/structure/extinguisher_cabinet,
@@ -117830,8 +118473,8 @@ dmo
 dmo
 dmo
 cVc
-akw
-akw
+bcM
+bey
 cGL
 akw
 akw
@@ -117859,7 +118502,7 @@ cVc
 hMN
 cVc
 cVc
-cVc
+xXY
 cVc
 cVc
 aad
@@ -118088,7 +118731,7 @@ dmo
 dmo
 cVc
 bvg
-akw
+beA
 akw
 akw
 akw
@@ -118344,8 +118987,8 @@ dmo
 dmo
 dmo
 cVc
-akw
-ako
+bcN
+bid
 ako
 ako
 ksy
@@ -118374,7 +119017,7 @@ bUW
 rmC
 xve
 aaW
-akw
+iYx
 cVc
 aad
 aad
@@ -118858,7 +119501,7 @@ dmo
 dmo
 dmo
 cVc
-bvg
+bcO
 mPK
 akw
 lsC
@@ -119115,18 +119758,18 @@ dmo
 dmo
 cVc
 cVc
-tKt
+bdD
 tKt
 tKt
 tKt
 tKt
 blE
 tKt
-tKt
+bdD
 bya
 cwN
 bya
-tKt
+bdD
 tKt
 bwE
 tKt
@@ -119146,7 +119789,7 @@ kFC
 tKt
 tKt
 tKt
-cVc
+xXY
 cVc
 cVc
 cVc
@@ -119372,7 +120015,7 @@ dmo
 dmo
 cVc
 bya
-bya
+bew
 bya
 bjG
 bya
@@ -119386,7 +120029,7 @@ bsr
 bmS
 bsr
 bcd
-bya
+rPr
 oPD
 bya
 bya
@@ -119398,7 +120041,7 @@ bya
 bya
 bya
 bya
-bya
+lvF
 lJx
 iAD
 bya
@@ -119881,9 +120524,9 @@ tKt
 aad
 aad
 cVc
-bcL
-cMU
-bew
+akw
+akw
+akw
 tKt
 blF
 lJx
@@ -120138,7 +120781,7 @@ aad
 aad
 aad
 cVc
-bcM
+akw
 akw
 bex
 bfm
@@ -120172,9 +120815,9 @@ aaP
 bMz
 tKt
 tKt
+bdD
 tKt
-tKt
-cVc
+xXY
 cVc
 cVc
 cVc
@@ -120395,13 +121038,13 @@ aad
 aad
 aad
 cVc
-bcN
-cUT
-bey
+akw
+ako
+cUv
 bfn
-sID
+vXX
 mvT
-bid
+bya
 aaP
 bfq
 mxy
@@ -120425,7 +121068,7 @@ hyv
 vsa
 hyv
 aaP
-akw
+ibk
 bMA
 aKA
 nTE
@@ -120652,8 +121295,8 @@ dmo
 dmo
 dmo
 cVc
-bcO
-bdD
+akw
+aVk
 bez
 tKt
 cPH
@@ -120674,7 +121317,7 @@ uAA
 xSf
 lza
 aaP
-bya
+pwQ
 bya
 bya
 bya
@@ -120909,9 +121552,9 @@ dmo
 dmo
 dmo
 cVc
-cMM
+cPy
 bdE
-beA
+ako
 tKt
 cPH
 mvT
@@ -120931,7 +121574,7 @@ lze
 dgS
 peh
 aaP
-iXZ
+uMw
 bya
 bya
 xik
@@ -121446,18 +122089,18 @@ yff
 lVk
 aaP
 fxy
-kDv
+kvr
 bya
 wJx
 lJx
 edD
 kDv
 qkp
-akw
+wBa
 bwD
 xjp
 peX
-cPy
+nsO
 cPt
 cVc
 aad
@@ -121701,7 +122344,7 @@ bgG
 aaP
 qxZ
 bgG
-aaP
+sZo
 aaP
 aaP
 ncN
@@ -121720,13 +122363,13 @@ cVc
 cVc
 cVc
 cVc
-vVj
+muT
 vVj
 bvw
 nQW
 vVj
 vVj
-gfZ
+lUg
 gfZ
 gfZ
 gfZ
@@ -121960,7 +122603,7 @@ bcd
 cwS
 xwD
 dPD
-cwS
+iDX
 cwS
 pbx
 lJx
@@ -122240,7 +122883,7 @@ bSA
 pps
 vLW
 cVc
-bya
+qij
 cwN
 wgi
 gfZ
@@ -122466,7 +123109,7 @@ bya
 rxT
 xZn
 lEN
-xZn
+jue
 ePP
 rKc
 nSX
@@ -122723,13 +123366,13 @@ bya
 bya
 bya
 wCs
-aaP
+sZo
 aaP
 pOL
 fAA
 aaP
 aaP
-rxT
+lPa
 xjv
 bya
 uYf
@@ -122738,7 +123381,7 @@ mBd
 gKo
 mBd
 mwM
-aaP
+sZo
 oro
 tKt
 tKt
@@ -122754,7 +123397,7 @@ hEs
 krP
 ueu
 cVc
-qdW
+ulT
 bvk
 bfv
 gfZ
@@ -123011,7 +123654,7 @@ eXc
 krP
 vLW
 cVc
-flS
+tzz
 bgz
 bya
 gfZ
@@ -123246,7 +123889,7 @@ aaP
 neB
 gLo
 bya
-aaP
+sIF
 kNr
 wBy
 jct
@@ -123262,16 +123905,16 @@ cVc
 aab
 aad
 cVc
-fAX
+avf
 bvn
 vlF
 krP
 vLW
 cVc
 tDQ
-bya
+uqX
 laC
-gfZ
+lUg
 cFp
 cFp
 cFp
@@ -123744,7 +124387,7 @@ cPH
 gLo
 bya
 aaP
-sID
+cMM
 beC
 bya
 bfv
@@ -123756,7 +124399,7 @@ vjD
 mYw
 kpJ
 qoA
-aaP
+sZo
 neB
 gLo
 bBq
@@ -123996,12 +124639,12 @@ bya
 bya
 iAD
 bya
-bya
+bcL
 cPH
 gLo
 bya
 aaP
-bya
+cMU
 beE
 bya
 bfx
@@ -124014,7 +124657,7 @@ bya
 bya
 bya
 mBd
-bya
+vtd
 gLo
 ecE
 mBd
@@ -124264,7 +124907,7 @@ lns
 hrX
 nMk
 bya
-bya
+tFe
 aaP
 pdD
 wJx
@@ -124280,7 +124923,7 @@ gIU
 gUA
 lJx
 wuM
-iXZ
+bnp
 aaP
 akw
 akw
@@ -124507,7 +125150,7 @@ bya
 kDv
 bya
 bya
-tGf
+bya
 iAD
 bya
 flS
@@ -124521,9 +125164,9 @@ beI
 dUG
 krP
 gvo
-bcP
+eRR
 aaP
-lKs
+eua
 xik
 ola
 fOs
@@ -124793,7 +125436,7 @@ tqz
 haD
 krP
 bvk
-xMI
+lKu
 hYg
 aaP
 akw
@@ -125030,9 +125673,9 @@ tKt
 tKt
 aaP
 fBu
-bya
+tGf
 boX
-bvk
+tcm
 krP
 cwN
 oEN
@@ -125061,7 +125704,7 @@ cVc
 dmo
 dmo
 cVc
-kGz
+nJh
 kGz
 iOI
 mBd
@@ -125294,12 +125937,12 @@ nDh
 dUG
 bya
 aaP
-rLy
+wXm
 rxT
 nSX
 pnl
 aaP
-rRK
+nkx
 gLo
 bya
 aaP
@@ -125545,7 +126188,7 @@ akw
 aaP
 jLC
 bya
-bya
+sWg
 xik
 ntb
 bvk
@@ -125554,7 +126197,7 @@ aaP
 ufx
 mYw
 kpJ
-gvo
+mVW
 aaP
 pbx
 sqn
@@ -126060,7 +126703,7 @@ akw
 akw
 akw
 aaP
-bya
+pwQ
 bgq
 gLo
 nUP
@@ -126074,7 +126717,7 @@ bya
 sqn
 bya
 aaP
-sID
+kFM
 bya
 flS
 bgq
@@ -126587,7 +127230,7 @@ mBd
 rxT
 mca
 bya
-aaP
+sZo
 knm
 bya
 bya
@@ -126846,12 +127489,12 @@ gZV
 bya
 aaP
 oqd
-bya
+etv
 hSE
 cFS
 bfx
 kQF
-qoA
+dAt
 aaP
 akw
 bxc
@@ -126866,7 +127509,7 @@ cVc
 cVc
 cVc
 ewi
-ewi
+tUm
 ewi
 ewi
 ewi
@@ -127098,7 +127741,7 @@ xVo
 rrY
 uHj
 mBd
-bya
+beb
 gLo
 bya
 cVc
@@ -127362,7 +128005,7 @@ oiw
 bfx
 beH
 fAX
-tPR
+xbq
 mkd
 cVc
 akw
@@ -127858,13 +128501,13 @@ akw
 akw
 aaP
 bya
-oPD
-bya
+oql
+tGf
 bya
 gLo
 bya
 bya
-bya
+lOU
 bya
 oPD
 bya
@@ -127872,7 +128515,7 @@ bfs
 bya
 fjQ
 gFu
-rKM
+xhl
 ofk
 sIY
 xZn
@@ -128885,7 +129528,7 @@ bxc
 akw
 akw
 aaP
-bya
+pwQ
 bya
 bya
 bya
@@ -129142,7 +129785,7 @@ bgE
 akw
 akw
 aaP
-bya
+eJm
 bya
 bya
 bya
@@ -129154,7 +129797,7 @@ ygQ
 ygQ
 kyq
 aaP
-aaP
+sZo
 aaP
 aaP
 aaP
@@ -130684,7 +131327,7 @@ bxc
 akw
 akw
 aaP
-bya
+tAV
 kDv
 bya
 bya
