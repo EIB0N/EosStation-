@@ -6737,6 +6737,16 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
+"ayI" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/structure/chair/office/light,
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "ayK" = (
 /obj/effect/landmark/event_spawn,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -23630,6 +23640,14 @@
 /obj/effect/turf_decal/siding/blue{
 	dir = 8
 	},
+/obj/machinery/door_buttons/airlock_controller{
+	idExterior = "virology_airlock_exterior";
+	idInterior = "virology_airlock_interior";
+	idSelf = "virology_airlock_control";
+	name = "Virology Access Console";
+	pixel_x = -40;
+	req_access_txt = "39"
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -26332,12 +26350,9 @@
 	},
 /area/space)
 "bvn" = (
-/obj/structure/chair/office/light,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable,
-/turf/open/floor/plasteel/white{
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer4,
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -60702,13 +60717,13 @@
 /obj/machinery/shower{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/blue{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 6
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -61580,14 +61595,18 @@
 	},
 /area/security/prison)
 "fOs" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -63074,6 +63093,7 @@
 /area/space)
 "hEV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/visible/layer4,
+/obj/machinery/computer/pandemic,
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -64174,11 +64194,9 @@
 	},
 /area/hallway/primary/fore)
 "iOr" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/siding/blue{
-	dir = 6
-	},
-/turf/open/floor/plasteel/white{
+/obj/machinery/portable_atmospherics/scrubber,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2,
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -64503,6 +64521,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/aft)
+"jkl" = (
+/obj/machinery/atmospherics/components/unary/tank/air,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "jkF" = (
 /turf/open/floor/plasteel,
 /area/mine/unexplored{
@@ -64562,10 +64586,6 @@
 /turf/open/floor/plating/rust,
 /area/space)
 "jns" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
-	dir = 8
-	},
 /obj/structure/sink{
 	dir = 4;
 	pixel_x = -12
@@ -64573,6 +64593,9 @@
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/blue{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 6
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -65557,6 +65580,17 @@
 	icon_state = "platingdmg2"
 	},
 /area/space)
+"kwE" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 9
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "kxr" = (
 /obj/structure/chair/stool/bar,
 /obj/structure/cable,
@@ -66062,16 +66096,14 @@
 	},
 /area/space)
 "kXj" = (
-/obj/machinery/door_buttons/airlock_controller{
-	idExterior = "virology_airlock_exterior";
-	idInterior = "virology_airlock_interior";
-	idSelf = "virology_airlock_control";
-	name = "Virology Access Console";
-	pixel_x = 20;
-	req_access_txt = "39"
-	},
 /obj/effect/turf_decal/siding/blue{
 	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -66080,12 +66112,6 @@
 "kZE" = (
 /obj/machinery/shower{
 	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 6
 	},
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/blue{
@@ -67555,6 +67581,12 @@
 	},
 /turf/open/floor/carpet/orange,
 /area/space)
+"mzl" = (
+/obj/structure/bed/pod,
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "mAd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -68014,6 +68046,14 @@
 "mUi" = (
 /obj/structure/cable,
 /turf/open/floor/plating/rust,
+/area/space)
+"mUk" = (
+/obj/structure/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
 /area/space)
 "mUO" = (
 /obj/structure/disposalpipe/segment{
@@ -68925,6 +68965,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"nLQ" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "nLW" = (
 /obj/structure/chair{
 	dir = 8
@@ -69187,13 +69236,15 @@
 /turf/open/floor/plasteel,
 /area/space)
 "nVL" = (
-/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold4w/supply/visible/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/blue/corner,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -69558,9 +69609,6 @@
 "oro" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
@@ -70203,6 +70251,21 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"oRv" = (
+/obj/machinery/door/airlock/virology/glass{
+	name = "Virology Access";
+	req_access_txt = "39"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "oRA" = (
 /obj/structure/disposalpipe/junction{
 	dir = 4;
@@ -70296,6 +70359,14 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"oWO" = (
+/obj/effect/spawner/structure/window,
+/obj/structure/cable,
+/obj/structure/sign/warning/biohazard,
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -70801,12 +70872,6 @@
 	},
 /area/ai_monitored/turret_protected/ai)
 "pvA" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 9
-	},
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 4
@@ -70859,6 +70924,14 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
+"pzg" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 9
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "pzE" = (
 /obj/machinery/power/smes,
 /obj/structure/cable,
@@ -71748,6 +71821,13 @@
 "qul" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"qup" = (
+/obj/machinery/portable_atmospherics/canister/miasma,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -73892,9 +73972,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/blue{
 	dir = 6
@@ -74200,6 +74277,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/processing)
+"tEY" = (
+/obj/machinery/door/airlock/virology/glass{
+	name = "Virology Containment Cell";
+	req_access_txt = "39"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "tFe" = (
 /obj/structure/extinguisher_cabinet{
 	dir = 4;
@@ -74491,7 +74577,7 @@
 "tUm" = (
 /obj/structure/cable,
 /obj/effect/spawner/structure/window,
-/obj/structure/sign/warning/vacuum,
+/obj/structure/sign/warning/biohazard,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -78002,8 +78088,6 @@
 	name = "Virology Access";
 	req_access_txt = "39"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/supply/visible/layer4,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -78599,6 +78683,14 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/storage)
+"ygM" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer2,
+/obj/structure/cable,
+/obj/machinery/atmospherics/components/binary/pump/layer4,
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "ygQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -128185,7 +128277,7 @@ flS
 nSl
 bmO
 fOs
-pGI
+ygM
 pGI
 bmU
 bSA
@@ -128698,7 +128790,7 @@ pGX
 tKt
 cVc
 cVc
-cVc
+oRv
 cVc
 raA
 iEQ
@@ -128954,11 +129046,11 @@ gYN
 xsB
 gOr
 cVc
-aad
-dmo
+bvn
+nLQ
 cVc
 dPh
-iEQ
+ayI
 eXc
 krP
 vLW
@@ -129211,11 +129303,11 @@ gYN
 xsB
 abs
 cVc
-aab
-aad
+iOr
+kwE
 cVc
 avf
-bvn
+iEQ
 vlF
 krP
 vLW
@@ -129468,8 +129560,8 @@ gYN
 xsB
 uVC
 cVc
-aab
-aad
+jkl
+pzg
 cVc
 pbx
 fzd
@@ -129725,12 +129817,12 @@ vhz
 eFw
 akw
 cVc
-aab
-aad
+cVc
+cVc
 cVc
 bmT
 oQY
-bya
+mUk
 bcQ
 cDI
 sAP
@@ -132559,9 +132651,9 @@ nQQ
 sRl
 nFP
 mBd
-xZt
-uhy
-iOr
+kDv
+bya
+cwN
 mBd
 jAa
 nbz
@@ -132816,8 +132908,8 @@ cVc
 cVc
 cVc
 cVc
-cVc
-ewi
+oWO
+tEY
 tUm
 ewi
 ewi
@@ -133072,12 +133164,12 @@ aad
 aad
 cFp
 cFp
+cVc
+bya
+bya
+bya
+cVc
 cFp
-bhv
-bhv
-bhv
-bhv
-bhv
 abC
 abC
 abC
@@ -133329,11 +133421,11 @@ aad
 aad
 cFp
 cFp
-cFp
-cFp
-aaa
-aaa
-aaa
+cVc
+bya
+bya
+bya
+cVc
 aaa
 abC
 aaa
@@ -133586,11 +133678,11 @@ dmo
 aad
 cFp
 cFp
-cFp
-cFp
-aaa
-aaa
-aaa
+cVc
+qup
+mzl
+bya
+cVc
 aaa
 abC
 aaa
@@ -133843,12 +133935,12 @@ dmo
 aad
 cFp
 cFp
-cFp
-cFp
+cVc
+cVc
+cVc
+cVc
+cVc
 aaa
-uor
-uor
-uor
 liB
 uor
 uor
