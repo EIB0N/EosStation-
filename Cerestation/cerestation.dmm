@@ -4972,7 +4972,6 @@
 	})
 "atl" = (
 /obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -19936,6 +19935,10 @@
 	dir = 8;
 	name = "Medbay Pharmacy Camra";
 	network = list("ss13","medbay")
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 25
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -60743,6 +60746,15 @@
 /area/maintenance/aft{
 	name = "Aft Asteroid Maintenance"
 	})
+"eKi" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "Surgery C"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "eKr" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
@@ -62803,6 +62815,7 @@
 	id = "chemisttop";
 	name = "Chemistry Lobby Shutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -62834,6 +62847,7 @@
 	id = "chemisttop";
 	name = "Chemistry Lobby Shutters"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -66429,6 +66443,16 @@
 /obj/machinery/door/poddoor,
 /turf/open/floor/plating,
 /area/space)
+"kQy" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "surgeryb";
+	name = "privacy shutters"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "kQF" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 5
@@ -66680,7 +66704,10 @@
 	name = "Chemistry Desk"
 	},
 /obj/machinery/door/window/southleft,
-/obj/machinery/door/poddoor/shutters/preopen,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "chemistbot";
+	name = "Chemistry Side Shutters"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -67397,20 +67424,37 @@
 /turf/closed/wall/rust,
 /area/crew_quarters/abandoned_gambling_den)
 "lOU" = (
-/obj/machinery/button/door{
-	id = "chemisttop";
-	name = "Chemistry Shutter Control";
-	pixel_x = -26;
-	pixel_y = 7;
-	req_access_txt = "69"
-	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/turf_decal/siding/blue{
+	dir = 9
+	},
+/obj/structure/cable,
+/obj/machinery/airalarm{
+	pixel_x = 30;
+	pixel_y = 23
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -25
+	},
+/obj/machinery/light{
 	dir = 8
+	},
+/obj/machinery/button/door{
+	id = "Surgery C";
+	name = "Privacy Shutters Control";
+	pixel_x = -25;
+	pixel_y = 23
+	},
+/obj/machinery/power/apc{
+	areastring = "/area/medical/medbay/central";
+	dir = 1;
+	name = "Medbay Surguery APC"
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/medical/chemistry)
+/area/medical/surgery)
 "lPa" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/machinery/airalarm{
@@ -67490,12 +67534,6 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
-"lRf" = (
-/obj/effect/spawner/structure/window,
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "lSY" = (
 /obj/structure/chair/stool/bar,
 /obj/machinery/power/apc{
@@ -71259,6 +71297,10 @@
 /area/space)
 "pfO" = (
 /obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "chemistbot";
+	name = "Chemistry Side Shutters"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -72097,37 +72139,16 @@
 	name = "Fore Asteroid Maintenance"
 	})
 "qbD" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/obj/effect/turf_decal/siding/blue{
-	dir = 9
+/obj/structure/sign/departments/chemistry,
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "chemistbot";
+	name = "Chemistry Side Shutters"
 	},
-/obj/structure/cable,
-/obj/machinery/airalarm{
-	pixel_x = 30;
-	pixel_y = 23
-	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -25
-	},
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/machinery/button/door{
-	id = "Surgery C";
-	name = "Privacy Shutters Control";
-	pixel_x = -25;
-	pixel_y = 23
-	},
-/obj/machinery/power/apc{
-	areastring = "/area/medical/medbay/central";
-	dir = 1;
-	name = "Medbay Surguery APC"
-	},
-/turf/open/floor/plasteel/white{
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/medical/surgery)
+/area/medical/chemistry)
 "qbW" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -72842,15 +72863,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/pharmacy)
-"qSL" = (
-/obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "Surgery C"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "qTZ" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -75662,16 +75674,16 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/button/door{
-	id = "surgeryb";
-	name = "Privacy Shutters Control";
-	pixel_x = -25;
-	pixel_y = 23
-	},
 /obj/machinery/power/apc{
 	areastring = "/area/medical/medbay/central";
 	dir = 1;
 	name = "Medbay Surguery APC"
+	},
+/obj/machinery/button/door{
+	id = "surgeryb";
+	name = "Privacy Shutters Control";
+	pixel_x = -26;
+	pixel_y = 26
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -78831,6 +78843,13 @@
 "xgJ" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 10
+	},
+/obj/machinery/button/door{
+	id = "chemistbot";
+	name = "Chemistry Shutter Control";
+	pixel_x = -26;
+	pixel_y = -7;
+	req_access_txt = "69"
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -130269,7 +130288,7 @@ omB
 nHG
 ibC
 akl
-lRf
+atl
 rRK
 wQK
 xDx
@@ -130780,9 +130799,9 @@ brr
 ivS
 fsc
 fsc
-lRf
-lRf
-lRf
+atl
+atl
+atl
 sZo
 neB
 qfl
@@ -131808,9 +131827,9 @@ gvo
 eRR
 fsc
 fsc
-lRf
-lRf
-lRf
+kQy
+kQy
+kQy
 fsc
 pOL
 iyn
@@ -132325,7 +132344,7 @@ pdD
 jjy
 meG
 nkD
-atl
+kQy
 pPP
 wQK
 xxr
@@ -132579,9 +132598,9 @@ dUG
 eYV
 fsc
 fsc
-qSL
-qSL
-qSL
+atl
+atl
+atl
 sZo
 rRK
 wQK
@@ -132835,7 +132854,7 @@ ntb
 bvk
 fre
 fsc
-qbD
+lOU
 mQW
 sDI
 mVW
@@ -133096,7 +133115,7 @@ gwd
 jSH
 meG
 nkD
-qSL
+eKi
 pPP
 sqn
 xDx
@@ -135148,7 +135167,7 @@ ojE
 noN
 mcG
 joZ
-lOU
+mcG
 mcG
 uCK
 xgJ
@@ -136180,7 +136199,7 @@ ntb
 sEx
 sEx
 qrp
-bgv
+qbD
 kep
 oSL
 poo
