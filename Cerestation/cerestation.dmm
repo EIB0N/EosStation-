@@ -19072,18 +19072,19 @@
 	},
 /area/engine/atmos)
 "bcP" = (
-/obj/machinery/button/door{
-	id = "chemisttop";
-	name = "Chemistry Shutter Control";
-	pixel_x = 26;
-	req_access_txt = "69"
-	},
 /obj/effect/turf_decal/siding/blue{
 	dir = 5
 	},
 /obj/machinery/shower{
 	dir = 8;
 	name = "emergency shower"
+	},
+/obj/machinery/button/door{
+	id = "chemisttop";
+	name = "Chemistry Shutter Control";
+	pixel_x = 26;
+	pixel_y = 7;
+	req_access_txt = "69"
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -36093,6 +36094,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"bWi" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "bWj" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/camera{
@@ -62797,6 +62804,7 @@
 	req_access_txt = "5; 69"
 	},
 /obj/machinery/door/window/westleft,
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -62823,6 +62831,7 @@
 	name = "Chemistry Desk";
 	req_access_txt = "5; 69"
 	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -70686,15 +70695,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/engine/atmos)
-"oJd" = (
-/obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "Surgery C"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "oJB" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/grimy{
@@ -72089,8 +72089,34 @@
 	name = "Fore Asteroid Maintenance"
 	})
 "qbD" = (
-/obj/effect/spawner/structure/window,
-/turf/open/floor/plating{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/effect/turf_decal/siding/blue{
+	dir = 9
+	},
+/obj/structure/cable,
+/obj/machinery/airalarm{
+	pixel_x = 30;
+	pixel_y = 23
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -25
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/button/door{
+	id = "Surgery C";
+	name = "Privacy Shutters Control";
+	pixel_x = -25;
+	pixel_y = 23
+	},
+/obj/machinery/power/apc{
+	areastring = "/area/medical/medbay/central";
+	dir = 1;
+	name = "Medbay Surguery APC"
+	},
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/surgery)
@@ -76253,6 +76279,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
+"uNx" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "Surgery C"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "uNO" = (
 /obj/structure/sign/poster/official/help_others{
 	pixel_x = 32
@@ -79581,6 +79616,10 @@
 /area/medical/sleeper)
 "xNB" = (
 /obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "chemisttop";
+	name = "Chemistry Lobby Shutters"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -130222,7 +130261,7 @@ omB
 nHG
 ibC
 akl
-qbD
+bWi
 rRK
 wQK
 xDx
@@ -130733,9 +130772,9 @@ brr
 ivS
 fsc
 fsc
-qbD
-qbD
-qbD
+bWi
+bWi
+bWi
 sZo
 neB
 qfl
@@ -131761,9 +131800,9 @@ gvo
 eRR
 fsc
 fsc
-qbD
-qbD
-qbD
+bWi
+bWi
+bWi
 fsc
 pOL
 iyn
@@ -132532,9 +132571,9 @@ dUG
 eYV
 fsc
 fsc
-oJd
-oJd
-oJd
+uNx
+uNx
+uNx
 sZo
 rRK
 wQK
@@ -132788,7 +132827,7 @@ ntb
 bvk
 fre
 fsc
-ufx
+qbD
 mQW
 sDI
 mVW
@@ -133049,7 +133088,7 @@ gwd
 jSH
 meG
 nkD
-oJd
+uNx
 pPP
 sqn
 xDx
