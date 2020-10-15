@@ -64470,16 +64470,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hydroponics)
-"iMv" = (
-/obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/preopen{
-	id = "surgeryb";
-	name = "privacy shutters"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "iMW" = (
 /obj/machinery/door/airlock/glass,
 /obj/structure/cable,
@@ -67802,6 +67792,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/prison)
+"mek" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "surgeryc";
+	name = "privacy shutters"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "meD" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -70437,16 +70437,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/qm)
-"oxw" = (
-/obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/preopen{
-	id = "surgeryc";
-	name = "privacy shutters"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "oxy" = (
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=8";
@@ -73120,6 +73110,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/prison)
+"rjb" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "surgeryb";
+	name = "privacy shutters"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "rjB" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -73981,21 +73981,22 @@
 	name = "Fore Asteroid Maintenance"
 	})
 "sma" = (
-/obj/machinery/door_buttons/access_button{
-	idDoor = "Virology Incinerator Door";
-	idSelf = "virology_incinerator_door_control";
-	name = "Degas button";
-	pixel_x = 40;
-	pixel_y = 30
-	},
 /obj/machinery/door/airlock/virology{
 	autoclose = 0;
 	frequency = 1449;
-	id_tag = "Virology Incinerator Door";
-	name = "Virology Incinerator Door";
+	id_tag = "virology_airlock_exterior";
+	name = "Virology Exterior Airlock";
 	req_access_txt = "39"
 	},
-/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door_buttons/access_button{
+	dir = 1;
+	idDoor = "virology_airlock_exterior";
+	idSelf = "virology_airlock_control";
+	name = "Virology Access Button";
+	pixel_x = 40;
+	pixel_y = 20;
+	req_access_txt = "39"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -131839,9 +131840,9 @@ gvo
 eRR
 fsc
 fsc
-iMv
-iMv
-iMv
+rjb
+rjb
+rjb
 fsc
 pOL
 iyn
@@ -132356,7 +132357,7 @@ pdD
 jjy
 meG
 nkD
-iMv
+rjb
 pPP
 wQK
 xxr
@@ -132610,9 +132611,9 @@ dUG
 eYV
 fsc
 fsc
-oxw
-oxw
-oxw
+mek
+mek
+mek
 sZo
 rRK
 wQK
