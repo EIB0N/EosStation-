@@ -26441,11 +26441,11 @@
 	},
 /area/medical/virology)
 "bvw" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/effect/spawner/structure/window/plasma,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -26805,23 +26805,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/pharmacy)
-"bwX" = (
-/obj/effect/turf_decal/siding/blue{
-	dir = 8
-	},
-/obj/machinery/door_buttons/access_button{
-	dir = 1;
-	idDoor = "virology_airlock";
-	idSelf = "virology_airlock_control";
-	name = "Virology Airlock Button";
-	pixel_x = -24;
-	pixel_y = -2;
-	req_access_txt = "39"
-	},
-/turf/open/floor/plasteel/white{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/virology)
 "bwZ" = (
 /obj/item/wallframe/apc,
 /obj/structure/cable,
@@ -59905,11 +59888,37 @@
 	},
 /area/space)
 "dQT" = (
-/obj/structure/disposalpipe/trunk,
-/turf/open/floor/plating{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/effect/turf_decal/siding/blue{
+	dir = 9
+	},
+/obj/structure/cable,
+/obj/machinery/airalarm{
+	pixel_x = 30;
+	pixel_y = 23
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -25
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/button/door{
+	id = "surgeryc";
+	name = "Privacy Shutters Control";
+	pixel_x = -25;
+	pixel_y = 23
+	},
+/obj/machinery/power/apc{
+	areastring = "/area/medical/medbay/central";
+	dir = 1;
+	name = "Medbay Surguery APC"
+	},
+/turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/medical/virology)
+/area/medical/surgery)
 "dQU" = (
 /turf/closed/wall{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -61060,6 +61069,23 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/storage)
+"fcc" = (
+/obj/effect/turf_decal/siding/blue{
+	dir = 8
+	},
+/obj/machinery/door_buttons/access_button{
+	dir = 1;
+	idDoor = "virology_airlock";
+	idSelf = "virology_airlock_control";
+	name = "Virology Airlock Button";
+	pixel_x = -24;
+	pixel_y = -2;
+	req_access_txt = "39"
+	},
+/turf/open/floor/plasteel/white{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/virology)
 "fce" = (
 /turf/closed/wall,
 /area/medical/medbay/central)
@@ -61522,9 +61548,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/crew_quarters/heads/cmo)
-"fCs" = (
-/turf/open/floor/plating/asteroid/airless,
-/area/medical/virology)
 "fCN" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/southleft{
@@ -62404,6 +62427,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/prison)
+"gzo" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "surgeryc";
+	name = "privacy shutters"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "gzD" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -64481,16 +64514,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
-"iJT" = (
-/obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/preopen{
-	id = "surgeryb";
-	name = "privacy shutters"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "iLv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -65684,6 +65707,9 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/medbay/central)
+"keF" = (
+/turf/open/floor/plating/asteroid/airless,
+/area/medical/virology)
 "kfu" = (
 /obj/structure/disposalpipe/sorting{
 	dir = 8;
@@ -67438,34 +67464,12 @@
 /turf/closed/wall/rust,
 /area/crew_quarters/abandoned_gambling_den)
 "lOU" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/obj/effect/turf_decal/siding/blue{
-	dir = 9
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "surgeryb";
+	name = "privacy shutters"
 	},
-/obj/structure/cable,
-/obj/machinery/airalarm{
-	pixel_x = 30;
-	pixel_y = 23
-	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -25
-	},
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/machinery/button/door{
-	id = "surgeryc";
-	name = "Privacy Shutters Control";
-	pixel_x = -25;
-	pixel_y = 23
-	},
-/obj/machinery/power/apc{
-	areastring = "/area/medical/medbay/central";
-	dir = 1;
-	name = "Medbay Surguery APC"
-	},
-/turf/open/floor/plasteel/white{
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/surgery)
@@ -68089,9 +68093,9 @@
 	},
 /area/hallway/primary/central)
 "muT" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/structure/cable,
 /obj/structure/sign/warning/vacuum,
+/obj/effect/spawner/structure/window/plasma,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -69777,11 +69781,11 @@
 	},
 /area/space)
 "nQW" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/effect/spawner/structure/window/plasma,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -72611,16 +72615,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/qm)
-"qvC" = (
-/obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/preopen{
-	id = "surgeryc";
-	name = "privacy shutters"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "qvQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark{
@@ -77531,8 +77525,8 @@
 	},
 /area/tcommsat/computer)
 "vVj" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
 /obj/structure/cable,
+/obj/effect/spawner/structure/window/plasma,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -128790,9 +128784,9 @@ wuA
 cOg
 aXD
 aXD
-fCs
+keF
 sma
-dQT
+sCR
 bvv
 gQx
 sCR
@@ -129304,7 +129298,7 @@ eOl
 eLI
 wjE
 swt
-bwX
+fcc
 gDz
 gDz
 bBd
@@ -131852,9 +131846,9 @@ gvo
 eRR
 fsc
 fsc
-iJT
-iJT
-iJT
+lOU
+lOU
+lOU
 fsc
 pOL
 iyn
@@ -132369,7 +132363,7 @@ pdD
 jjy
 meG
 nkD
-iJT
+lOU
 pPP
 wQK
 xxr
@@ -132623,9 +132617,9 @@ dUG
 eYV
 fsc
 fsc
-qvC
-qvC
-qvC
+gzo
+gzo
+gzo
 sZo
 rRK
 wQK
@@ -132879,7 +132873,7 @@ ntb
 bvk
 fre
 fsc
-lOU
+dQT
 mQW
 sDI
 mVW
