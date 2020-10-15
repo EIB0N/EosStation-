@@ -4972,6 +4972,10 @@
 	})
 "atl" = (
 /obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "surgerya";
+	name = "privacy shutters"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -60746,15 +60750,6 @@
 /area/maintenance/aft{
 	name = "Aft Asteroid Maintenance"
 	})
-"eKi" = (
-/obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/shutters/preopen{
-	id = "Surgery C"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "eKr" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
@@ -61072,6 +61067,13 @@
 	pixel_y = -30
 	},
 /obj/effect/turf_decal/siding/blue,
+/obj/machinery/button/door{
+	id = "cmoshutter";
+	name = "CMO Office Shutters";
+	pixel_x = 7;
+	pixel_y = -20;
+	req_access_txt = "40"
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -64440,14 +64442,6 @@
 	pixel_x = -32;
 	pixel_y = 32
 	},
-/obj/machinery/button/door{
-	desc = "A remote control switch for the medbay foyer.";
-	id = "Medbay Sec Shutters";
-	name = "Medbay Sec Shutters";
-	normaldoorcontrol = 1;
-	pixel_x = 24;
-	pixel_y = 24
-	},
 /obj/effect/turf_decal/siding/blue{
 	dir = 1
 	},
@@ -64476,6 +64470,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hydroponics)
+"iMv" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "surgeryb";
+	name = "privacy shutters"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "iMW" = (
 /obj/machinery/door/airlock/glass,
 /obj/structure/cable,
@@ -66443,16 +66447,6 @@
 /obj/machinery/door/poddoor,
 /turf/open/floor/plating,
 /area/space)
-"kQy" = (
-/obj/effect/spawner/structure/window,
-/obj/machinery/door/poddoor/preopen{
-	id = "surgeryb";
-	name = "privacy shutters"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/medical/surgery)
 "kQF" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 5
@@ -67441,7 +67435,7 @@
 	dir = 8
 	},
 /obj/machinery/button/door{
-	id = "Surgery C";
+	id = "surgeryc";
 	name = "Privacy Shutters Control";
 	pixel_x = -25;
 	pixel_y = 23
@@ -70104,6 +70098,10 @@
 /obj/effect/spawner/structure/window,
 /obj/structure/sign/departments/medbay,
 /obj/structure/cable,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "cmoshutter";
+	name = "CMO Office Shutters"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -70439,6 +70437,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/qm)
+"oxw" = (
+/obj/effect/spawner/structure/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "surgeryc";
+	name = "privacy shutters"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/medical/surgery)
 "oxy" = (
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=8";
@@ -72463,6 +72471,10 @@
 "qqr" = (
 /obj/effect/spawner/structure/window,
 /obj/structure/cable,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "cmoshutter";
+	name = "CMO Office Shutters"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -79485,16 +79497,16 @@
 	dir = 8;
 	pixel_x = 25
 	},
-/obj/machinery/button/door{
-	id = "surgeryb";
-	name = "Privacy Shutters Control";
-	pixel_x = -25;
-	pixel_y = 23
-	},
 /obj/machinery/power/apc{
 	areastring = "/area/medical/medbay/central";
 	dir = 1;
 	name = "Medbay Surguery APC"
+	},
+/obj/machinery/button/door{
+	id = "surgerya";
+	name = "Privacy Shutters Control";
+	pixel_x = -26;
+	pixel_y = 26
 	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -131827,9 +131839,9 @@ gvo
 eRR
 fsc
 fsc
-kQy
-kQy
-kQy
+iMv
+iMv
+iMv
 fsc
 pOL
 iyn
@@ -132344,7 +132356,7 @@ pdD
 jjy
 meG
 nkD
-kQy
+iMv
 pPP
 wQK
 xxr
@@ -132598,9 +132610,9 @@ dUG
 eYV
 fsc
 fsc
-atl
-atl
-atl
+oxw
+oxw
+oxw
 sZo
 rRK
 wQK
@@ -133115,7 +133127,7 @@ gwd
 jSH
 meG
 nkD
-eKi
+atl
 pPP
 sqn
 xDx
