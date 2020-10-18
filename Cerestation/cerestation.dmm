@@ -1803,14 +1803,6 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
-"aiK" = (
-/obj/effect/turf_decal/delivery,
-/mob/living/simple_animal/bot/mulebot{
-	home_destination = "QM #3";
-	suffix = "#3"
-	},
-/turf/open/floor/plasteel,
-/area/space)
 "aiM" = (
 /obj/machinery/telecomms/bus/preset_one,
 /turf/open/floor/circuit{
@@ -56228,12 +56220,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/sleeper)
-"dzm" = (
-/obj/machinery/autolathe,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "dzn" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
@@ -56731,6 +56717,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/medbay/central)
+"edf" = (
+/obj/machinery/rnd/production/techfab/department/cargo,
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "edD" = (
 /obj/machinery/shower{
 	dir = 8
@@ -56921,6 +56913,14 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
+"ept" = (
+/obj/effect/turf_decal/delivery,
+/mob/living/simple_animal/bot/mulebot{
+	home_destination = "QM #3";
+	suffix = "#3"
+	},
+/turf/open/floor/plasteel,
+/area/space)
 "epy" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -57877,6 +57877,18 @@
 "fvU" = (
 /turf/closed/wall,
 /area/medical/morgue)
+"fwo" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-21"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "fww" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 9
@@ -58649,10 +58661,8 @@
 	icon_state = "wood-broken"
 	},
 /area/crew_quarters/abandoned_gambling_den)
-"gqs" = (
-/obj/structure/disposaloutlet{
-	dir = 8
-	},
+"grd" = (
+/obj/structure/closet/wardrobe/miner,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -59183,6 +59193,21 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
+"gWt" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-21"
+	},
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "gWu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -59973,7 +59998,6 @@
 "hMP" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/brute,
-/obj/item/storage/firstaid/brute,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -60413,6 +60437,19 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
+"iiX" = (
+/obj/effect/turf_decal/loading_area,
+/obj/effect/turf_decal/delivery,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "ija" = (
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -60444,12 +60481,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/grille,
 /turf/open/space,
-/area/space)
-"ilK" = (
-/obj/structure/window/reinforced,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
 /area/space)
 "imI" = (
 /obj/machinery/airalarm{
@@ -60688,12 +60719,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/processing)
-"iuT" = (
-/obj/machinery/rnd/production/techfab/department/cargo,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "ivq" = (
 /obj/structure/table/glass,
 /obj/machinery/reagentgrinder,
@@ -60952,8 +60977,11 @@
 	},
 /area/hydroponics)
 "iLM" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plasteel{
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "cargoload"
+	},
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -61324,11 +61352,8 @@
 /turf/open/floor/plasteel,
 /area/vacant_room)
 "jgo" = (
-/obj/machinery/conveyor{
-	dir = 1;
-	id = "cargoload"
-	},
-/turf/open/floor/plating{
+/obj/machinery/recycler,
+/turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
@@ -61511,7 +61536,6 @@
 "jqy" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/fire,
-/obj/item/storage/firstaid/fire,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -61665,6 +61689,12 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
+"jyl" = (
+/obj/machinery/autolathe,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -62035,21 +62065,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/chapel/office)
-"jYn" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/item/kirbyplants{
-	icon_state = "plant-22"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "jYR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -62236,7 +62251,14 @@
 	name = "Fore Asteroid Maintenance"
 	})
 "kkH" = (
-/obj/machinery/recycler,
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "cargodisposals"
+	},
+/obj/machinery/door/poddoor{
+	id = "cargoload";
+	name = "supply dock loading door"
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -62316,6 +62338,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/virology)
+"kpd" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Warehouse Maintenance";
+	req_access_txt = "31"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "kpy" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -62453,6 +62484,18 @@
 /obj/machinery/light/small,
 /turf/open/floor/wood,
 /area/maintenance/port/fore)
+"kvS" = (
+/obj/machinery/conveyor{
+	id = "cargounload"
+	},
+/obj/machinery/door/poddoor{
+	id = "cargounload";
+	name = "supply dock unloading door"
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "kwf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -62624,6 +62667,14 @@
 /area/teleporter{
 	name = "Security Quantum Pad"
 	})
+"kFj" = (
+/obj/item/kirbyplants{
+	icon_state = "plant-21"
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "kFC" = (
 /obj/machinery/door/airlock/atmos{
 	name = "Medbay Atmospherics Checkpoint";
@@ -63467,6 +63518,14 @@
 /obj/structure/window/shuttle,
 /turf/open/floor/plating,
 /area/shuttle/escape)
+"lwF" = (
+/obj/structure/disposaloutlet{
+	dir = 8
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "lwX" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -63584,14 +63643,6 @@
 /turf/open/floor/plasteel/dark{
 	baseturf = /turf/open/floor/plating/asteroid/airless;
 	dir = 5
-	},
-/area/space)
-"lBx" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-21"
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
 "lBV" = (
@@ -64334,6 +64385,13 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/virology)
+"mlB" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/belt/utility,
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "mmG" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/plasteel/dark/side{
@@ -65776,6 +65834,14 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/space)
+"nEC" = (
+/obj/machinery/computer/cargo/request{
+	dir = 8
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "nFd" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -65787,13 +65853,8 @@
 	name = "Aft Asteroid Maintenance"
 	})
 "nFn" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "cargodisposals"
-	},
-/obj/machinery/door/poddoor{
-	id = "cargoload";
-	name = "supply dock loading door"
+/obj/machinery/mineral/stacking_machine{
+	input_dir = 2
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -66292,8 +66353,8 @@
 	},
 /area/ai_monitored/security/armory)
 "nXz" = (
-/obj/machinery/mineral/stacking_machine{
-	input_dir = 2
+/obj/machinery/disposal/delivery_chute{
+	dir = 8
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -66389,19 +66450,6 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
-"odl" = (
-/obj/effect/turf_decal/loading_area,
-/obj/effect/turf_decal/delivery,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "ody" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -67001,6 +67049,21 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
+"oFx" = (
+/obj/machinery/door/window/eastright{
+	base_state = "left";
+	dir = 2;
+	icon_state = "left";
+	name = "Danger: Conveyor Access";
+	req_access_txt = "12"
+	},
+/obj/structure/window/reinforced/spawner{
+	dir = 8
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "oFY" = (
 /obj/machinery/conveyor/auto{
 	dir = 6;
@@ -67504,6 +67567,15 @@
 /area/maintenance/fore{
 	name = "Fore Asteroid Maintenance"
 	})
+"pbs" = (
+/obj/machinery/conveyor{
+	dir = 9;
+	id = "cargodisposals"
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "pbx" = (
 /obj/machinery/vending/medical,
 /obj/effect/turf_decal/siding/blue{
@@ -67938,8 +68010,9 @@
 	name = "Port Asteroid Maintenance"
 	})
 "pzF" = (
-/obj/machinery/disposal/delivery_chute{
-	dir = 8
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "cargodisposals"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -68629,21 +68702,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/prison)
-"qmI" = (
-/obj/machinery/door/window/eastright{
-	base_state = "left";
-	dir = 2;
-	icon_state = "left";
-	name = "Danger: Conveyor Access";
-	req_access_txt = "12"
-	},
-/obj/structure/window/reinforced/spawner{
-	dir = 8
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "qnp" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/plasteel{
@@ -68868,9 +68926,13 @@
 	},
 /area/solar/port/fore)
 "qwo" = (
-/obj/machinery/conveyor{
-	dir = 1;
-	id = "cargodisposals"
+/obj/structure/window/reinforced/spawner{
+	dir = 1
+	},
+/obj/machinery/conveyor_switch/oneway{
+	dir = 8;
+	id = "garbage";
+	name = "disposal conveyor"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -69090,13 +69152,11 @@
 	},
 /area/hallway/primary/central)
 "qMe" = (
-/obj/structure/window/reinforced/spawner{
-	dir = 1
-	},
-/obj/machinery/conveyor_switch/oneway{
-	dir = 8;
-	id = "garbage";
-	name = "disposal conveyor"
+/obj/machinery/door/window{
+	base_state = "right";
+	dir = 1;
+	icon_state = "right";
+	layer = 3
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -69430,7 +69490,6 @@
 "rjS" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/toxin,
-/obj/item/storage/firstaid/toxin,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -69587,11 +69646,13 @@
 	},
 /area/hallway/primary/central)
 "rwU" = (
-/obj/machinery/door/window{
-	base_state = "right";
+/obj/machinery/door/poddoor{
+	id = "cargoload";
+	name = "supply dock loading door"
+	},
+/obj/machinery/conveyor{
 	dir = 1;
-	icon_state = "right";
-	layer = 3
+	id = "cargodisposals"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -70001,15 +70062,6 @@
 /obj/structure/closet,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/escape)
-"rTt" = (
-/obj/machinery/door/airlock/maintenance_hatch{
-	name = "Warehouse Maintenance";
-	req_access_txt = "31"
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "rTE" = (
 /obj/machinery/door/airlock/glass{
 	name = "Brig Lobby"
@@ -70238,14 +70290,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
-"siF" = (
-/obj/machinery/computer/cargo/request{
-	dir = 8
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "siK" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/showroomfloor{
@@ -71194,18 +71238,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
-"tmM" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-21"
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "tmY" = (
 /obj/machinery/door/airlock/maintenance_hatch{
 	name = "Maintenance Hatch";
@@ -71445,21 +71477,6 @@
 /area/crew_quarters{
 	name = "Rehabilitation Dome"
 	})
-"tDd" = (
-/obj/item/kirbyplants{
-	icon_state = "plant-21"
-	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "tDQ" = (
 /obj/machinery/vending/wardrobe/viro_wardrobe,
 /obj/effect/turf_decal/siding/blue{
@@ -71469,12 +71486,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/virology)
-"tEK" = (
-/obj/structure/closet/wardrobe/miner,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "tEN" = (
 /obj/structure/chair{
 	dir = 1
@@ -71907,13 +71918,8 @@
 /turf/open/floor/carpet/orange,
 /area/medical/psychology)
 "ubL" = (
-/obj/machinery/door/poddoor{
-	id = "cargoload";
-	name = "supply dock loading door"
-	},
-/obj/machinery/conveyor{
-	dir = 1;
-	id = "cargodisposals"
+/obj/structure/window/reinforced/spawner{
+	dir = 8
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -71970,8 +71976,17 @@
 	},
 /area/medical/chemistry)
 "udw" = (
-/obj/structure/window/reinforced/spawner{
-	dir = 8
+/obj/machinery/conveyor_switch/oneway{
+	dir = 8;
+	id = "garbage";
+	name = "disposal conveyor"
+	},
+/obj/machinery/door/window/eastright{
+	base_state = "left";
+	dir = 8;
+	icon_state = "left";
+	name = "Danger: Conveyor Access";
+	req_access_txt = "12"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -72175,6 +72190,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/virology)
+"umc" = (
+/obj/structure/table,
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "umx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/door/airlock/glass{
@@ -72803,12 +72824,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/central)
-"uWQ" = (
-/obj/structure/table,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "uYf" = (
 /obj/structure/sign/departments/examroom,
 /obj/effect/spawner/structure/window,
@@ -73375,6 +73390,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/chemistry)
+"vza" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "vze" = (
 /obj/structure/sign/poster/random,
 /turf/closed/wall/rust,
@@ -74337,13 +74358,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/prison)
-"wvy" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/belt/utility,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "wvE" = (
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel/dark{
@@ -74954,6 +74968,21 @@
 	},
 /turf/open/floor/plating/grass,
 /area/medical/virology)
+"xdh" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/item/kirbyplants{
+	icon_state = "plant-22"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "xdm" = (
 /obj/machinery/vending/cola/random,
 /turf/open/floor/plasteel/white{
@@ -75310,17 +75339,10 @@
 	},
 /area/space)
 "xue" = (
-/obj/machinery/conveyor_switch/oneway{
-	dir = 8;
-	id = "garbage";
-	name = "disposal conveyor"
-	},
-/obj/machinery/door/window/eastright{
-	base_state = "left";
-	dir = 8;
-	icon_state = "left";
-	name = "Danger: Conveyor Access";
-	req_access_txt = "12"
+/obj/effect/turf_decal/delivery,
+/mob/living/simple_animal/bot/mulebot{
+	home_destination = "QM #3";
+	suffix = "#3"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -75579,15 +75601,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
-"xCa" = (
-/obj/machinery/conveyor{
-	dir = 9;
-	id = "cargodisposals"
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "xCj" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -75924,18 +75937,6 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
-"xWI" = (
-/obj/machinery/conveyor{
-	id = "cargounload"
-	},
-/obj/machinery/door/poddoor{
-	id = "cargounload";
-	name = "supply dock unloading door"
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "xXf" = (
 /turf/open/floor/plasteel/showroomfloor{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -76069,16 +76070,6 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
-"yeC" = (
-/obj/effect/turf_decal/delivery,
-/mob/living/simple_animal/bot/mulebot{
-	home_destination = "QM #3";
-	suffix = "#3"
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
 "yff" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -125870,7 +125861,7 @@ cFp
 cFp
 cFp
 cFp
-iLM
+lQX
 xMj
 xMj
 xMj
@@ -126641,7 +126632,7 @@ cFp
 cFp
 cFp
 cFp
-iLM
+lQX
 vUS
 azp
 azp
@@ -127412,7 +127403,7 @@ cFp
 cFp
 cFp
 cFp
-iLM
+lQX
 iNr
 azp
 azp
@@ -127919,12 +127910,12 @@ akw
 aaP
 aaP
 nTD
-qwo
-ubL
-qwo
-qwo
-qwo
-xCa
+pzF
+rwU
+pzF
+pzF
+pzF
+pbs
 lQX
 tQn
 azp
@@ -127944,9 +127935,9 @@ lYv
 xMj
 xMj
 xMj
-xWI
-odl
-ilK
+kvS
+iiX
+vza
 azp
 azp
 azp
@@ -128175,13 +128166,13 @@ aaP
 how
 aaP
 aaP
-kkH
+jgo
 lQX
+ubL
 udw
-xue
-udw
-qmI
-gqs
+ubL
+oFx
+lwF
 aaP
 wus
 azp
@@ -128203,7 +128194,7 @@ gyB
 azp
 lQX
 azp
-ilK
+vza
 azp
 azp
 azp
@@ -128438,9 +128429,9 @@ azp
 azp
 azp
 azp
-udw
+ubL
 aaP
-iQE
+wus
 azp
 cqr
 cqr
@@ -128686,7 +128677,7 @@ aaa
 aaa
 cyS
 cZO
-jgo
+iLM
 akw
 oHO
 cqr
@@ -128717,7 +128708,7 @@ azp
 cBS
 lQX
 azp
-tmM
+fwo
 azp
 azp
 azp
@@ -128946,13 +128937,13 @@ dHj
 akw
 akw
 aaP
-nFn
+kkH
 oJk
 azp
 azp
 lQX
-azp
-azp
+iQE
+bEY
 lQX
 azp
 azp
@@ -128974,8 +128965,8 @@ azp
 inM
 lQX
 ebH
-jYn
-tDd
+xdh
+gWt
 lQX
 qds
 azp
@@ -129204,7 +129195,7 @@ how
 aaP
 aaP
 fXq
-qMe
+qwo
 azp
 azp
 oHO
@@ -129225,7 +129216,7 @@ aaP
 bEY
 azp
 azp
-dzm
+jyl
 azp
 xRB
 dWa
@@ -129460,7 +129451,7 @@ akw
 akw
 akw
 aaP
-nXz
+nFn
 azp
 azp
 azp
@@ -129482,7 +129473,7 @@ lQX
 azp
 azp
 azp
-iuT
+edf
 azp
 oNC
 vlj
@@ -129736,7 +129727,7 @@ azp
 azp
 azp
 aaP
-lBx
+kFj
 azp
 azp
 nXl
@@ -129746,7 +129737,7 @@ azp
 oHO
 azp
 azp
-wvy
+mlB
 jFN
 azp
 azp
@@ -130007,7 +129998,7 @@ azp
 alb
 azp
 azp
-siF
+nEC
 aaP
 azp
 azp
@@ -130489,7 +130480,7 @@ akw
 akw
 aaP
 fXq
-rwU
+qMe
 azp
 azp
 azp
@@ -130524,7 +130515,7 @@ azp
 qvu
 aaP
 azp
-tEK
+grd
 aaP
 aqV
 aqV
@@ -130745,13 +130736,13 @@ akw
 akw
 akw
 aaP
-pzF
+nXz
 oJk
 azp
 vbU
-yeC
-yeC
-aiK
+xue
+xue
+ept
 aaP
 iQE
 azp
@@ -130781,7 +130772,7 @@ azp
 qvu
 aaP
 azp
-tEK
+grd
 aaP
 aqV
 aqV
@@ -131038,7 +131029,7 @@ azp
 qvu
 aaP
 azp
-tEK
+grd
 aaP
 aqV
 aqV
@@ -131537,8 +131528,8 @@ sjD
 lQX
 sjD
 azp
-uWQ
-uWQ
+umc
+umc
 tvS
 qvu
 klK
@@ -133837,7 +133828,7 @@ akw
 akw
 akw
 akw
-rTt
+kpd
 akw
 azp
 akw
@@ -133848,7 +133839,7 @@ azp
 akw
 akw
 azp
-rTt
+kpd
 akw
 akw
 cVc
