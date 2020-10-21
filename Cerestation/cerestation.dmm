@@ -56046,12 +56046,9 @@
 	name = "Aft Asteroid Maintenance"
 	})
 "djL" = (
-/obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/start/shaft_miner,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/obj/machinery/status_display/evac,
+/turf/closed/wall/r_wall,
 /area/quartermaster/miningoffice)
 "djN" = (
 /obj/machinery/computer/station_alert{
@@ -60228,6 +60225,7 @@
 	},
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
+/obj/structure/closet/secure_closet/miner,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -62087,6 +62085,8 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/brute,
 /obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/regular,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -62125,6 +62125,9 @@
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/holopad,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -62407,6 +62410,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/effect/landmark/start/shaft_miner,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -73206,8 +73210,13 @@
 /turf/open/floor/carpet/red,
 /area/hallway/primary/central)
 "ppk" = (
-/obj/machinery/status_display/evac,
-/turf/closed/wall/r_wall,
+/obj/structure/cable,
+/obj/machinery/light_switch{
+	pixel_y = 25
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
 /area/quartermaster/miningoffice)
 "ppo" = (
 /obj/effect/spawner/structure/window,
@@ -75293,11 +75302,13 @@
 /turf/closed/wall,
 /area/quartermaster/miningoffice)
 "qWW" = (
-/obj/structure/table,
-/obj/item/reagent_containers/glass/bottle/epinephrine,
-/obj/item/reagent_containers/glass/bottle/formaldehyde,
-/obj/item/reagent_containers/syringe,
-/turf/open/floor/plasteel{
+/obj/machinery/door/airlock/mining/glass{
+	name = "Mining Office";
+	req_one_access_txt = "31;48"
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable,
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/miningoffice)
@@ -77383,9 +77394,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/turf/closed/wall/r_wall,
 /area/quartermaster/miningoffice)
 "sFY" = (
 /obj/structure/table,
@@ -78661,15 +78670,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/chemistry)
-"tIF" = (
-/obj/structure/cable,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/miningoffice)
 "tIR" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -78822,15 +78822,6 @@
 /obj/machinery/light/small,
 /turf/open/space/basic,
 /area/space)
-"tNX" = (
-/obj/structure/cable,
-/obj/machinery/light_switch{
-	pixel_y = 25
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/miningoffice)
 "tOp" = (
 /obj/machinery/light/dim{
 	dir = 8
@@ -80389,17 +80380,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/crew_quarters/theatre)
-"uNx" = (
-/obj/machinery/door/airlock/mining/glass{
-	name = "Mining Office";
-	req_one_access_txt = "31;48"
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/cable,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/miningoffice)
 "uNO" = (
 /obj/structure/sign/poster/official/help_others{
 	pixel_x = 32
@@ -80783,6 +80763,10 @@
 "vea" = (
 /obj/machinery/iv_drip,
 /obj/structure/closet/crate/freezer/blood,
+/obj/structure/table,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/glass/bottle/formaldehyde,
+/obj/item/reagent_containers/glass/bottle/epinephrine,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -84475,14 +84459,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/virology)
-"xDZ" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/firstaid/regular,
-/obj/item/storage/firstaid/regular,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/miningoffice)
 "xEj" = (
 /obj/structure/cable,
 /obj/structure/grille,
@@ -141414,7 +141390,7 @@ eTm
 jXW
 jXW
 sFL
-uaJ
+tDb
 uaJ
 foO
 kOw
@@ -141669,9 +141645,9 @@ slw
 vAY
 slw
 slw
-jXW
-tNX
-mMw
+slw
+iSv
+ppk
 mMw
 mMw
 mMw
@@ -141926,11 +141902,11 @@ slw
 slw
 slw
 slw
+slw
 iSv
-uNx
-wVH
-wVH
-wVH
+qWW
+eTm
+eTm
 xnl
 gyc
 gyc
@@ -142183,9 +142159,9 @@ slw
 slw
 slw
 slw
-ppk
+slw
 djL
-qWW
+uaJ
 mBh
 vea
 gyc
@@ -142440,8 +142416,8 @@ slw
 slw
 slw
 slw
+slw
 iSv
-tIF
 hOM
 hXw
 pAV
@@ -142697,8 +142673,8 @@ slw
 slw
 slw
 slw
+slw
 iSv
-xDZ
 jqy
 rjS
 hMP
