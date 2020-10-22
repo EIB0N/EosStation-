@@ -57503,10 +57503,6 @@
 	name = "Fore Asteroid Maintenance"
 	})
 "eeu" = (
-/obj/machinery/power/apc{
-	name = "Abandoned Gambling Room APC";
-	pixel_x = 30
-	},
 /obj/structure/cable,
 /turf/open/floor/carpet/green,
 /area/maintenance/starboard/aft)
@@ -57553,6 +57549,9 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
+	},
+/obj/machinery/power/apc{
+	pixel_y = -25
 	},
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -58007,6 +58006,9 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/power/apc{
+	pixel_x = 25
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -58530,8 +58532,14 @@
 	},
 /area/hallway/primary/fore)
 "eWk" = (
-/obj/machinery/status_display/supply,
-/turf/closed/wall,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/machinery/power/apc{
+	pixel_y = -25
+	},
+/obj/structure/cable,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
 /area/maintenance/starboard/aft)
 "eWp" = (
 /obj/effect/turf_decal/stripes/line{
@@ -58819,21 +58827,15 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
 "fiL" = (
-/obj/machinery/conveyor{
-	id = "cargounload"
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/machinery/power/apc{
-	name = "Supply Cargo Shuttle APC";
-	pixel_x = -25
-	},
+/obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/cable,
-/turf/open/floor/plasteel{
+/obj/machinery/power/apc{
+	pixel_y = -25
+	},
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/quartermaster/storage)
+/area/maintenance/starboard/aft)
 "fjQ" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 1
@@ -59682,16 +59684,9 @@
 	},
 /area/maintenance/port/fore)
 "fTk" = (
-/obj/structure/ore_box,
-/obj/structure/cable,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 25
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/miningoffice)
+/obj/machinery/status_display/supply,
+/turf/closed/wall,
+/area/maintenance/starboard/aft)
 "fTB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/cafeteria{
@@ -60240,10 +60235,6 @@
 	},
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/power/apc{
-	name = "Supply Miner APC";
-	pixel_x = 23
-	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -61047,14 +61038,21 @@
 	},
 /area/medical/medbay/central)
 "har" = (
-/obj/structure/cable,
-/obj/machinery/light{
-	dir = 1
+/obj/machinery/conveyor{
+	id = "cargounload"
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	name = "Supply Cargo Shuttle APC";
+	pixel_x = -25
+	},
+/obj/structure/cable,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/quartermaster/miningoffice)
+/area/quartermaster/storage)
 "haD" = (
 /obj/machinery/shower{
 	dir = 8
@@ -64296,7 +64294,6 @@
 /obj/machinery/power/apc{
 	pixel_y = 25
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -64595,15 +64592,15 @@
 /turf/open/floor/plating/asteroid,
 /area/space)
 "jsm" = (
+/obj/effect/spawner/lootdrop/maintenance,
 /obj/machinery/power/apc{
-	name = "Supply Hall 1 APC";
-	pixel_y = -25
+	pixel_x = -25
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel{
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/hallway/primary/central)
+/area/maintenance/starboard/aft)
 "jsw" = (
 /obj/machinery/light/small,
 /obj/structure/table/wood,
@@ -64756,15 +64753,15 @@
 	},
 /area/space)
 "jyB" = (
-/obj/machinery/vending/coffee,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/power/apc{
-	name = "Supply Hall 3 APC";
-	pixel_x = 23
+	pixel_x = 25
 	},
-/turf/open/floor/plasteel{
+/turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/hallway/primary/central)
+/area/maintenance/starboard/aft)
 "jyX" = (
 /obj/machinery/camera{
 	c_tag = "Supply - Main hallway 2";
@@ -64937,15 +64934,10 @@
 /area/hallway/primary/central)
 "jFj" = (
 /obj/machinery/power/apc{
-	pixel_y = 25
+	name = "Abandoned Gambling Room APC";
+	pixel_x = 30
 	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/turf/open/floor/carpet/green,
 /area/maintenance/starboard/aft)
 "jFJ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -67205,14 +67197,16 @@
 	},
 /area/solar/port/fore)
 "lqN" = (
-/obj/machinery/power/apc{
-	pixel_y = 25
-	},
+/obj/structure/ore_box,
 /obj/structure/cable,
-/turf/open/floor/plating{
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 25
+	},
+/turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/maintenance/starboard/aft)
+/area/quartermaster/miningoffice)
 "lrg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 5
@@ -70432,6 +70426,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/warehouse)
+"nAz" = (
+/obj/structure/cable,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/quartermaster/miningoffice)
 "nAG" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 4
@@ -73572,9 +73575,6 @@
 	},
 /area/medical/medbay/central)
 "pBT" = (
-/obj/machinery/power/apc{
-	pixel_x = -25
-	},
 /obj/structure/cable,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
@@ -74793,6 +74793,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
+"qBq" = (
+/obj/machinery/power/apc{
+	name = "Supply Hall 1 APC";
+	pixel_y = -25
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/hallway/primary/central)
 "qBG" = (
 /obj/structure/closet/crate,
 /turf/open/floor/mineral/titanium/yellow,
@@ -75072,6 +75082,16 @@
 "qKn" = (
 /obj/structure/sign/warning/electricshock,
 /turf/closed/wall{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/hallway/primary/central)
+"qLR" = (
+/obj/machinery/vending/coffee,
+/obj/machinery/power/apc{
+	name = "Supply Hall 3 APC";
+	pixel_x = 23
+	},
+/turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/central)
@@ -80800,9 +80820,6 @@
 /area/quartermaster/miningoffice)
 "veo" = (
 /obj/effect/spawner/lootdrop/maintenance,
-/obj/machinery/power/apc{
-	pixel_y = 25
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/plating{
@@ -80820,19 +80837,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/janitor)
-"vfr" = (
-/obj/machinery/power/apc{
-	pixel_x = 25
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 9
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/maintenance/starboard/aft)
 "vfv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/door/firedoor,
@@ -81421,6 +81425,10 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark/start/shaft_miner,
+/obj/machinery/power/apc{
+	name = "Supply Miner APC";
+	pixel_x = 23
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -82110,18 +82118,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/medbay/central)
-"vWK" = (
-/obj/machinery/power/apc{
-	pixel_x = 25
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 9
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/maintenance/starboard/aft)
 "vXi" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/disposalpipe/segment{
@@ -133708,7 +133704,7 @@ cOg
 hoT
 oQN
 gyc
-lqN
+vht
 egN
 gyc
 dyK
@@ -133730,7 +133726,7 @@ tmw
 tmw
 gyc
 xBF
-dAt
+jsm
 pBT
 arF
 xQt
@@ -133978,8 +133974,8 @@ xBS
 gtb
 vht
 gyc
-akR
 gyc
+akR
 owg
 toH
 gyc
@@ -134003,7 +133999,7 @@ rAF
 bKa
 fmf
 nVx
-jsm
+qBq
 rMH
 sqx
 qFO
@@ -134751,7 +134747,7 @@ gyc
 gyc
 gyc
 gyc
-eWk
+fTk
 gyc
 gyc
 gyc
@@ -135010,7 +135006,7 @@ dXl
 xMj
 jIR
 xMj
-fiL
+har
 lIu
 tut
 xxz
@@ -136278,8 +136274,8 @@ cOg
 tdn
 tmw
 gyc
-jFj
-dAt
+gYz
+eWk
 gyc
 cFp
 cFp
@@ -139878,7 +139874,7 @@ lAj
 gyc
 jko
 vfL
-dAt
+fiL
 gyc
 kkH
 rZu
@@ -140165,7 +140161,7 @@ doa
 lOB
 jXW
 fQs
-fTk
+lqN
 jSQ
 vrf
 rqy
@@ -141453,7 +141449,7 @@ eTm
 jXW
 jXW
 sFL
-har
+nAz
 uaJ
 foO
 kOw
@@ -143260,7 +143256,7 @@ rWN
 tsc
 hMx
 oGn
-jyB
+qLR
 gxQ
 hMx
 hMx
@@ -143502,8 +143498,8 @@ qGM
 nzs
 eCC
 gub
+jyB
 gub
-lnv
 wEl
 oOT
 gub
@@ -144255,7 +144251,7 @@ rAs
 lfH
 www
 eBh
-vfr
+qAC
 ifp
 eCC
 gub
@@ -144263,12 +144259,12 @@ ipa
 pGy
 ifp
 gub
-lnv
+gub
 gub
 ibU
 gub
-gub
-vWK
+jyB
+qGs
 mqx
 jHn
 tmw
@@ -145045,7 +145041,7 @@ cOg
 cOg
 cOg
 lKY
-jMY
+jFj
 eeu
 rlm
 maL
