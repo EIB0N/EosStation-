@@ -2024,13 +2024,12 @@
 	name = "AI Asteroid"
 	})
 "ajJ" = (
-/obj/structure/lattice/catwalk,
-/turf/open/space/basic,
-/area/solar/port/fore)
+/turf/closed/wall{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space/nearstation)
 "ajK" = (
 /obj/structure/lattice/catwalk,
-/obj/structure/lattice/catwalk,
-/obj/structure/cable,
 /turf/open/space/basic,
 /area/solar/port/fore)
 "ajL" = (
@@ -16133,7 +16132,9 @@
 /area/hallway/primary/central)
 "bce" = (
 /obj/structure/lattice/catwalk,
-/turf/open/space,
+/obj/structure/lattice/catwalk,
+/obj/structure/cable,
+/turf/open/space/basic,
 /area/solar/port/fore)
 "bch" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -16464,7 +16465,6 @@
 /area/hallway/primary/starboard)
 "bcS" = (
 /obj/structure/lattice/catwalk,
-/obj/structure/cable,
 /turf/open/space,
 /area/solar/port/fore)
 "bcU" = (
@@ -59751,6 +59751,10 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/miningoffice)
+"fZi" = (
+/obj/item/pickaxe/mini,
+/turf/open/floor/plating/asteroid/airless,
+/area/space)
 "fZs" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/wood,
@@ -59911,12 +59915,9 @@
 	},
 /area/hallway/primary/central)
 "gfZ" = (
+/obj/structure/lattice/catwalk,
 /obj/structure/cable,
-/obj/machinery/power/solar{
-	id = "foresolar";
-	name = "Fore Solar Array"
-	},
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/space,
 /area/solar/port/fore)
 "ggp" = (
 /obj/machinery/light/small{
@@ -65537,10 +65538,12 @@
 	},
 /area/quartermaster/office)
 "kju" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/lattice/catwalk,
-/obj/item/stack/cable_coil,
-/turf/open/space/basic,
+/obj/structure/cable,
+/obj/machinery/power/solar{
+	id = "foresolar";
+	name = "Fore Solar Array"
+	},
+/turf/open/floor/plasteel/airless/solarpanel,
 /area/solar/port/fore)
 "kjV" = (
 /obj/machinery/light/small,
@@ -66568,6 +66571,7 @@
 /area/hallway/primary/fore)
 "kVR" = (
 /obj/structure/lattice/catwalk,
+/obj/structure/lattice/catwalk,
 /obj/item/stack/cable_coil,
 /turf/open/space/basic,
 /area/solar/port/fore)
@@ -66769,9 +66773,10 @@
 	},
 /area/maintenance/starboard/aft)
 "ldE" = (
-/obj/structure/grille,
-/turf/open/space,
-/area/space/nearstation)
+/obj/structure/lattice/catwalk,
+/obj/item/stack/cable_coil,
+/turf/open/space/basic,
+/area/solar/port/fore)
 "ldH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -67164,9 +67169,9 @@
 	},
 /area/quartermaster/sorting)
 "lqf" = (
-/turf/closed/wall{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/obj/structure/lattice,
+/obj/structure/lattice,
+/turf/open/space,
 /area/space/nearstation)
 "lqN" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -68569,10 +68574,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/engine/atmos)
-"mlJ" = (
-/obj/item/pickaxe/mini,
-/turf/open/floor/plating/asteroid/airless,
-/area/space)
 "mmG" = (
 /obj/machinery/seed_extractor,
 /turf/open/floor/plasteel/dark/side{
@@ -69166,8 +69167,9 @@
 	},
 /area/quartermaster/storage)
 "mId" = (
-/turf/open/floor/plating/asteroid/airless,
-/area/solar/port/fore)
+/obj/structure/grille,
+/turf/open/space,
+/area/space/nearstation)
 "mJH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -70655,11 +70657,7 @@
 	},
 /area/medical/chemistry)
 "nHm" = (
-/obj/effect/spawner/structure/window,
-/obj/structure/cable,
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/turf/open/floor/plating/asteroid/airless,
 /area/solar/port/fore)
 "nHG" = (
 /obj/effect/turf_decal/siding/blue{
@@ -70787,12 +70785,8 @@
 	},
 /area/maintenance/starboard/aft)
 "nLh" = (
-/obj/machinery/door/airlock/external{
-	cyclelinkeddir = 4;
-	name = "Solar Maintenance";
-	req_access = null;
-	req_access_txt = "10; 13"
-	},
+/obj/effect/spawner/structure/window,
+/obj/structure/cable,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -72307,7 +72301,12 @@
 	name = "Aft Asteroid Maintenance"
 	})
 "oIJ" = (
-/obj/structure/cable,
+/obj/machinery/door/airlock/external{
+	cyclelinkeddir = 4;
+	name = "Solar Maintenance";
+	req_access = null;
+	req_access_txt = "10; 13"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -74705,12 +74704,11 @@
 	},
 /area/security/brig)
 "qwi" = (
-/obj/effect/spawner/structure/window,
 /obj/structure/cable,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/engine/atmos)
+/area/solar/port/fore)
 "qwo" = (
 /obj/structure/table/reinforced,
 /obj/item/hand_labeler,
@@ -76496,6 +76494,11 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/central)
+"rPs" = (
+/turf/open/space,
+/area/mine/unexplored{
+	name = "Engineering Asteroid"
+	})
 "rPz" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -77237,17 +77240,12 @@
 	},
 /area/medical/pharmacy)
 "syt" = (
-/obj/machinery/door/airlock/external{
-	cyclelinkeddir = 4;
-	name = "Solar Maintenance";
-	req_access = null;
-	req_access_txt = "10; 13"
-	},
+/obj/effect/spawner/structure/window,
 /obj/structure/cable,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/solar/port/fore)
+/area/engine/atmos)
 "syv" = (
 /turf/closed/wall,
 /area/maintenance/port/fore)
@@ -77822,6 +77820,18 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/storage)
+"sUr" = (
+/obj/machinery/door/airlock/external{
+	cyclelinkeddir = 4;
+	name = "Solar Maintenance";
+	req_access = null;
+	req_access_txt = "10; 13"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/solar/port/fore)
 "sUS" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -85310,11 +85320,6 @@
 	},
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
-	})
-"ygu" = (
-/turf/open/space,
-/area/mine/unexplored{
-	name = "Engineering Asteroid"
 	})
 "ygQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -129509,15 +129514,15 @@ aaa
 cFp
 cFp
 cFp
-bcS
 gfZ
+kju
 jdZ
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 bhv
@@ -129547,14 +129552,14 @@ aaa
 aaa
 aaa
 aaa
-ygu
-ygu
-ygu
-ygu
-ygu
-ygu
-ygu
-ygu
+rPs
+rPs
+rPs
+rPs
+rPs
+rPs
+rPs
+rPs
 aaa
 aaa
 aaa
@@ -129766,11 +129771,11 @@ cFp
 cFp
 cFp
 aaa
-bcS
 gfZ
+kju
 jdZ
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 ohQ
@@ -130023,15 +130028,15 @@ cFp
 cFp
 cFp
 aaa
-bcS
 gfZ
+kju
 bhv
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 ohQ
-bcS
+gfZ
 ohQ
 jdZ
 bhv
@@ -130039,17 +130044,17 @@ bhv
 bhv
 jdZ
 jdZ
-lqf
+ajJ
 aXR
 aXR
 aXR
 aXR
 aXR
-cFp
-cFp
-cFp
-cFp
-aaa
+aad
+aad
+aad
+aad
+aad
 kmm
 myn
 dww
@@ -130280,15 +130285,15 @@ cFp
 cFp
 cFp
 cFp
-bcS
 gfZ
+kju
 jdZ
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 ohQ
-bcS
+gfZ
 ohQ
 aaa
 aaa
@@ -130537,27 +130542,27 @@ cFp
 cFp
 cFp
 cFp
+gfZ
+kju
+jdZ
+ohQ
 bcS
-gfZ
+ohQ
+kju
+ohQ
+ajK
+ohQ
+bhv
+bhv
+bhv
+bhv
 jdZ
-ohQ
-bce
-ohQ
-gfZ
-ohQ
+jdZ
 ajJ
-ohQ
-bhv
-bhv
-bhv
-bhv
-jdZ
-jdZ
-lqf
-nHm
-nHm
-nHm
-qwi
+nLh
+nLh
+nLh
+syt
 bcM
 bey
 iaX
@@ -130795,26 +130800,26 @@ cFp
 cFp
 iNK
 sdI
-ajJ
-ajJ
-bcS
-bce
-bce
-kVR
-bce
-bce
-bce
-bce
-bce
-bce
-bce
+ajK
+ajK
+gfZ
 bcS
 bcS
-bce
-nLh
+ldE
+bcS
+bcS
+bcS
+bcS
+bcS
+bcS
+bcS
+gfZ
+gfZ
+bcS
 oIJ
-oIJ
-syt
+qwi
+qwi
+sUr
 nRb
 beA
 sNp
@@ -131051,27 +131056,27 @@ cFp
 cFp
 cFp
 aaa
+gfZ
+kju
+jdZ
+ohQ
 bcS
-gfZ
-jdZ
 ohQ
-bce
+kju
 ohQ
-gfZ
-ohQ
-bce
+bcS
 ohQ
 bhv
 jdZ
 bhv
 bhv
 jdZ
-lqf
-mId
+ajJ
 nHm
-nHm
-nHm
-qwi
+nLh
+nLh
+nLh
+syt
 bcN
 bid
 sNp
@@ -131308,15 +131313,15 @@ cFp
 cFp
 cFp
 aaa
-bcS
 gfZ
+kju
 jdZ
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 ohQ
-bcS
+gfZ
 ohQ
 cFp
 aaa
@@ -131565,15 +131570,15 @@ cFp
 cFp
 cFp
 aaa
-bcS
 gfZ
+kju
 jdZ
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 jdZ
@@ -131822,11 +131827,11 @@ cFp
 cFp
 cFp
 cFp
-bcS
 gfZ
+kju
 jdZ
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 ohQ
@@ -132069,7 +132074,7 @@ aaa
 aaa
 aaf
 aaf
-lNh
+ajJ
 bhv
 bhv
 bhv
@@ -132079,11 +132084,11 @@ bhv
 bhv
 bhv
 bhv
-bcS
 gfZ
+kju
 bhv
 ohQ
-bcS
+gfZ
 ohQ
 bhv
 ohQ
@@ -132583,7 +132588,7 @@ aaa
 aaf
 aaf
 aaf
-lNh
+ajJ
 bhv
 bhv
 bhv
@@ -132605,7 +132610,7 @@ aXx
 aXx
 bhv
 bhv
-aYg
+ajJ
 lmC
 lmC
 ovy
@@ -132859,7 +132864,7 @@ cFp
 aaa
 jdZ
 aaa
-ldE
+mId
 aaa
 aaa
 aXR
@@ -133116,7 +133121,7 @@ bhv
 ohQ
 sdI
 jdZ
-ldE
+mId
 aaa
 aaa
 aXR
@@ -133356,11 +133361,11 @@ mCf
 hjd
 hMN
 aaf
-aaf
-aaa
-aaa
-aaa
-cFp
+ajJ
+jdZ
+jdZ
+jdZ
+bhv
 bhv
 ohQ
 sdI
@@ -133877,20 +133882,20 @@ cFp
 cFp
 bhv
 ohQ
-ajJ
+ajK
 ohQ
 bhv
 ohQ
-ajJ
+ajK
 ohQ
 bhv
 ohQ
 sdI
-aaa
-aaa
-aaa
-aaa
-aXD
+lqf
+jdZ
+jdZ
+jdZ
+ajJ
 aXD
 aXD
 ovy
@@ -134134,11 +134139,11 @@ bhv
 bhv
 bhv
 ohQ
-ajJ
+ajK
 ohQ
 ohQ
 ohQ
-ajJ
+ajK
 ohQ
 ohQ
 ohQ
@@ -134389,17 +134394,17 @@ sdI
 sdI
 sdI
 sdI
-ajJ
-ajJ
 ajK
-ajJ
-sdI
-ajJ
-kju
-ajJ
-ajJ
+ajK
+bce
+ajK
 sdI
 ajK
+kVR
+ajK
+ajK
+sdI
+bce
 iNK
 aaa
 aaa
@@ -134648,11 +134653,11 @@ bhv
 bhv
 bhv
 ohQ
-bce
+bcS
 ohQ
 ohQ
 ohQ
-ajJ
+ajK
 ohQ
 ohQ
 ohQ
@@ -134909,7 +134914,7 @@ sdI
 ohQ
 bhv
 ohQ
-ajJ
+ajK
 ohQ
 bhv
 ohQ
@@ -135157,9 +135162,9 @@ cOg
 cOg
 cOg
 cOg
-aaf
-aaa
-aaa
+ajJ
+jdZ
+jdZ
 jdZ
 ohQ
 sdI
@@ -135428,10 +135433,10 @@ ohQ
 jdZ
 ohQ
 sdI
-aaa
-aaa
-aaa
-aXD
+jdZ
+jdZ
+jdZ
+ajJ
 aXD
 aXD
 vdv
@@ -148613,7 +148618,7 @@ aac
 aac
 aac
 aac
-mlJ
+fZi
 aaa
 aaa
 aaa
