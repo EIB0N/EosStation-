@@ -58430,7 +58430,7 @@
 "eVA" = (
 /obj/machinery/door/airlock/mining/glass{
 	name = "Mining Office";
-	req_one_access_txt = "31;48"
+	req_one_access_txt = "48"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -60840,7 +60840,6 @@
 /turf/closed/wall/r_wall,
 /area/hallway/primary/central)
 "gUa" = (
-/obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
@@ -62457,7 +62456,10 @@
 /area/engine/atmos)
 "hZv" = (
 /obj/machinery/recycler,
-/obj/effect/turf_decal/stripes/box,
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "cargodisposals"
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -63543,13 +63545,13 @@
 	},
 /area/hydroponics)
 "iLM" = (
+/obj/machinery/door/poddoor{
+	id = "cargo_stacker";
+	name = "supply dock loading door"
+	},
 /obj/machinery/conveyor{
 	dir = 4;
-	id = "cargodisposals"
-	},
-/obj/machinery/door/poddoor{
-	id = "cargoload";
-	name = "supply dock loading door"
+	id = "stacker"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -64163,7 +64165,13 @@
 "jgo" = (
 /obj/effect/turf_decal/stripes/box,
 /obj/machinery/mineral/stacking_machine{
-	input_dir = 2
+	input_dir = 8;
+	output_dir = 4
+	},
+/obj/machinery/mineral/stacking_unit_console{
+	input_dir = 8;
+	machinedir = 2;
+	pixel_y = 23
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -65562,10 +65570,6 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/obj/machinery/power/apc{
-	name = "Supply Cargo Disposal APC";
-	pixel_x = 25
-	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -65721,7 +65725,7 @@
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/hallway/primary/fore)
+/area/hallway/primary/central)
 "krH" = (
 /obj/machinery/telecomms/message_server,
 /turf/open/floor/circuit{
@@ -67938,6 +67942,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/engine/atmos)
+"lQm" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/hallway/primary/central)
 "lQA" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -68205,6 +68218,13 @@
 /area/security/checkpoint/supply)
 "lYv" = (
 /obj/effect/turf_decal/delivery,
+/obj/machinery/button/door{
+	id = "cargo_stacker";
+	layer = 4;
+	name = "Cargo Stacker Security Door Button";
+	pixel_x = 23;
+	pixel_y = 23
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -68807,12 +68827,12 @@
 	},
 /area/hallway/primary/central)
 "mvV" = (
-/obj/machinery/door/airlock/mining/glass{
-	name = "Mining Office";
-	req_access_txt = "31"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Mining Office";
+	req_one_access_txt = "48"
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -69570,14 +69590,10 @@
 	},
 /area/medical/surgery)
 "mWd" = (
-/obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/turf_decal/stripes/asteroid/line{
-	dir = 8;
-	icon_state = "ast_warn"
-	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -71470,10 +71486,6 @@
 	},
 /area/crew_quarters/theatre)
 "oiv" = (
-/obj/machinery/door/airlock/mining/glass{
-	name = "Mining Office";
-	req_one_access_txt = "31;48"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
@@ -71484,6 +71496,10 @@
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/door/airlock/mining/glass{
+	name = "Mining Office";
+	req_one_access_txt = "48"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -75328,12 +75344,12 @@
 /turf/closed/wall,
 /area/quartermaster/miningoffice)
 "qWW" = (
-/obj/machinery/door/airlock/mining/glass{
-	name = "Mining Office";
-	req_one_access_txt = "31;48"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Mining Office";
+	req_one_access_txt = "48"
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -75443,6 +75459,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/medbay/central)
+"rah" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/maintenance/disposal)
 "raA" = (
 /obj/structure/table/glass,
 /obj/item/clothing/glasses/science,
@@ -75732,15 +75754,15 @@
 	name = "Port Asteroid Maintenance"
 	})
 "rnI" = (
-/obj/machinery/door/airlock/mining/glass{
-	name = "Mining Office";
-	req_one_access_txt = "31;48"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Mining Office";
+	req_one_access_txt = "48"
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -76726,6 +76748,10 @@
 	pixel_x = 38
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/power/apc{
+	name = "Supply Cargo Disposal APC";
+	pixel_x = 25
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -77406,13 +77432,19 @@
 /turf/closed/wall,
 /area/maintenance/disposal)
 "sFD" = (
-/obj/structure/disposalpipe/segment{
-	dir = 5
+/obj/structure/window/reinforced/spawner{
+	dir = 4
 	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
+/obj/structure/window/reinforced/spawner{
+	dir = 8
 	},
-/area/hallway/primary/fore)
+/obj/machinery/door/poddoor{
+	id = "massdriver";
+	name = "Disposals Launch Seal"
+	},
+/obj/structure/plasticflaps,
+/turf/open/space,
+/area/space)
 "sFL" = (
 /obj/machinery/airalarm{
 	pixel_y = 22
@@ -77993,11 +78025,13 @@
 /turf/open/floor/plasteel,
 /area/security/checkpoint/supply)
 "tdn" = (
-/obj/machinery/door/poddoor{
-	id = "massdriver";
-	name = "Disposals Launch Seal"
+/obj/machinery/mass_driver{
+	dir = 1;
+	id = "trash"
 	},
-/turf/open/space,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
 /area/maintenance/starboard/aft)
 "tdw" = (
 /obj/structure/table/reinforced,
@@ -78101,7 +78135,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 10
 	},
-/obj/structure/closet/emcloset,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -79773,10 +79806,6 @@
 	},
 /area/medical/virology)
 "urr" = (
-/obj/machinery/door/airlock/mining{
-	name = "Cargo Warehouse";
-	req_access_txt = "31"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
@@ -79785,6 +79814,10 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Cargo Office";
+	req_one_access_txt = "31;48"
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -81029,11 +81062,14 @@
 /turf/open/floor/carpet/red,
 /area/hallway/primary/central)
 "vjd" = (
-/obj/machinery/mass_driver,
 /obj/machinery/computer/pod/old/mass_driver_controller{
 	id = "trash";
 	pixel_x = -25;
 	pixel_y = 23
+	},
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "massdriver"
 	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -83137,10 +83173,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/machinery/mineral/stacking_unit_console{
-	machinedir = 8;
-	pixel_x = 32
-	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -84305,7 +84337,7 @@
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/hallway/primary/fore)
+/area/hallway/primary/central)
 "xxg" = (
 /obj/structure/closet/secure_closet/security/med,
 /turf/open/floor/plasteel{
@@ -136132,10 +136164,10 @@ tZS
 pZD
 qhm
 pZD
-tZS
-tZS
+gxv
+gxv
 krs
-sFD
+tRF
 ine
 dgE
 ine
@@ -136392,7 +136424,7 @@ uTz
 sqE
 tZS
 mWd
-xIo
+lQm
 ine
 dgE
 iJi
@@ -137632,13 +137664,13 @@ cFp
 aaa
 aaa
 aaa
-aaa
+cVc
 cOg
 trd
 lNU
 tOp
 vOg
-vOg
+rah
 euK
 fXq
 qMe
@@ -137889,7 +137921,7 @@ cFp
 aaa
 aaa
 aaa
-aaa
+sFD
 tdn
 vjd
 cyS
@@ -138146,7 +138178,7 @@ cFp
 aaa
 aaa
 aaa
-aaa
+cVc
 cOg
 leK
 pav
@@ -138427,8 +138459,8 @@ ute
 rBX
 tGj
 dBk
-sjD
 lff
+sjD
 dkm
 lMF
 nKo
