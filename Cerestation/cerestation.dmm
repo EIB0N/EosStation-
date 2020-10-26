@@ -181,18 +181,16 @@
 /turf/open/floor/plating/airless,
 /area/space)
 "acm" = (
-/obj/docking_port/stationary{
-	dheight = 9;
-	dir = 2;
-	dwidth = 5;
-	height = 24;
-	id = "syndicate_n";
-	name = "north of station";
-	turf_type = /turf/open/space;
-	width = 18
+/obj/machinery/door/window{
+	base_state = "leftsecure";
+	dir = 8;
+	icon_state = "leftsecure";
+	name = "Primary AI Core Access";
+	obj_integrity = 300;
+	req_access_txt = "16"
 	},
-/turf/open/space,
-/area/space)
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
 "acC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/door/firedoor,
@@ -58902,20 +58900,15 @@
 	},
 /area/hallway/primary/central)
 "gxw" = (
-/obj/effect/landmark/start/ai/secondary,
 /obj/machinery/door/window{
-	base_state = "leftsecure";
+	base_state = "rightsecure";
 	dir = 4;
-	icon_state = "leftsecure";
-	layer = 4.1;
-	name = "Tertiary AI Core Access";
+	icon_state = "rightsecure";
+	name = "Primary AI Core Access";
 	obj_integrity = 300;
-	pixel_x = -3;
 	req_access_txt = "16"
 	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "gxP" = (
 /turf/open/floor/plating{
@@ -61809,20 +61802,8 @@
 	},
 /area/space)
 "izF" = (
-/obj/effect/landmark/start/ai/secondary,
-/obj/machinery/door/window{
-	base_state = "rightsecure";
-	dir = 8;
-	icon_state = "rightsecure";
-	layer = 4.1;
-	name = "Secondary AI Core Access";
-	obj_integrity = 300;
-	pixel_x = 4;
-	req_access_txt = "16"
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
 /area/ai_monitored/turret_protected/ai)
 "iAj" = (
 /obj/structure/window/reinforced{
@@ -62133,11 +62114,11 @@
 	},
 /area/medical/medbay/central)
 "iNr" = (
-/obj/machinery/computer/bounty,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
+/obj/machinery/power/smes{
+	charge = 5e+006
 	},
-/area/quartermaster/storage)
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai)
 "iNK" = (
 /obj/machinery/power/solar{
 	id = "foresolar";
@@ -64744,12 +64725,15 @@
 	},
 /area/medical/morgue)
 "kHG" = (
+/obj/effect/landmark/start/ai/secondary,
 /obj/machinery/door/window{
-	base_state = "rightsecure";
+	base_state = "leftsecure";
 	dir = 4;
-	icon_state = "rightsecure";
-	name = "Primary AI Core Access";
+	icon_state = "leftsecure";
+	layer = 4.1;
+	name = "Tertiary AI Core Access";
 	obj_integrity = 300;
+	pixel_x = -3;
 	req_access_txt = "16"
 	},
 /turf/open/floor/circuit,
@@ -65943,12 +65927,15 @@
 /turf/open/floor/carpet/red,
 /area/hallway/primary/central)
 "lyp" = (
+/obj/effect/landmark/start/ai/secondary,
 /obj/machinery/door/window{
-	base_state = "leftsecure";
+	base_state = "rightsecure";
 	dir = 8;
-	icon_state = "leftsecure";
-	name = "Primary AI Core Access";
+	icon_state = "rightsecure";
+	layer = 4.1;
+	name = "Secondary AI Core Access";
 	obj_integrity = 300;
+	pixel_x = 4;
 	req_access_txt = "16"
 	},
 /turf/open/floor/circuit,
@@ -69040,7 +69027,6 @@
 	name = "Aft Asteroid Maintenance"
 	})
 "nFn" = (
-/obj/machinery/computer/bounty,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/carpet,
 /area/quartermaster/qm)
@@ -71428,14 +71414,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/chemistry)
-"phy" = (
-/obj/machinery/porta_turret/ai{
-	dir = 8
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/ai_monitored/turret_protected/ai)
 "piG" = (
 /obj/structure/table/reinforced,
 /obj/item/grenade/chem_grenade/cleaner,
@@ -73648,9 +73626,6 @@
 	},
 /area/medical/surgery)
 "qSq" = (
-/obj/machinery/computer/bounty{
-	dir = 1
-	},
 /obj/machinery/light,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -73927,12 +73902,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
-"rbN" = (
-/obj/machinery/power/smes{
-	charge = 5e+006
-	},
-/turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/ai)
 "rcy" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible,
 /turf/open/floor/plasteel/grimy{
@@ -74417,10 +74386,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
-"rAd" = (
-/obj/effect/landmark/start/ai,
-/turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/ai)
 "rAh" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/effect/turf_decal/siding/yellow{
@@ -77645,7 +77610,6 @@
 	},
 /area/maintenance/disposal)
 "ucX" = (
-/obj/machinery/computer/bounty,
 /obj/structure/cable,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel{
@@ -79433,14 +79397,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/prison)
-"vlj" = (
-/obj/machinery/computer/bounty{
-	dir = 8
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/office)
 "vls" = (
 /obj/structure/disposalpipe/sorting{
 	dir = 8;
@@ -80286,8 +80242,8 @@
 	},
 /area/engine/atmos)
 "vPM" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
+/obj/effect/landmark/start/ai,
+/turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "vPW" = (
 /obj/item/kirbyplants/potty,
@@ -81619,10 +81575,10 @@
 	},
 /area/medical/medbay/central)
 "wPE" = (
-/mob/living/simple_animal/bot/secbot/pingsky,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
+/obj/machinery/ai_slipper{
+	uses = 10
 	},
+/turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "wPP" = (
 /obj/effect/loot_site_spawner,
@@ -82475,12 +82431,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/crew_quarters/toilet/auxiliary)
-"xsL" = (
-/obj/machinery/ai_slipper{
-	uses = 10
-	},
-/turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/ai)
 "xsM" = (
 /obj/structure/table,
 /obj/structure/reagent_dispensers/beerkeg,
@@ -113590,16 +113540,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -113847,16 +113797,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -114104,16 +114054,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -114361,16 +114311,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -114618,16 +114568,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -114875,16 +114825,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -115132,16 +115082,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -115389,16 +115339,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -115646,16 +115596,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -115903,16 +115853,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -116160,16 +116110,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -116417,16 +116367,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-acm
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -116674,16 +116624,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -116931,16 +116881,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -117188,16 +117138,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -117445,16 +117395,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -117702,16 +117652,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 aaa
 aaa
 aaa
@@ -121048,21 +120998,21 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -121305,11 +121255,11 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
+aad
 hQq
 hQq
 hQq
@@ -121317,10 +121267,10 @@ hQq
 hQq
 hQq
 hQq
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -121561,9 +121511,9 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
 hQq
 hQq
 hQq
@@ -121577,9 +121527,9 @@ hQq
 hQq
 hQq
 hQq
-cFp
-cFp
-cFp
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -121817,9 +121767,9 @@ aaa
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
 hQq
 hQq
 wTr
@@ -121835,9 +121785,9 @@ htp
 tLK
 hQq
 hQq
-cFp
-cFp
-cFp
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -122073,8 +122023,8 @@ aaa
 aaa
 cFp
 cFp
-cFp
-cFp
+aad
+aad
 hQq
 hQq
 hQq
@@ -122094,9 +122044,9 @@ ruC
 hQq
 hQq
 hQq
-cFp
-cFp
-cFp
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -122329,8 +122279,8 @@ cFp
 aaa
 aaa
 cFp
-cFp
-cFp
+aad
+aad
 hQq
 hQq
 iKn
@@ -122352,8 +122302,8 @@ mXU
 hpy
 hQq
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 cFp
 cFp
@@ -122585,8 +122535,8 @@ cFp
 cFp
 aaa
 aaa
-cFp
-cFp
+aad
+aad
 hQq
 hQq
 fJA
@@ -122610,10 +122560,10 @@ xKg
 nqN
 hQq
 hQq
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
 cFp
 cFp
 aaa
@@ -122842,7 +122792,7 @@ cFp
 cFp
 aaa
 aaa
-cFp
+aad
 hQq
 hQq
 kQI
@@ -122868,9 +122818,9 @@ fny
 tZl
 hQq
 hQq
-cFp
-cFp
-cFp
+aad
+aad
+aad
 cFp
 cFp
 aaa
@@ -123098,8 +123048,8 @@ cFp
 cFp
 cFp
 aaa
-aaa
-cFp
+aad
+aad
 hQq
 tCD
 jgJ
@@ -123125,10 +123075,10 @@ fny
 xKg
 aiT
 hQq
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
 cFp
 aaa
 aaa
@@ -123354,8 +123304,8 @@ cFp
 cFp
 cFp
 cFp
-aaa
-aaa
+aad
+aad
 hQq
 hQq
 uEc
@@ -123383,9 +123333,9 @@ xKg
 wIC
 hQq
 hQq
-cFp
-cFp
-cFp
+aad
+aad
+aad
 cFp
 aaa
 aaa
@@ -123611,7 +123561,7 @@ cFp
 cFp
 cFp
 cFp
-aaa
+aad
 hQq
 hQq
 hQq
@@ -123641,8 +123591,8 @@ xKg
 oDW
 hQq
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 aaa
 aaa
@@ -123867,8 +123817,8 @@ cFp
 cFp
 cFp
 cFp
-cFp
-aaa
+aad
+aad
 hQq
 pOu
 ggo
@@ -123876,7 +123826,7 @@ nNn
 wKA
 nNn
 ggo
-iPL
+iNr
 hQq
 tCD
 tCD
@@ -123898,8 +123848,8 @@ fny
 fny
 jPo
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 aaa
 aaa
@@ -124124,8 +124074,8 @@ cFp
 cFp
 cFp
 cFp
-cFp
-aaa
+aad
+aad
 hQq
 xZI
 ggo
@@ -124156,7 +124106,7 @@ fny
 iZu
 hQq
 hQq
-cFp
+aad
 cFp
 cFp
 cFp
@@ -124381,7 +124331,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+aad
 hQq
 hQq
 pOu
@@ -124638,16 +124588,16 @@ cFp
 cFp
 cFp
 cFp
-cFp
+aad
 hQq
+add
+add
 wKA
+add
 wKA
+add
+add
 wKA
-wKA
-wKA
-wKA
-wKA
-phy
 hQq
 hQq
 hQq
@@ -124895,15 +124845,15 @@ cFp
 cFp
 cFp
 cFp
-cFp
+aad
 hQq
-izF
+add
 add
 lyp
 add
-wKA
-ggo
-ggo
+acm
+add
+add
 ggo
 hQq
 irp
@@ -125152,15 +125102,15 @@ cFp
 cFp
 cFp
 cFp
-cFp
+aad
 hQq
 add
-rAd
-xsL
+add
+add
 vPM
 wPE
+izF
 ggo
-xsL
 ggo
 jfU
 mVl
@@ -125409,15 +125359,15 @@ cFp
 cFp
 cFp
 cFp
-cFp
+aad
 hQq
-gxw
+add
 add
 kHG
 add
-wKA
-ggo
-ggo
+gxw
+add
+add
 ggo
 hQq
 irp
@@ -125666,16 +125616,16 @@ cFp
 cFp
 cFp
 cFp
-cFp
+aad
 hQq
+add
+add
 wKA
+add
 wKA
+add
+add
 wKA
-wKA
-wKA
-wKA
-wKA
-phy
 hQq
 hQq
 hQq
@@ -125923,7 +125873,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+aad
 hQq
 hQq
 pOu
@@ -125932,7 +125882,7 @@ ggo
 wKA
 ggo
 ggo
-rbN
+ggo
 hQq
 ayL
 ocx
@@ -126180,8 +126130,8 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
+aad
+aad
 hQq
 xZI
 ggo
@@ -126212,7 +126162,7 @@ jTX
 vGL
 hQq
 hQq
-cFp
+aad
 cFp
 bhv
 cFp
@@ -126437,8 +126387,8 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
+aad
+aad
 hQq
 pOu
 ggo
@@ -126468,8 +126418,8 @@ jTX
 jTX
 sPZ
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 bhv
 cFp
@@ -126695,7 +126645,7 @@ cFp
 cFp
 cFp
 cFp
-aaa
+aad
 hQq
 hQq
 hQq
@@ -126725,8 +126675,8 @@ uBu
 cge
 hQq
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 bhv
 cFp
@@ -126952,8 +126902,8 @@ cFp
 cFp
 cFp
 cFp
-aaa
-aaa
+aad
+aad
 hQq
 hQq
 yhD
@@ -126981,8 +126931,8 @@ uBu
 vGL
 hQq
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 cFp
 bhv
@@ -127209,9 +127159,9 @@ cFp
 cFp
 cFp
 cFp
-aaa
-aaa
 cFp
+aad
+aad
 hQq
 nqa
 kED
@@ -127237,8 +127187,8 @@ jTX
 uBu
 sPZ
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 cFp
 cFp
@@ -127466,9 +127416,9 @@ cFp
 cFp
 cFp
 cFp
-aaa
-aaa
 cFp
+aad
+aad
 hQq
 hQq
 woC
@@ -127494,8 +127444,8 @@ tCv
 cge
 hQq
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 cFp
 cFp
@@ -127723,10 +127673,10 @@ cFp
 cFp
 cFp
 cFp
-aaa
-aaa
 cFp
 cFp
+aad
+aad
 hQq
 hQq
 pok
@@ -127750,9 +127700,9 @@ uBu
 uBu
 hQq
 hQq
-cFp
-cFp
-cFp
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -127980,11 +127930,11 @@ cFp
 cFp
 cFp
 cFp
+cFp
 aaa
-aaa
 cFp
-cFp
-cFp
+aad
+aad
 hQq
 hQq
 wOa
@@ -128006,10 +127956,10 @@ jTX
 jTX
 hQq
 hQq
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -128241,8 +128191,8 @@ aaa
 aaa
 cFp
 cFp
-cFp
-cFp
+aad
+aad
 hQq
 hQq
 hQq
@@ -128262,8 +128212,8 @@ hQq
 hQq
 hQq
 hQq
-cFp
-cFp
+aad
+aad
 cFp
 cFp
 cFp
@@ -128499,9 +128449,9 @@ aaa
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
 hQq
 hQq
 gtW
@@ -128517,9 +128467,9 @@ eTn
 aaL
 hQq
 hQq
-cFp
-cFp
-cFp
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -128757,9 +128707,9 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
 hQq
 hQq
 hQq
@@ -128773,10 +128723,10 @@ hQq
 hQq
 hQq
 hQq
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -129015,11 +128965,11 @@ aaa
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
+aad
 hQq
 hQq
 hQq
@@ -129027,12 +128977,12 @@ hQq
 hQq
 hQq
 hQq
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -129272,24 +129222,24 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -129533,13 +129483,13 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
+aad
+aad
+aad
+aad
+aad
+aad
+aad
 cFp
 cFp
 cFp
@@ -137024,7 +136974,7 @@ jFT
 eXZ
 nKo
 xqq
-vlj
+nKo
 dkm
 jXW
 jXW
@@ -137521,7 +137471,7 @@ eSk
 eSk
 eSk
 vvq
-iNr
+lff
 fEB
 xnc
 sjD
