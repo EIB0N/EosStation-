@@ -113,31 +113,40 @@
 	},
 /area/hallway/primary/fore)
 "aba" = (
-/turf/open/space/basic,
-/area/mine/unexplored{
-	name = "Civilian Asteroid"
-	})
+/obj/structure/sign/directions/medical,
+/obj/structure/sign/directions/command{
+	dir = 8;
+	pixel_y = 7
+	},
+/obj/structure/sign/directions/security{
+	dir = 8;
+	pixel_y = -7;
+	tag = "icon-direction_sec (WEST)"
+	},
+/turf/closed/wall/r_wall,
+/area/hallway/primary/central)
 "abb" = (
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/structure/sign/directions/medical,
+/obj/structure/sign/directions/command{
+	dir = 8;
+	pixel_y = 7
 	},
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/structure/sign/directions/security{
+	dir = 8;
+	pixel_y = -7;
+	tag = "icon-direction_sec (WEST)"
 	},
-/turf/open/floor/plating,
-/area/space)
+/turf/closed/wall/r_wall,
+/area/engine/atmos)
 "abc" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall{
+/turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/space)
+/area/hallway/primary/central)
 "abe" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/window/reinforced,
@@ -166,25 +175,30 @@
 /turf/open/floor/engine,
 /area/hallway/primary/central)
 "abr" = (
-/obj/structure/window/reinforced{
-	dir = 8
+/obj/machinery/status_display/ai{
+	pixel_y = -32
 	},
-/turf/open/floor/engine{
-	baseturf = /turf/open/floor/plating/asteroid/airless;
-	name = "reinforced floor"
+/obj/structure/sign/directions/command{
+	dir = 8;
+	pixel_y = 7
 	},
-/area/space)
+/obj/structure/sign/directions/medical,
+/obj/structure/sign/directions/security{
+	pixel_y = -7
+	},
+/turf/closed/wall,
+/area/hallway/primary/central)
 "abs" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+/obj/structure/sign/directions/medical,
+/obj/structure/sign/directions/command{
+	dir = 8;
+	pixel_y = 7
 	},
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/engine{
-	baseturf = /turf/open/floor/plating/asteroid/airless;
-	name = "reinforced floor"
+/obj/structure/sign/directions/security{
+	pixel_y = -7
 	},
-/area/space)
+/turf/closed/wall,
+/area/hallway/primary/central)
 "abC" = (
 /obj/structure/lattice,
 /turf/open/space,
@@ -557,15 +571,10 @@
 	},
 /area/hallway/primary/fore)
 "agS" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/closed/wall{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/space)
+/turf/open/space/basic,
+/area/mine/unexplored{
+	name = "Civilian Asteroid"
+	})
 "agX" = (
 /obj/effect/landmark/blobstart,
 /turf/open/floor/plating/rust,
@@ -13175,11 +13184,14 @@
 /area/hallway/primary/central)
 "aYR" = (
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 8
 	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
+/turf/open/floor/plating,
 /area/space)
 "aYS" = (
 /obj/structure/girder,
@@ -23336,9 +23348,14 @@
 	},
 /area/medical/medbay/central)
 "bya" = (
-/obj/structure/lattice,
-/obj/structure/lattice/catwalk,
-/turf/open/space,
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/closed/wall{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
 /area/space)
 "bye" = (
 /obj/item/screwdriver,
@@ -23941,6 +23958,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/port/fore)
+"bAe" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/engine{
+	baseturf = /turf/open/floor/plating/asteroid/airless;
+	name = "reinforced floor"
+	},
+/area/space)
 "bAh" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -24768,6 +24794,17 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/checkpoint/engineering)
+"bCq" = (
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/engine{
+	baseturf = /turf/open/floor/plating/asteroid/airless;
+	name = "reinforced floor"
+	},
+/area/space)
 "bCw" = (
 /obj/structure/closet/emcloset,
 /obj/effect/decal/cleanable/cobweb,
@@ -27069,6 +27106,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/central)
+"bIZ" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/closed/wall{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "bJk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment,
@@ -27448,6 +27495,14 @@
 "bKa" = (
 /turf/closed/wall,
 /area/hallway/primary/central)
+"bKb" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "bKl" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating/asteroid,
@@ -35046,6 +35101,11 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
+"cda" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/turf/open/space,
+/area/space)
 "cdb" = (
 /turf/open/floor/plating/asteroid/airless,
 /area/mine/unexplored{
@@ -53387,18 +53447,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
-"iJi" = (
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
-	dir = 4
-	},
-/obj/machinery/status_display/ai{
-	pixel_y = -32
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/hallway/primary/central)
 "iJA" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -85569,7 +85617,7 @@ ybv
 ybv
 ybv
 ybv
-aba
+agS
 aXn
 aXL
 xou
@@ -85825,8 +85873,8 @@ ybv
 ybv
 ybv
 ybv
-aba
-aba
+agS
+agS
 aXr
 aXM
 aYS
@@ -86082,8 +86130,8 @@ ybv
 ybv
 ybv
 ybv
-aba
-aba
+agS
+agS
 aXr
 aXM
 aXM
@@ -90014,8 +90062,8 @@ cYd
 cYd
 cYd
 cYd
-abc
-abc
+bya
+bya
 tKt
 vZy
 vZy
@@ -90271,8 +90319,8 @@ cdc
 cdc
 cdc
 cdc
-abr
-abr
+bAe
+bAe
 vZy
 vZy
 vZy
@@ -90785,8 +90833,8 @@ cYg
 cYg
 nxw
 cYg
-abs
-abs
+bCq
+bCq
 vZy
 vZy
 vZy
@@ -91041,9 +91089,9 @@ cYf
 cYf
 cYf
 cYf
-abb
-abb
-agS
+aYR
+aYR
+bIZ
 tKt
 tKt
 vZy
@@ -105195,7 +105243,7 @@ akw
 fou
 aqV
 sDr
-aYR
+bKb
 aqh
 tKt
 tKt
@@ -105710,7 +105758,7 @@ fou
 aqV
 coU
 cpC
-bya
+cda
 abC
 aWr
 aaa
@@ -106738,7 +106786,7 @@ fou
 aqV
 sDr
 cpC
-bya
+cda
 abC
 aWr
 aaa
@@ -109051,7 +109099,7 @@ fou
 aqV
 coV
 cpC
-bya
+cda
 abC
 aWr
 aaa
@@ -110079,7 +110127,7 @@ fou
 aqV
 sDr
 cpC
-bya
+cda
 abC
 aWr
 aaa
@@ -112135,7 +112183,7 @@ dLa
 aqV
 cJH
 cpC
-bya
+cda
 abC
 aWr
 aaa
@@ -113163,7 +113211,7 @@ dLa
 aqV
 cJH
 cpC
-bya
+cda
 abC
 aWr
 aaa
@@ -123829,11 +123877,11 @@ sCH
 dqt
 hMN
 hMN
-hMx
+aba
 xaa
 gzG
 ine
-hMN
+abb
 hMN
 hMN
 uyx
@@ -126408,7 +126456,7 @@ krs
 tRF
 ine
 dgE
-ine
+abc
 pjJ
 dLG
 wZO
@@ -126665,8 +126713,8 @@ mWd
 lQm
 ine
 dgE
-iJi
-bKa
+rOV
+abr
 bKa
 bKa
 qHE
@@ -127694,7 +127742,7 @@ pZD
 uph
 uis
 gxv
-bKa
+abs
 bKa
 bKa
 bKa
