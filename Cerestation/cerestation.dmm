@@ -45798,6 +45798,9 @@
 /obj/structure/disposaloutlet{
 	dir = 4
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "dhm" = (
@@ -48603,6 +48606,15 @@
 "eME" = (
 /turf/open/floor/plasteel/white,
 /area/science/nanite)
+"eMG" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/science/xenobiology)
 "eOl" = (
 /obj/machinery/shower{
 	dir = 4
@@ -49716,7 +49728,7 @@
 	},
 /area/medical/morgue)
 "fxW" = (
-/obj/effect/spawner/structure/window,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -54608,6 +54620,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/disposalpipe/trunk,
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "isZ" = (
@@ -54955,6 +54968,11 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/storage)
+"iCZ" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
 "iDf" = (
 /obj/machinery/holopad,
 /turf/open/floor/plasteel/grimy{
@@ -57383,7 +57401,7 @@
 	},
 /area/hydroponics)
 "jUg" = (
-/obj/effect/spawner/structure/window,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -57667,6 +57685,7 @@
 "kgc" = (
 /obj/structure/chair/office/light,
 /obj/structure/cable,
+/obj/effect/landmark/start/research_director,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/hor)
 "kgh" = (
@@ -59016,12 +59035,11 @@
 	},
 /area/hallway/primary/fore)
 "kWy" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/door/firedoor,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/space)
+/area/science/genetics)
 "kWO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/turf_decal/siding/blue/corner{
@@ -63306,7 +63324,7 @@
 	},
 /area/medical/medbay/central)
 "nmS" = (
-/obj/effect/spawner/structure/window,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -64736,6 +64754,13 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/morgue)
+"nYW" = (
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -25
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
 "nYZ" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -65434,11 +65459,15 @@
 	name = "Port Asteroid Maintenance"
 	})
 "ori" = (
-/obj/effect/spawner/structure/window,
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
+/obj/machinery/button/door{
+	id = "rdtoxins";
+	name = "Toxins Containment Control";
+	pixel_x = -7;
+	pixel_y = -4;
+	req_access_txt = "30"
 	},
-/area/science/robotics/lab)
+/turf/closed/wall/r_wall,
+/area/crew_quarters/heads/hor)
 "oro" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -67010,6 +67039,9 @@
 /area/science/research)
 "phw" = (
 /obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "phT" = (
@@ -67924,7 +67956,7 @@
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
 "pJm" = (
-/obj/effect/spawner/structure/window,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -69737,11 +69769,11 @@
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "qOb" = (
-/obj/machinery/door/firedoor,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/space)
+/area/crew_quarters/heads/hor)
 "qOA" = (
 /obj/structure/closet/bombcloset,
 /obj/item/radio/intercom{
@@ -69774,7 +69806,7 @@
 	},
 /area/quartermaster/miningoffice)
 "qPG" = (
-/obj/effect/spawner/structure/window,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -72454,9 +72486,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/turf/open/floor/plasteel/white,
 /area/space)
 "sFD" = (
 /obj/structure/window/reinforced/spawner{
@@ -75752,9 +75782,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
+/turf/open/floor/plasteel/white,
 /area/space)
 "uyx" = (
 /obj/structure/cable,
@@ -76224,7 +76252,7 @@
 	},
 /area/medical/medbay/central)
 "uMh" = (
-/obj/effect/spawner/structure/window,
+/obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -76436,6 +76464,9 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "uTg" = (
@@ -76479,10 +76510,9 @@
 	},
 /area/hallway/primary/fore)
 "uTJ" = (
-/obj/structure/closet/bombcloset,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -25
+/obj/structure/tank_holder/extinguisher/advanced,
+/obj/machinery/airalarm{
+	pixel_y = 23
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
@@ -77454,6 +77484,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
+"vtW" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
 "vue" = (
 /obj/machinery/light{
 	dir = 8
@@ -95307,6 +95342,7 @@ cVc
 akw
 akw
 akw
+cVc
 akw
 akw
 akw
@@ -95338,8 +95374,7 @@ akw
 akw
 akw
 akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -95560,6 +95595,11 @@ akw
 akw
 akw
 akw
+cVc
+akw
+akw
+akw
+cVc
 akw
 akw
 akw
@@ -95591,12 +95631,7 @@ akw
 akw
 akw
 akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -95817,6 +95852,35 @@ akw
 akw
 akw
 akw
+cVc
+akw
+akw
+akw
+akw
+akw
+akw
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+akw
+akw
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
 akw
 akw
 akw
@@ -95824,36 +95888,7 @@ akw
 akw
 akw
 akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -96074,6 +96109,14 @@ akw
 akw
 akw
 akw
+cVc
+akw
+akw
+akw
+cVc
+akw
+akw
+cVc
 akw
 akw
 akw
@@ -96083,6 +96126,10 @@ akw
 akw
 akw
 akw
+cVc
+akw
+akw
+cVc
 akw
 akw
 akw
@@ -96090,6 +96137,7 @@ akw
 akw
 akw
 akw
+cVc
 akw
 akw
 akw
@@ -96097,25 +96145,12 @@ akw
 akw
 akw
 akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
 cVc
 ahH
 ahH
@@ -96331,6 +96366,14 @@ eUl
 akw
 akw
 akw
+cVc
+cVc
+cVc
+cVc
+cVc
+akw
+akw
+cVc
 akw
 akw
 akw
@@ -96340,6 +96383,10 @@ akw
 akw
 akw
 akw
+cVc
+akw
+akw
+cVc
 akw
 akw
 akw
@@ -96347,19 +96394,7 @@ akw
 akw
 akw
 akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -96595,6 +96630,7 @@ akw
 akw
 akw
 akw
+cVc
 akw
 akw
 akw
@@ -96604,6 +96640,10 @@ akw
 akw
 akw
 akw
+cVc
+akw
+akw
+cVc
 akw
 akw
 akw
@@ -96611,12 +96651,7 @@ akw
 akw
 akw
 akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -96882,7 +96917,7 @@ cVc
 cVc
 cVc
 cVc
-akw
+cVc
 akw
 akw
 akw
@@ -97097,7 +97132,7 @@ cFp
 tKt
 tKt
 tKt
-qOb
+tKt
 uyd
 tKt
 tKt
@@ -97117,7 +97152,7 @@ qZR
 qZO
 sjH
 lCd
-ori
+xse
 xiR
 jNT
 oxC
@@ -97139,7 +97174,7 @@ qFt
 rpx
 war
 hmu
-akw
+cVc
 akw
 akw
 akw
@@ -97374,13 +97409,13 @@ kmJ
 sjH
 sjH
 rif
-ori
+xse
 jrW
 sjH
 pmU
 sjH
 knx
-ori
+xse
 llz
 tpx
 tpx
@@ -97396,7 +97431,7 @@ qFt
 rpx
 vyO
 nQR
-akw
+cVc
 akw
 akw
 akw
@@ -97631,13 +97666,13 @@ kmJ
 sjH
 sjH
 sBu
-ori
+xse
 lIw
 sjH
 ahy
 otV
 sjH
-ori
+xse
 wYS
 tpx
 tpx
@@ -97653,7 +97688,7 @@ pJm
 nCV
 nQR
 ueb
-akw
+cVc
 akw
 akw
 akw
@@ -97888,13 +97923,13 @@ xYu
 sjH
 sjH
 nan
-ori
+xse
 fLc
 sjH
 twO
 nDl
 oyX
-ori
+xse
 qbR
 tpx
 tpx
@@ -99967,9 +100002,9 @@ jfD
 rIr
 ndN
 cVc
-akw
-akw
-akw
+cVc
+cVc
+cVc
 akw
 akw
 akw
@@ -100226,7 +100261,7 @@ hmu
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -100743,9 +100778,9 @@ cVc
 cVc
 cVc
 cVc
-akw
-akw
-akw
+cVc
+cVc
+cVc
 akw
 akw
 cVc
@@ -102288,9 +102323,9 @@ ppt
 ppt
 qNF
 ppt
-akw
-akw
-akw
+cVc
+cVc
+cVc
 akw
 akw
 cVc
@@ -102804,7 +102839,7 @@ gve
 ppt
 akw
 akw
-akw
+cVc
 akw
 akw
 cVc
@@ -103061,7 +103096,7 @@ gve
 ppt
 akw
 akw
-akw
+cVc
 akw
 akw
 cVc
@@ -103318,7 +103353,7 @@ wfj
 ppt
 akw
 akw
-akw
+cVc
 akw
 akw
 cVc
@@ -103575,7 +103610,7 @@ miw
 ppt
 akw
 akw
-akw
+cVc
 akw
 akw
 cVc
@@ -103806,7 +103841,7 @@ rxz
 xWQ
 tTe
 fGN
-qbR
+uTJ
 tpx
 mlB
 tpx
@@ -104093,8 +104128,8 @@ cVc
 akw
 akw
 cVc
-cVc
-cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -104317,7 +104352,7 @@ fiU
 qkL
 fGN
 fGN
-fGN
+ori
 nUI
 fGN
 kqW
@@ -104349,9 +104384,9 @@ nPl
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -104576,7 +104611,7 @@ dGz
 wrV
 uDK
 bsw
-fGN
+qOb
 tpx
 tpx
 mlB
@@ -104606,9 +104641,9 @@ jdZ
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -104842,7 +104877,7 @@ leC
 xeD
 tGv
 teQ
-tpx
+nYW
 fdG
 tMW
 tMW
@@ -104863,9 +104898,9 @@ nPl
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -105090,8 +105125,8 @@ gJn
 wrV
 uDK
 nuJ
-fGN
-lRR
+qOb
+tpx
 tpx
 qdU
 wjk
@@ -105099,7 +105134,7 @@ ilO
 jNd
 dXC
 tvP
-uTJ
+myS
 wjk
 tMW
 tMW
@@ -105120,9 +105155,9 @@ nPl
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -105377,9 +105412,9 @@ jdZ
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -105634,9 +105669,9 @@ nPl
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 aaa
@@ -105891,9 +105926,9 @@ nPl
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 aaa
 cFp
 aaa
@@ -106148,9 +106183,9 @@ jdZ
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -106367,7 +106402,7 @@ uGf
 uGf
 rQV
 uGf
-uGf
+kWy
 aAK
 uGf
 uGf
@@ -106405,9 +106440,9 @@ nPl
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -106662,9 +106697,9 @@ nPl
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -106919,9 +106954,9 @@ nPl
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -107176,9 +107211,9 @@ cVc
 cVc
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -107422,7 +107457,7 @@ sDj
 dBr
 njA
 isG
-kbl
+vtW
 uTe
 gFg
 gFg
@@ -107430,12 +107465,12 @@ sDj
 akw
 akw
 akw
-akw
-akw
-akw
+cVc
 akw
 akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -107687,12 +107722,12 @@ sDj
 akw
 akw
 akw
-akw
-akw
-akw
+cVc
 akw
 akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -107944,12 +107979,12 @@ sDj
 akw
 akw
 akw
-akw
-akw
-akw
+cVc
 akw
 akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -108192,21 +108227,21 @@ pHR
 pHR
 pHR
 xSJ
-phw
-kbl
+iCZ
+vtW
 uTe
 gFg
 gFg
 sDj
+cVc
+cVc
 akw
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -108461,9 +108496,9 @@ akw
 akw
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -108675,7 +108710,7 @@ cVc
 ouu
 wKm
 mLF
-tKt
+cVc
 akw
 akw
 akw
@@ -108718,9 +108753,9 @@ akw
 akw
 akw
 akw
-akw
-akw
 cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -108928,11 +108963,11 @@ akw
 akw
 akw
 akw
-xoA
+cVc
 mLF
 kIk
 wFt
-kWy
+ktn
 nvh
 nvh
 nvh
@@ -108963,7 +108998,7 @@ wSL
 pHR
 sgF
 qVj
-phw
+pHR
 hOv
 mpv
 wJU
@@ -108976,8 +109011,8 @@ akw
 cVc
 cVc
 cVc
-cVc
-cVc
+cFp
+cFp
 cFp
 cFp
 cFp
@@ -109189,7 +109224,7 @@ ktn
 wFt
 aIx
 mLF
-qOb
+cVc
 akw
 akw
 akw
@@ -109208,13 +109243,13 @@ mPq
 dkD
 faC
 sDj
-wzn
+eMG
 pWV
 wzn
-wzn
+eMG
 oME
 wzn
-wzn
+eMG
 oME
 wzn
 pHR
@@ -109446,7 +109481,7 @@ cVc
 tmW
 gCA
 btl
-tKt
+cVc
 akw
 akw
 akw
@@ -109485,7 +109520,7 @@ hbh
 sDj
 akw
 akw
-akw
+cVc
 akw
 cVc
 cFp
@@ -109703,7 +109738,7 @@ cVc
 sxj
 wKm
 oTV
-tKt
+cVc
 akw
 akw
 akw
@@ -109714,7 +109749,7 @@ akw
 akw
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -109742,7 +109777,7 @@ sDj
 sDj
 akw
 akw
-akw
+cVc
 akw
 cVc
 cFp
@@ -109971,7 +110006,7 @@ akw
 akw
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -109999,7 +110034,7 @@ akw
 akw
 akw
 akw
-akw
+cVc
 akw
 cVc
 cFp
@@ -110228,13 +110263,13 @@ akw
 akw
 akw
 akw
+cVc
+cVc
 akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
+cVc
+cVc
+cVc
 sDj
 sDj
 sDj
@@ -110256,7 +110291,7 @@ akw
 akw
 akw
 akw
-akw
+cVc
 akw
 cVc
 cFp
@@ -110764,10 +110799,10 @@ akw
 akw
 akw
 akw
+cVc
 akw
-akw
-akw
-akw
+cVc
+cVc
 cVc
 cFp
 cFp
@@ -110995,6 +111030,12 @@ mNO
 jYM
 mkW
 vdv
+cVc
+cVc
+cVc
+cVc
+akw
+cVc
 akw
 akw
 akw
@@ -111015,13 +111056,7 @@ akw
 akw
 akw
 akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -111252,6 +111287,11 @@ ubz
 nDL
 qDT
 vdv
+akw
+akw
+akw
+akw
+akw
 cVc
 akw
 akw
@@ -111273,12 +111313,7 @@ akw
 akw
 akw
 akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -111509,6 +111544,11 @@ vdv
 vdv
 vdv
 vdv
+akw
+akw
+akw
+akw
+akw
 cVc
 akw
 akw
@@ -111530,12 +111570,7 @@ akw
 akw
 akw
 akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -111765,7 +111800,7 @@ pKq
 cVc
 aac
 aac
-aac
+cVc
 cVc
 cVc
 cVc
