@@ -18705,10 +18705,14 @@
 	},
 /area/maintenance/starboard/aft)
 "bkQ" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "bkS" = (
@@ -39131,6 +39135,7 @@
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8
 	},
+/obj/machinery/light/small,
 /turf/open/floor/engine,
 /area/science/mixing/chamber)
 "cvZ" = (
@@ -47409,7 +47414,7 @@
 	},
 /area/quartermaster/storage)
 "dWz" = (
-/obj/machinery/igniter/on,
+/obj/machinery/igniter/incinerator_toxmix,
 /turf/open/floor/engine,
 /area/science/mixing/chamber)
 "dXi" = (
@@ -47833,6 +47838,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdtoxins";
+	name = "Toxins Lab Shutters"
+	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "emo" = (
@@ -48230,6 +48239,13 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel,
 /area/maintenance/disposal)
+"eAU" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel,
+/area/science/mixing)
 "eBb" = (
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/structure/cable,
@@ -48606,15 +48622,6 @@
 "eME" = (
 /turf/open/floor/plasteel/white,
 /area/science/nanite)
-"eMG" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/science/xenobiology)
 "eOl" = (
 /obj/machinery/shower{
 	dir = 4
@@ -49750,6 +49757,9 @@
 "fyg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 9
+	},
+/obj/structure/chair/office/light{
+	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/security/checkpoint/science/research)
@@ -51953,6 +51963,8 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
+/obj/item/pizzabox/vegetable,
+/obj/item/food/pizza/margherita,
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "gRI" = (
@@ -54359,6 +54371,11 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/carpet,
 /area/quartermaster/qm)
+"iji" = (
+/obj/machinery/computer/atmos_control/toxinsmix,
+/obj/structure/cable,
+/turf/open/floor/plasteel,
+/area/science/mixing)
 "ikX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
@@ -54872,12 +54889,7 @@
 /area/quartermaster/office)
 "izq" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 6
-	},
+/obj/machinery/atmospherics/pipe/manifold/general/hidden,
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/server)
 "izE" = (
@@ -54953,6 +54965,16 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
+"iBY" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/preopen{
+	id = "rdoffice";
+	name = "Research Director's Shutters"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/crew_quarters/heads/hor)
 "iCx" = (
 /obj/vehicle/ridden/janicart,
 /obj/effect/turf_decal/siding/purple{
@@ -54968,11 +54990,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/storage)
-"iCZ" = (
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk,
-/turf/open/floor/plasteel/white,
-/area/science/xenobiology)
 "iDf" = (
 /obj/machinery/holopad,
 /turf/open/floor/plasteel/grimy{
@@ -55098,6 +55115,14 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/ai_monitored/turret_protected/ai_upload)
+"iGy" = (
+/obj/machinery/door/airlock/research{
+	id_tag = "ResearchInt";
+	name = "Research Division";
+	req_one_access_txt = "47"
+	},
+/turf/open/floor/engine,
+/area/science/research)
 "iGA" = (
 /obj/structure/sign/departments/medbay/alt,
 /obj/effect/spawner/structure/window,
@@ -55590,6 +55615,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/tcommsat/server)
+"iVd" = (
+/obj/structure/table/wood,
+/obj/item/pizzabox/vegetable,
+/obj/item/food/pizza/vegetable,
+/turf/open/floor/plasteel/white,
+/area/science/research)
 "iVg" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -57146,6 +57177,10 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdtoxins";
+	name = "Toxins Lab Shutters"
+	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "jNT" = (
@@ -58026,11 +58061,6 @@
 /obj/machinery/computer/slot_machine,
 /turf/open/floor/carpet/green,
 /area/maintenance/starboard/aft)
-"ktn" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/white,
-/area/space)
 "ktu" = (
 /obj/structure/closet/crate/freezer/blood,
 /obj/effect/decal/cleanable/dirt,
@@ -58114,6 +58144,17 @@
 /obj/machinery/vending/cola/random,
 /turf/open/floor/plasteel/white,
 /area/science/research)
+"kwx" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdtoxins";
+	name = "Toxins Lab Shutters"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/science/nanite)
 "kwz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -59035,11 +59076,14 @@
 	},
 /area/hallway/primary/fore)
 "kWy" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
 	},
-/area/science/genetics)
+/turf/open/floor/plasteel/white,
+/area/space)
 "kWO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/turf_decal/siding/blue/corner{
@@ -59794,6 +59838,11 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/storage)
+"lrQ" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
 "lsb" = (
 /obj/structure/closet/l3closet/janitor,
 /obj/effect/turf_decal/siding/purple{
@@ -60187,6 +60236,11 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/janitor)
+"lDk" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel/white,
+/area/science/xenobiology)
 "lEc" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 1
@@ -60895,7 +60949,6 @@
 	name = "Server Access";
 	req_access_txt = "30"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
@@ -61576,6 +61629,10 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/central)
+"mqB" = (
+/obj/structure/cable,
+/turf/open/floor/plasteel/white,
+/area/science/research)
 "mqI" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/turf_decal/siding/blue/corner{
@@ -62209,6 +62266,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/ai_monitored/storage/satellite)
+"mJh" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/science/xenobiology)
 "mJH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -62586,7 +62652,6 @@
 /area/science/robotics/mechbay)
 "mTh" = (
 /obj/structure/table/wood,
-/obj/item/storage/box/donkpockets,
 /obj/machinery/newscaster{
 	pixel_y = -30
 	},
@@ -62834,6 +62899,10 @@
 	req_access_txt = "8"
 	},
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdtoxins";
+	name = "Toxins Lab Shutters"
+	},
 /turf/open/floor/plasteel,
 /area/science/misc_lab)
 "nan" = (
@@ -64754,13 +64823,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/morgue)
-"nYW" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -25
-	},
-/turf/open/floor/plasteel/white,
-/area/science/research)
 "nYZ" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -64886,6 +64948,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "ody" = (
@@ -65459,15 +65522,12 @@
 	name = "Port Asteroid Maintenance"
 	})
 "ori" = (
-/obj/machinery/button/door{
-	id = "rdtoxins";
-	name = "Toxins Containment Control";
-	pixel_x = -7;
-	pixel_y = -4;
-	req_access_txt = "30"
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/turf/closed/wall/r_wall,
-/area/crew_quarters/heads/hor)
+/area/science/robotics/lab)
 "oro" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -67957,6 +68017,11 @@
 /area/maintenance/port/fore)
 "pJm" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdtoxins";
+	name = "Toxins Lab Shutters"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -68799,6 +68864,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/keycard_auth{
+	pixel_x = 7;
 	pixel_y = -24
 	},
 /turf/open/floor/plasteel/white,
@@ -69464,6 +69530,9 @@
 /obj/machinery/light_switch{
 	pixel_x = 38
 	},
+/obj/machinery/atmospherics/pipe/simple{
+	dir = 9
+	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/server)
 "qEy" = (
@@ -69754,6 +69823,10 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdtoxins";
+	name = "Toxins Lab Shutters"
+	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "qNO" = (
@@ -69769,11 +69842,14 @@
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "qOb" = (
-/obj/effect/spawner/structure/window/reinforced,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
-/area/crew_quarters/heads/hor)
+/area/space)
 "qOA" = (
 /obj/structure/closet/bombcloset,
 /obj/item/radio/intercom{
@@ -70468,6 +70544,19 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
+"rld" = (
+/obj/machinery/atmospherics/pipe/simple/general/visible{
+	dir = 9
+	},
+/obj/structure/cable,
+/obj/machinery/button/door/incinerator_vent_toxmix{
+	pixel_x = 23
+	},
+/obj/machinery/button/ignition/incinerator/toxmix{
+	pixel_x = 35
+	},
+/turf/open/floor/plasteel,
+/area/science/mixing)
 "rlm" = (
 /obj/machinery/airalarm{
 	dir = 8;
@@ -71613,6 +71702,7 @@
 	name = "Robotics Lab";
 	req_access_txt = "29"
 	},
+/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "rZu" = (
@@ -72486,6 +72576,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plasteel/white,
 /area/space)
 "sFD" = (
@@ -73559,6 +73653,13 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/central)
+"tqt" = (
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -25
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
 "tqz" = (
 /obj/machinery/light{
 	dir = 4
@@ -74156,6 +74257,10 @@
 	name = "Research and Development Lab";
 	req_one_access_txt = "7"
 	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdrnd";
+	name = "Research and Development Shutters"
+	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "tJw" = (
@@ -74596,7 +74701,35 @@
 /turf/open/floor/plasteel/white,
 /area/space)
 "tTe" = (
-/obj/structure/tank_holder/extinguisher/advanced,
+/obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	id = "rdxeno";
+	name = "Xenobiology Containment Control";
+	pixel_x = -7;
+	pixel_y = 7;
+	req_access_txt = "30"
+	},
+/obj/machinery/button/door{
+	id = "rdrnd";
+	name = "Research and Development Containment Control";
+	pixel_x = 7;
+	pixel_y = 7;
+	req_access_txt = "30"
+	},
+/obj/machinery/button/door{
+	id = "rdtoxins";
+	name = "Toxins Containment Control";
+	pixel_x = -7;
+	pixel_y = -4;
+	req_access_txt = "30"
+	},
+/obj/machinery/button/door{
+	id = "rdoffice";
+	name = "Privacy Control";
+	pixel_x = 7;
+	pixel_y = -4;
+	req_access_txt = "30"
+	},
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/hor)
 "tTi" = (
@@ -74729,6 +74862,10 @@
 /obj/machinery/door/window/eastright{
 	name = "Research and Development Desk";
 	req_one_access_txt = "7"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "research_shutters";
+	name = "research shutters"
 	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
@@ -75051,6 +75188,10 @@
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdtoxins";
+	name = "Toxins Lab Shutters"
+	},
 /turf/open/floor/plasteel/white,
 /area/science/mixing)
 "ueE" = (
@@ -75782,6 +75923,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plasteel/white,
 /area/space)
 "uyx" = (
@@ -76510,12 +76655,11 @@
 	},
 /area/hallway/primary/fore)
 "uTJ" = (
-/obj/structure/tank_holder/extinguisher/advanced,
-/obj/machinery/airalarm{
-	pixel_y = 23
+/obj/structure/chair/office/light{
+	dir = 8
 	},
-/turf/open/floor/plasteel/white,
-/area/science/research)
+/turf/open/floor/plasteel,
+/area/science/robotics/lab)
 "uUl" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/oil,
@@ -76705,6 +76849,12 @@
 "vaD" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 4
+	},
+/obj/machinery/airlock_sensor/incinerator_toxmix{
+	pixel_y = 23
+	},
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/open/floor/engine,
 /area/science/mixing/chamber)
@@ -76991,10 +77141,11 @@
 /area/space)
 "viy" = (
 /obj/structure/table/wood,
-/obj/item/radio/off,
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/item/pizzabox/vegetable,
+/obj/item/food/pizza/meat,
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "viC" = (
@@ -77361,6 +77512,12 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/button/door{
+	id = "mechbay";
+	name = "Mech Bay Shutters Control";
+	pixel_x = 26;
+	req_access_txt = "29"
+	},
 /turf/open/floor/plasteel,
 /area/science/robotics/mechbay)
 "vra" = (
@@ -77484,11 +77641,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/medical)
-"vtW" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel/white,
-/area/science/xenobiology)
 "vue" = (
 /obj/machinery/light{
 	dir = 8
@@ -77675,6 +77827,10 @@
 	pixel_x = 27;
 	pixel_y = 5
 	},
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
+	external_pressure_bound = 120;
+	name = "server vent"
+	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/server)
 "vyr" = (
@@ -77787,11 +77943,9 @@
 	},
 /area/ai_monitored/turret_protected/aisat_interior)
 "vBn" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark/telecomms,
-/area/science/server)
+/obj/structure/tank_holder/extinguisher/advanced,
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/heads/hor)
 "vCa" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
@@ -77950,6 +78104,15 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/security/checkpoint/science/research)
+"vGV" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_one_access_txt = "12;47"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/space)
 "vHl" = (
 /turf/open/floor/plasteel/dark{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -78540,6 +78703,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/engine,
 /area/science/mixing/chamber)
 "vYV" = (
@@ -79041,6 +79205,11 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "wob" = (
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/research{
+	id_tag = "ResearchInt";
+	name = "Research Division";
+	req_one_access_txt = "47"
+	},
 /turf/open/floor/engine,
 /area/science/research)
 "wod" = (
@@ -79861,6 +80030,11 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/fore)
+"wQi" = (
+/obj/machinery/atmospherics/components/unary/thermomachine/freezer,
+/obj/structure/cable,
+/turf/open/floor/plasteel,
+/area/science/mixing)
 "wQK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
@@ -80289,6 +80463,9 @@
 "xdp" = (
 /obj/machinery/firealarm{
 	pixel_y = 25
+	},
+/obj/structure/chair/office/light{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/server)
@@ -80817,6 +80994,11 @@
 /area/science/research)
 "xse" = (
 /obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "roboticsprivacy";
+	name = "Robotics Shutters"
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -80891,6 +81073,10 @@
 	name = "Research and Development Desk";
 	req_one_access_txt = "7"
 	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "rdrnd";
+	name = "Research and Development Shutters"
+	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "xtE" = (
@@ -80899,6 +81085,7 @@
 	dir = 1;
 	pixel_y = -25
 	},
+/obj/item/radio/off,
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "xub" = (
@@ -81540,6 +81727,15 @@
 "xFc" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "roboticsprivacy";
+	name = "Robotics Shutters"
+	},
+/obj/machinery/door/window/eastleft,
+/obj/machinery/door/window/westleft{
+	name = "Robotics Desk";
+	req_access_txt = "29"
+	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "xFQ" = (
@@ -82260,6 +82456,13 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/chemistry)
+"ydw" = (
+/obj/structure/tank_holder/extinguisher/advanced,
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
 "ydD" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 1
@@ -95337,7 +95540,7 @@ cVc
 cVc
 cVc
 cVc
-akw
+qOb
 cVc
 akw
 akw
@@ -95856,20 +96059,7 @@ cVc
 akw
 akw
 akw
-akw
-akw
-akw
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
+qOb
 akw
 akw
 cVc
@@ -95877,18 +96067,31 @@ cVc
 cVc
 cVc
 cVc
+qOb
 cVc
 cVc
 cVc
 cVc
-akw
-akw
-akw
-akw
-akw
+cVc
 akw
 akw
 cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+akw
+akw
+akw
+akw
+akw
+akw
+akw
+qOb
 akw
 akw
 akw
@@ -96394,9 +96597,7 @@ akw
 akw
 akw
 akw
-cVc
-akw
-akw
+qOb
 akw
 akw
 akw
@@ -96409,7 +96610,9 @@ akw
 akw
 akw
 cVc
-ahH
+aad
+aad
+aad
 ahH
 ahH
 ahH
@@ -96623,7 +96826,7 @@ eUl
 akw
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -96663,10 +96866,10 @@ akw
 akw
 akw
 akw
-akw
-akw
 cVc
-ahH
+aad
+dmo
+dmo
 ahH
 ahH
 ahH
@@ -96903,7 +97106,7 @@ tKt
 tKt
 tKt
 tKt
-akw
+vGV
 tKt
 cVc
 cVc
@@ -96920,10 +97123,10 @@ cVc
 cVc
 akw
 akw
-akw
-akw
 cVc
-ahH
+aac
+aac
+dmo
 ahH
 ahH
 ahH
@@ -97152,7 +97355,7 @@ qZR
 qZO
 sjH
 lCd
-xse
+ori
 xiR
 jNT
 oxC
@@ -97177,10 +97380,10 @@ hmu
 cVc
 akw
 akw
-akw
-akw
 cVc
-ahH
+aad
+dmo
+dmo
 ahH
 dmo
 dmo
@@ -97409,13 +97612,13 @@ kmJ
 sjH
 sjH
 rif
-xse
+ori
 jrW
-sjH
+uTJ
 pmU
 sjH
 knx
-xse
+ori
 llz
 tpx
 tpx
@@ -97434,10 +97637,10 @@ nQR
 cVc
 akw
 akw
-akw
-akw
 cVc
-ahH
+aac
+aac
+dmo
 ahH
 aad
 aac
@@ -97666,13 +97869,13 @@ kmJ
 sjH
 sjH
 sBu
-xse
+ori
 lIw
 sjH
 ahy
 otV
 sjH
-xse
+ori
 wYS
 tpx
 tpx
@@ -97691,10 +97894,10 @@ ueb
 cVc
 akw
 akw
-akw
-akw
 cVc
-ahH
+aac
+aac
+dmo
 ahH
 aad
 aad
@@ -97923,13 +98126,13 @@ xYu
 sjH
 sjH
 nan
-xse
+ori
 fLc
 sjH
 twO
 nDl
 oyX
-xse
+ori
 qbR
 tpx
 tpx
@@ -97948,10 +98151,10 @@ oit
 cVc
 akw
 akw
-akw
-akw
 cVc
-ahH
+aac
+dmo
+aad
 ahH
 aad
 dmo
@@ -98205,10 +98408,10 @@ dXp
 cVc
 akw
 akw
-akw
-akw
 cVc
+aac
 aad
+dmo
 ahH
 aad
 dmo
@@ -98462,10 +98665,10 @@ oit
 cVc
 akw
 akw
-akw
-akw
 cVc
+aac
 aad
+dmo
 ahH
 ahH
 ahH
@@ -98719,9 +98922,9 @@ xla
 cVc
 akw
 akw
-akw
-akw
 cVc
+aac
+aad
 aad
 aad
 dmo
@@ -98976,9 +99179,9 @@ euh
 cVc
 akw
 akw
-akw
-akw
 cVc
+aad
+aad
 aad
 aad
 dmo
@@ -99185,7 +99388,7 @@ aab
 aab
 aab
 aab
-akw
+qOb
 akw
 akw
 dZj
@@ -99233,8 +99436,8 @@ xNw
 cVc
 akw
 akw
-akw
-akw
+cVc
+cVc
 cVc
 aad
 ahH
@@ -99718,7 +99921,7 @@ mLF
 gnD
 unS
 sjH
-sjH
+kmJ
 sjH
 vSf
 pgu
@@ -99974,8 +100177,8 @@ aIx
 mLF
 gnD
 oyX
-sjH
-sjH
+kmJ
+kmJ
 pyF
 kaN
 pBd
@@ -100217,10 +100420,10 @@ cVc
 akw
 akw
 akw
+cVc
+cVc
 akw
-akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -100231,7 +100434,7 @@ wKm
 mLF
 gnD
 wiy
-sjH
+kmJ
 xBt
 fly
 kaN
@@ -100474,10 +100677,10 @@ cVc
 akw
 akw
 akw
+qOb
 akw
 akw
-akw
-akw
+cVc
 akw
 akw
 akw
@@ -100510,7 +100713,7 @@ eME
 paY
 eME
 eME
-fxW
+kwx
 oit
 gKs
 frc
@@ -100518,7 +100721,7 @@ hmu
 cVc
 akw
 akw
-akw
+qOb
 akw
 akw
 akw
@@ -100734,7 +100937,7 @@ cVc
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -100767,8 +100970,8 @@ ngn
 iiR
 eME
 eME
-fxW
-nCV
+kwx
+iji
 gKs
 lHh
 hmu
@@ -100991,7 +101194,7 @@ dmo
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -101037,7 +101240,7 @@ xoF
 cVc
 akw
 akw
-akw
+qOb
 akw
 akw
 cVc
@@ -101248,7 +101451,7 @@ aac
 cVc
 akw
 akw
-akw
+qOb
 akw
 akw
 akw
@@ -101271,7 +101474,7 @@ phs
 khc
 ilO
 nSu
-phs
+jAt
 mcM
 lyh
 leC
@@ -101282,8 +101485,8 @@ ybc
 eME
 ubQ
 oma
-ueb
-gve
+wQi
+vMY
 nCm
 oaD
 oaD
@@ -101505,7 +101708,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -101538,8 +101741,8 @@ eME
 eME
 eME
 eME
-fxW
-oit
+kwx
+eAU
 gve
 frc
 jrN
@@ -101762,7 +101965,7 @@ dmo
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -101795,7 +101998,7 @@ eME
 vyP
 eME
 eME
-fxW
+kwx
 dXp
 jou
 pCW
@@ -102019,7 +102222,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -102276,7 +102479,7 @@ aad
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -102312,7 +102515,7 @@ oma
 oma
 jxN
 nCm
-csx
+rld
 aaq
 flj
 nsa
@@ -102533,7 +102736,7 @@ aad
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -102582,7 +102785,7 @@ gve
 ppt
 akw
 akw
-akw
+qOb
 akw
 akw
 cVc
@@ -102814,7 +103017,7 @@ fwY
 xWO
 izq
 lVx
-leC
+mqB
 bkQ
 tpx
 jAt
@@ -103069,7 +103272,7 @@ voF
 qPG
 fhm
 mPo
-vBn
+uFy
 wcY
 kqW
 mlB
@@ -103841,7 +104044,7 @@ rxz
 xWQ
 tTe
 fGN
-uTJ
+ydw
 tpx
 mlB
 tpx
@@ -104352,7 +104555,7 @@ fiU
 qkL
 fGN
 fGN
-ori
+fGN
 nUI
 fGN
 kqW
@@ -104363,7 +104566,7 @@ phs
 rUc
 viy
 gQO
-rUc
+iVd
 wNg
 wjk
 iDR
@@ -104589,7 +104792,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -104611,7 +104814,7 @@ dGz
 wrV
 uDK
 bsw
-qOb
+iBY
 tpx
 tpx
 mlB
@@ -104846,7 +105049,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -104877,8 +105080,8 @@ leC
 xeD
 tGv
 teQ
-nYW
-fdG
+tqt
+wob
 tMW
 tMW
 wjk
@@ -105103,7 +105306,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -105124,8 +105327,8 @@ tDD
 gJn
 wrV
 uDK
-nuJ
-qOb
+vBn
+iBY
 tpx
 tpx
 qdU
@@ -105360,7 +105563,7 @@ dmo
 cVc
 akw
 akw
-akw
+qOb
 akw
 akw
 akw
@@ -105393,8 +105596,8 @@ klA
 tpx
 nSu
 oIu
-tMW
-tMW
+iGy
+wjk
 wjk
 jdZ
 ppt
@@ -105617,7 +105820,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -105874,7 +106077,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -106131,7 +106334,7 @@ aad
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -106402,7 +106605,7 @@ uGf
 uGf
 rQV
 uGf
-kWy
+uGf
 aAK
 uGf
 uGf
@@ -107457,7 +107660,7 @@ sDj
 dBr
 njA
 isG
-vtW
+lDk
 uTe
 gFg
 gFg
@@ -108187,7 +108390,7 @@ aad
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -108227,15 +108430,15 @@ pHR
 pHR
 pHR
 xSJ
-iCZ
-vtW
+lrQ
+lDk
 uTe
 gFg
 gFg
 sDj
 cVc
 cVc
-akw
+qOb
 cVc
 akw
 akw
@@ -108444,7 +108647,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -108701,7 +108904,7 @@ aac
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -108958,16 +109161,16 @@ aac
 cVc
 akw
 akw
-akw
-akw
-akw
-akw
-akw
+cVc
+cVc
+qOb
+cVc
+cVc
 cVc
 mLF
 kIk
 wFt
-ktn
+kWy
 nvh
 nvh
 nvh
@@ -109220,7 +109423,7 @@ nvh
 nvh
 nvh
 nvh
-ktn
+kWy
 wFt
 aIx
 mLF
@@ -109243,13 +109446,13 @@ mPq
 dkD
 faC
 sDj
-eMG
+mJh
 pWV
 wzn
-eMG
+mJh
 oME
 wzn
-eMG
+mJh
 oME
 wzn
 pHR
@@ -109521,7 +109724,7 @@ sDj
 akw
 akw
 cVc
-akw
+qOb
 cVc
 cFp
 cFp
@@ -109729,11 +109932,11 @@ aac
 cVc
 akw
 akw
-akw
-akw
-akw
-akw
-akw
+cVc
+cVc
+cVc
+cVc
+qOb
 cVc
 sxj
 wKm
@@ -109986,7 +110189,7 @@ dmo
 cVc
 akw
 akw
-akw
+cVc
 akw
 akw
 akw
@@ -110265,7 +110468,7 @@ akw
 akw
 cVc
 cVc
-akw
+qOb
 cVc
 cVc
 cVc
@@ -110800,7 +111003,7 @@ akw
 akw
 akw
 cVc
-akw
+qOb
 cVc
 cVc
 cVc
@@ -111034,10 +111237,10 @@ cVc
 cVc
 cVc
 cVc
-akw
+qOb
 cVc
-akw
-akw
+qOb
+cVc
 akw
 akw
 akw
@@ -111294,23 +111497,23 @@ akw
 akw
 cVc
 akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
+cVc
 akw
 akw
 cVc
@@ -111551,23 +111754,23 @@ akw
 akw
 cVc
 akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
-akw
+cVc
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cVc
 akw
 akw
 cVc
@@ -111809,21 +112012,21 @@ cVc
 cVc
 cVc
 cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
-cVc
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
+cFp
 cVc
 cVc
 cVc
