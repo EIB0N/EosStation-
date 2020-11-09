@@ -2701,8 +2701,8 @@
 /turf/open/floor/engine,
 /area/space)
 "ara" = (
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
+/obj/structure/window/reinforced,
+/obj/machinery/computer/operating{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -47684,7 +47684,7 @@
 	},
 /area/space)
 "dSr" = (
-/obj/machinery/vending/wardrobe/robo_wardrobe,
+/obj/machinery/mecha_part_fabricator,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "dSK" = (
@@ -49910,7 +49910,7 @@
 	dir = 1;
 	pixel_y = -25
 	},
-/obj/structure/reagent_dispensers/watertank,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "flS" = (
@@ -50745,10 +50745,6 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/starboard/aft)
-"fLc" = (
-/obj/structure/closet/firecloset,
-/turf/open/floor/plasteel,
-/area/science/robotics/lab)
 "fLn" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/stripes/line{
@@ -51980,13 +51976,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/security/warden)
-"guW" = (
-/obj/machinery/mecha_part_fabricator,
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/open/floor/plasteel,
-/area/science/robotics/lab)
 "gvd" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -52691,7 +52680,7 @@
 /turf/open/floor/plating,
 /area/crew_quarters/toilet/auxiliary)
 "gOI" = (
-/obj/machinery/recharge_station,
+/obj/structure/closet/firecloset,
 /turf/open/floor/plasteel,
 /area/science/robotics/mechbay)
 "gON" = (
@@ -53190,6 +53179,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/sleeper)
+"heH" = (
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/science/robotics/lab)
 "heL" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/fire,
@@ -53580,13 +53579,10 @@
 	},
 /area/ai_monitored/turret_protected/aisat_interior)
 "hpi" = (
-/obj/machinery/mech_bay_recharge_port{
-	dir = 8
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 1
 	},
-/obj/machinery/newscaster{
-	pixel_y = -30
-	},
-/turf/open/floor/plasteel,
+/turf/open/floor/circuit/green,
 /area/science/robotics/mechbay)
 "hpw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -53714,9 +53710,6 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/crew_quarters/abandoned_gambling_den)
-"htE" = (
-/turf/open/floor/circuit,
-/area/science/robotics/mechbay)
 "htF" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -57574,17 +57567,11 @@
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "jrW" = (
-/obj/structure/table,
-/obj/item/mmi,
-/obj/item/mmi,
-/obj/item/mmi,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/structure/window/reinforced{
 	dir = 1;
 	pixel_y = 1
 	},
+/obj/structure/table/optable,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "jrX" = (
@@ -58276,7 +58263,6 @@
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "jNT" = (
-/obj/structure/table/optable,
 /obj/machinery/airalarm{
 	dir = 4;
 	icon_state = "alarm0";
@@ -58769,7 +58755,7 @@
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
 "kcI" = (
-/obj/machinery/computer/mech_bay_power_console{
+/obj/machinery/mech_bay_recharge_port{
 	dir = 1
 	},
 /turf/open/floor/circuit,
@@ -59157,13 +59143,10 @@
 	},
 /area/medical/medbay/central)
 "knx" = (
-/obj/structure/table,
-/obj/item/clothing/gloves/color/latex,
-/obj/item/surgical_drapes,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/structure/window/reinforced,
+/obj/structure/table/optable{
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "kof" = (
@@ -61632,7 +61615,25 @@
 /turf/open/floor/circuit/green/telecomms/mainframe,
 /area/tcommsat/server)
 "lCd" = (
-/obj/machinery/mecha_part_fabricator,
+/obj/structure/rack,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = -1;
+	pixel_y = 4
+	},
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = 2;
+	pixel_y = -1
+	},
+/obj/item/clothing/head/welding{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/item/clothing/glasses/welding,
+/obj/item/multitool{
+	pixel_x = 3
+	},
+/obj/effect/turf_decal/delivery,
+/obj/item/clothing/glasses/welding,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "lCP" = (
@@ -61848,35 +61849,11 @@
 	},
 /area/quartermaster/storage)
 "lIw" = (
-/obj/structure/rack,
-/obj/item/storage/firstaid/regular{
-	empty = 1;
-	name = "First-Aid (empty)"
+/obj/structure/window/reinforced{
+	dir = 1;
+	pixel_y = 1
 	},
-/obj/item/storage/firstaid/regular{
-	empty = 1;
-	name = "First-Aid (empty)"
-	},
-/obj/item/storage/firstaid/regular{
-	empty = 1;
-	name = "First-Aid (empty)"
-	},
-/obj/item/healthanalyzer{
-	pixel_x = 4;
-	pixel_y = -4
-	},
-/obj/item/healthanalyzer{
-	pixel_x = 4;
-	pixel_y = -4
-	},
-/obj/item/healthanalyzer{
-	pixel_x = 4;
-	pixel_y = -4
-	},
-/obj/item/radio/headset/headset_sci{
-	pixel_x = -3
-	},
-/obj/effect/turf_decal/delivery,
+/obj/machinery/computer/operating,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "lIX" = (
@@ -62747,7 +62724,10 @@
 	},
 /area/medical/surgery)
 "mfi" = (
-/obj/structure/rack,
+/obj/machinery/aug_manipulator,
+/obj/machinery/light_switch{
+	pixel_y = 24
+	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "mfq" = (
@@ -62885,8 +62865,10 @@
 	dir = 4;
 	pixel_x = -25
 	},
-/obj/structure/tank_holder/extinguisher/advanced,
-/turf/open/floor/plasteel,
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 4
+	},
+/turf/open/floor/circuit/red,
 /area/science/robotics/mechbay)
 "mjt" = (
 /obj/machinery/airalarm{
@@ -63504,12 +63486,6 @@
 	},
 /turf/open/floor/carpet,
 /area/quartermaster/qm)
-"mzr" = (
-/obj/machinery/computer/mechpad{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/science/robotics/mechbay)
 "mzN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 5
@@ -64541,13 +64517,21 @@
 /area/maintenance/starboard/aft)
 "nan" = (
 /obj/structure/table,
-/obj/item/storage/box/bodybags{
-	pixel_x = 2;
-	pixel_y = 2
+/obj/item/wrench,
+/obj/item/screwdriver{
+	pixel_y = 10
 	},
-/obj/item/borg/upgrade/rename,
+/obj/item/multitool{
+	pixel_x = 3
+	},
+/obj/item/stack/cable_coil,
 /obj/effect/turf_decal/delivery,
+/obj/item/clothing/head/welding{
+	pixel_x = -3;
+	pixel_y = 5
+	},
 /obj/item/clothing/glasses/welding,
+/obj/machinery/light,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "naG" = (
@@ -65742,7 +65726,7 @@
 	dir = 5
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 4
+	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
@@ -67522,9 +67506,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 5
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "oud" = (
@@ -67698,11 +67679,8 @@
 	},
 /area/ai_monitored/turret_protected/ai_upload)
 "oxC" = (
-/obj/machinery/computer/operating{
-	dir = 4
-	},
-/obj/machinery/light_switch{
-	pixel_x = -30
+/obj/machinery/smartfridge/organ{
+	pixel_x = -32
 	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
@@ -68041,10 +68019,17 @@
 	},
 /area/hallway/primary/central)
 "oGz" = (
-/obj/machinery/firealarm{
-	dir = 4;
+/obj/machinery/power/apc{
+	areastring = "/area/science/robotics/lab";
+	dir = 8;
+	name = "Robotics Lab APC";
 	pixel_x = -25
 	},
+/obj/structure/cable,
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/mecha_part_fabricator,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "oGA" = (
@@ -69154,7 +69139,6 @@
 /turf/open/floor/plasteel/white,
 /area/hallway/primary/central)
 "pjc" = (
-/obj/structure/table,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -69355,8 +69339,29 @@
 /turf/open/floor/carpet/royalblack,
 /area/maintenance/starboard/aft)
 "poJ" = (
-/turf/open/floor/circuit/red,
-/area/science/robotics/mechbay)
+/obj/structure/table,
+/obj/item/wrench,
+/obj/item/screwdriver{
+	pixel_y = 10
+	},
+/obj/item/multitool{
+	pixel_x = 3
+	},
+/obj/item/stack/cable_coil,
+/obj/effect/turf_decal/delivery,
+/obj/item/clothing/head/welding{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/machinery/airalarm{
+	pixel_y = 23
+	},
+/obj/item/clothing/glasses/welding,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/science/robotics/lab)
 "poK" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
@@ -69717,13 +69722,13 @@
 /turf/open/floor/plasteel/grimy,
 /area/tcommsat/computer)
 "pyF" = (
-/obj/structure/reagent_dispensers/fueltank,
+/obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "pyJ" = (
-/obj/machinery/mechpad,
+/obj/machinery/aug_manipulator,
 /turf/open/floor/plasteel,
-/area/science/robotics/mechbay)
+/area/science/robotics/lab)
 "pyX" = (
 /obj/structure/disposalpipe/sorting{
 	dir = 2;
@@ -70173,9 +70178,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/quartermaster/warehouse)
-"pKV" = (
-/turf/open/floor/circuit/green,
-/area/science/robotics/mechbay)
 "pLg" = (
 /obj/effect/loot_site_spawner,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -70218,6 +70220,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/vending/wardrobe/robo_wardrobe,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "pLn" = (
@@ -70364,9 +70367,9 @@
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/aft)
 "pQM" = (
-/obj/machinery/aug_manipulator,
-/obj/machinery/light_switch{
-	pixel_y = 24
+/obj/machinery/mecha_part_fabricator,
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
@@ -72485,25 +72488,18 @@
 	},
 /area/maintenance/starboard/aft)
 "qZO" = (
-/obj/structure/rack,
-/obj/item/storage/toolbox/electrical{
-	pixel_x = -1;
-	pixel_y = 4
-	},
-/obj/item/storage/toolbox/mechanical{
+/obj/structure/table,
+/obj/item/storage/box/bodybags{
 	pixel_x = 2;
-	pixel_y = -1
+	pixel_y = 2
 	},
-/obj/item/clothing/head/welding{
-	pixel_x = -3;
-	pixel_y = 5
-	},
-/obj/item/clothing/glasses/welding,
-/obj/item/multitool{
-	pixel_x = 3
-	},
+/obj/item/borg/upgrade/rename,
 /obj/effect/turf_decal/delivery,
 /obj/item/clothing/glasses/welding,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -25
+	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "qZQ" = (
@@ -72518,20 +72514,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/medbay/central)
-"qZR" = (
-/obj/machinery/power/apc{
-	areastring = "/area/science/robotics/lab";
-	dir = 8;
-	name = "Robotics Lab APC";
-	pixel_x = -25
-	},
-/obj/structure/cable,
-/obj/structure/tank_holder/extinguisher/advanced,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/science/robotics/lab)
 "rah" = (
 /obj/structure/closet/emcloset,
 /turf/open/floor/plating{
@@ -72593,7 +72575,10 @@
 	pixel_x = 27;
 	pixel_y = 5
 	},
-/turf/open/floor/plasteel,
+/obj/machinery/computer/mech_bay_power_console{
+	dir = 8
+	},
+/turf/open/floor/circuit,
 /area/science/robotics/mechbay)
 "rbG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -72605,8 +72590,7 @@
 	},
 /area/maintenance/starboard/aft)
 "rbZ" = (
-/obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plasteel,
+/turf/open/floor/mech_bay_recharge_floor,
 /area/science/robotics/mechbay)
 "rcs" = (
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
@@ -72742,7 +72726,51 @@
 /turf/open/floor/plasteel/grimy,
 /area/tcommsat/computer)
 "rif" = (
-/obj/machinery/rnd/production/circuit_imprinter/department/science,
+/obj/structure/table,
+/obj/item/stack/sheet/glass{
+	amount = 40;
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/package_wrap,
+/obj/item/stack/package_wrap,
+/obj/effect/turf_decal/delivery,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/stack/sheet/glass{
+	amount = 40;
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/stack/sheet/glass{
+	amount = 40;
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/stack/sheet/glass{
+	amount = 40;
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/stack/sheet/glass{
+	amount = 40;
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/item/stack/sheet/glass{
+	amount = 40;
+	pixel_x = 3;
+	pixel_y = -4
+	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "riu" = (
@@ -73422,7 +73450,12 @@
 /turf/open/floor/engine,
 /area/hallway/primary/central)
 "rDP" = (
-/obj/machinery/mech_bay_recharge_port,
+/obj/machinery/mech_bay_recharge_port{
+	dir = 8
+	},
+/obj/machinery/newscaster{
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel,
 /area/science/robotics/mechbay)
 "rEm" = (
@@ -73484,8 +73517,8 @@
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai)
 "rGr" = (
-/obj/machinery/computer/mech_bay_power_console,
-/turf/open/floor/circuit/red,
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/plasteel,
 /area/science/robotics/mechbay)
 "rHo" = (
 /obj/machinery/door/window/brigdoor{
@@ -74256,6 +74289,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/rack,
+/obj/item/clothing/glasses/welding,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/storage/belt/utility,
+/obj/item/book/manual/wiki/robotics_cyborgs{
+	pixel_x = 2;
+	pixel_y = 5
+	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "seT" = (
@@ -74330,10 +74371,10 @@
 	},
 /area/maintenance/starboard/aft)
 "sij" = (
-/obj/machinery/computer/mech_bay_power_console{
+/obj/machinery/mech_bay_recharge_port{
 	dir = 1
 	},
-/turf/open/floor/circuit/green,
+/turf/open/floor/circuit/red,
 /area/science/robotics/mechbay)
 "siF" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
@@ -74929,7 +74970,7 @@
 	},
 /area/medical/virology)
 "sBu" = (
-/obj/machinery/aug_manipulator,
+/obj/machinery/rnd/production/circuit_imprinter/department/science,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "sBx" = (
@@ -75405,7 +75446,8 @@
 	},
 /area/medical/morgue)
 "sJX" = (
-/turf/open/floor/mech_bay_recharge_floor,
+/obj/machinery/recharge_station,
+/turf/open/floor/plasteel,
 /area/science/robotics/mechbay)
 "sKe" = (
 /obj/machinery/mass_driver/toxins{
@@ -76020,11 +76062,12 @@
 	},
 /area/medical/medbay/central)
 "tik" = (
-/obj/machinery/mech_bay_recharge_port{
+/obj/structure/closet/firecloset,
+/obj/structure/window/reinforced{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/science/robotics/mechbay)
+/area/science/robotics/lab)
 "tiA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 10
@@ -77271,50 +77314,13 @@
 	},
 /area/hallway/primary/central)
 "tRG" = (
-/obj/structure/table,
-/obj/item/stack/sheet/glass{
-	amount = 40;
-	pixel_x = 3;
-	pixel_y = -4
+/obj/machinery/door/airlock/research{
+	name = "Robotics Lab";
+	req_access_txt = "29"
 	},
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/package_wrap,
-/obj/item/stack/package_wrap,
-/obj/effect/turf_decal/delivery,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/metal/fifty,
-/obj/item/stack/sheet/glass{
-	amount = 40;
-	pixel_x = 3;
-	pixel_y = -4
-	},
-/obj/item/stack/sheet/glass{
-	amount = 40;
-	pixel_x = 3;
-	pixel_y = -4
-	},
-/obj/item/stack/sheet/glass{
-	amount = 40;
-	pixel_x = 3;
-	pixel_y = -4
-	},
-/obj/item/stack/sheet/glass{
-	amount = 40;
-	pixel_x = 3;
-	pixel_y = -4
-	},
-/obj/item/stack/sheet/glass{
-	amount = 40;
-	pixel_x = 3;
-	pixel_y = -4
-	},
+/obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
-/area/science/robotics/lab)
+/area/science/robotics/mechbay)
 "tRS" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/cable,
@@ -78297,27 +78303,7 @@
 	},
 /area/engine/atmos)
 "unS" = (
-/obj/structure/table,
-/obj/item/wrench,
-/obj/item/screwdriver{
-	pixel_y = 10
-	},
-/obj/item/multitool{
-	pixel_x = 3
-	},
-/obj/item/stack/cable_coil,
-/obj/effect/turf_decal/delivery,
-/obj/item/clothing/head/welding{
-	pixel_x = -3;
-	pixel_y = 5
-	},
-/obj/machinery/airalarm{
-	pixel_y = 23
-	},
-/obj/item/clothing/glasses/welding,
-/obj/machinery/light{
-	dir = 1
-	},
+/obj/structure/tank_holder/extinguisher/advanced,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "uor" = (
@@ -78533,18 +78519,10 @@
 	},
 /area/maintenance/starboard/aft)
 "uur" = (
-/obj/structure/rack,
-/obj/item/book/manual/wiki/robotics_cyborgs{
-	pixel_x = 2;
-	pixel_y = 5
-	},
-/obj/item/storage/belt/utility,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/effect/turf_decal/delivery,
+/obj/machinery/rnd/production/circuit_imprinter/department/science,
 /obj/machinery/airalarm{
 	pixel_y = 23
 	},
-/obj/item/clothing/glasses/welding,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "uuH" = (
@@ -81447,7 +81425,7 @@
 /area/medical/virology)
 "vTx" = (
 /obj/structure/chair/office/light{
-	dir = 8
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
@@ -81549,11 +81527,16 @@
 	},
 /area/medical/medbay/central)
 "vWp" = (
-/obj/structure/table,
+/obj/structure/table/glass,
+/obj/item/storage/backpack/duffelbag/med/surgery,
+/obj/item/circular_saw,
 /obj/item/retractor,
-/obj/item/hemostat,
-/obj/item/cautery,
-/obj/structure/table,
+/obj/item/surgicaldrill{
+	pixel_y = 5
+	},
+/obj/item/mmi,
+/obj/item/mmi,
+/obj/item/mmi,
 /obj/structure/window/reinforced,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
@@ -83822,17 +83805,19 @@
 	name = "Fore Asteroid Maintenance"
 	})
 "xiR" = (
-/obj/structure/table,
+/obj/structure/table/glass,
+/obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/item/circular_saw,
-/obj/item/scalpel{
-	pixel_y = 12
+/obj/item/retractor,
+/obj/item/surgicaldrill{
+	pixel_y = 5
 	},
+/obj/item/mmi,
+/obj/item/mmi,
+/obj/item/mmi,
 /obj/structure/window/reinforced{
 	dir = 1;
 	pixel_y = 1
-	},
-/obj/item/razor{
-	pixel_y = 5
 	},
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
@@ -85994,9 +85979,7 @@
 	},
 /area/maintenance/starboard/aft)
 "ykX" = (
-/obj/machinery/smartfridge/organ{
-	pixel_x = -32
-	},
+/obj/structure/chair/office/light,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "yln" = (
@@ -100654,17 +100637,17 @@ dKv
 oaN
 oaN
 gnD
-dSr
+sjH
 oGz
-qZR
+sBu
 qZO
 sjH
-lCd
+pyJ
 ori
 xiR
 jNT
 oxC
-ykX
+sjH
 vWp
 gnD
 weo
@@ -100911,17 +100894,17 @@ mLF
 mLF
 mLF
 gnD
-fLc
-sjH
+mfi
+kmJ
 kmJ
 sjH
 sjH
-rif
+dSr
 ori
 jrW
 vTx
 pmU
-sjH
+ykX
 knx
 ori
 llz
@@ -101432,11 +101415,11 @@ sjH
 sjH
 nan
 ori
-fLc
+tik
 sjH
 twO
 nDl
-oyX
+heH
 ori
 qbR
 jti
@@ -101680,7 +101663,7 @@ gJH
 gJH
 mLF
 rBo
-xCT
+mLF
 gnD
 rif
 sjH
@@ -101939,7 +101922,7 @@ jph
 rBo
 mLF
 gnD
-guW
+sBu
 sjH
 kmJ
 aDH
@@ -101947,7 +101930,7 @@ kaN
 uMh
 kaN
 kaN
-uMh
+tRG
 kaN
 kaN
 qQC
@@ -102197,17 +102180,17 @@ rBo
 mLF
 gnD
 mfi
-tRG
+sjH
 kmJ
 pLj
 kaN
 gOI
-gOI
+rGr
 pjc
-pyJ
-mzr
+pgu
+sJX
 mje
-pKV
+rbZ
 sij
 qQC
 jti
@@ -102453,7 +102436,7 @@ ouu
 rBo
 mLF
 gnD
-rif
+dSr
 sjH
 rof
 sew
@@ -102464,7 +102447,7 @@ pgu
 pgu
 pgu
 pgu
-pKV
+pgu
 sJX
 kaN
 dom
@@ -102710,7 +102693,7 @@ sxj
 rBo
 mLF
 gnD
-pQM
+poJ
 sjH
 kmJ
 iyK
@@ -102718,10 +102701,10 @@ dsj
 xDl
 mSL
 qvx
-rGr
-poJ
 pgu
-pKV
+pgu
+pgu
+pgu
 hpi
 kaN
 jmy
@@ -102975,8 +102958,8 @@ xIv
 gUd
 rNx
 qNb
-sJX
-poJ
+pgu
+pgu
 pgu
 pgu
 rbZ
@@ -103232,10 +103215,10 @@ vSf
 ouF
 rNx
 iBB
-tik
-poJ
 pgu
-htE
+pgu
+pgu
+pgu
 rDP
 kaN
 pwr
@@ -103492,7 +103475,7 @@ mWH
 jOV
 pgu
 pgu
-htE
+pgu
 sJX
 kaN
 dAs
@@ -103749,7 +103732,7 @@ ojT
 hKU
 vqV
 rbC
-htE
+rbZ
 kcI
 kaN
 yfK
