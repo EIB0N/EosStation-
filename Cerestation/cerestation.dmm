@@ -1915,7 +1915,10 @@
 /obj/effect/turf_decal/siding/red{
 	dir = 1
 	},
-/obj/machinery/door/poddoor/shutters/window/preopen,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "securityfront";
+	name = "Security Front Shutters"
+	},
 /turf/open/floor/carpet/red,
 /area/security/brig)
 "asi" = (
@@ -4119,17 +4122,15 @@
 	req_access_txt = "63";
 	specialfunctions = 4
 	},
-/obj/machinery/button/door{
-	desc = "A door remote control switch for the interior brig doors.";
-	dir = 0;
-	id = "Warden front desk";
-	name = "Warden front desk button";
-	normaldoorcontrol = 1;
-	pixel_x = 6;
-	pixel_y = 7;
-	req_access_txt = "63"
-	},
 /obj/item/key/security,
+/obj/item/restraints/handcuffs,
+/obj/effect/turf_decal/siding/red{
+	dir = 4
+	},
+/obj/item/book/manual/wiki/security_space_law{
+	pixel_x = -3;
+	pixel_y = 5
+	},
 /obj/item/paper_bin{
 	pixel_x = -11;
 	pixel_y = 7
@@ -4137,14 +4138,6 @@
 /obj/item/pen{
 	pixel_x = -11;
 	pixel_y = 7
-	},
-/obj/item/book/manual/wiki/security_space_law{
-	pixel_x = -3;
-	pixel_y = 5
-	},
-/obj/item/restraints/handcuffs,
-/obj/effect/turf_decal/siding/red{
-	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
@@ -36438,9 +36431,9 @@
 /obj/effect/turf_decal/siding/red{
 	dir = 1
 	},
-/obj/machinery/door/poddoor/shutters/window/preopen{
-	id = "Warden front desk";
-	name = "Warden windowed shutters"
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "wardenfront";
+	name = "Warden Office Shutters"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -46937,6 +46930,13 @@
 /obj/item/book/manual/wiki/security_space_law,
 /obj/item/restraints/handcuffs,
 /obj/effect/turf_decal/siding/red,
+/obj/machinery/button/door{
+	id = "securityfront";
+	name = "Security Front Shutters";
+	pixel_x = 35;
+	pixel_y = -4;
+	req_access_txt = "69"
+	},
 /turf/open/floor/carpet/red,
 /area/security/brig)
 "jbm" = (
@@ -62899,13 +62899,16 @@
 	},
 /area/maintenance/disposal)
 "osK" = (
-/obj/machinery/door/poddoor/preopen{
-	id = "hopexternal"
+/obj/structure/cable,
+/obj/machinery/button/door{
+	id = "wardenfront";
+	name = "Warden Office Shutters";
+	pixel_x = 40;
+	pixel_y = 7;
+	req_access_txt = "69"
 	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/crew_quarters/heads)
+/turf/open/floor/plasteel/dark,
+/area/security/warden)
 "osZ" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/reagent_containers/glass/bucket,
@@ -80114,15 +80117,6 @@
 	},
 /obj/machinery/button/door{
 	desc = "A door remote control switch for the exterior brig doors.";
-	id = sec_front_door;
-	name = "Front desk shutter";
-	normaldoorcontrol = 1;
-	pixel_x = -1;
-	pixel_y = -35;
-	req_access_txt = "63"
-	},
-/obj/machinery/button/door{
-	desc = "A door remote control switch for the exterior brig doors.";
 	id = "outerbrig";
 	name = "Brig Exterior Door Control";
 	normaldoorcontrol = 1;
@@ -80769,6 +80763,14 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/central)
+"uWk" = (
+/obj/machinery/door/poddoor/preopen{
+	id = "hopexternal"
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/crew_quarters/heads)
 "uWt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
@@ -101861,7 +101863,7 @@ fyF
 uUZ
 fyF
 fyF
-fyF
+osK
 fWN
 kko
 qjS
@@ -104413,7 +104415,7 @@ dMR
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -104670,7 +104672,7 @@ dMR
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -104927,7 +104929,7 @@ dMR
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -105184,7 +105186,7 @@ dMR
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -105441,7 +105443,7 @@ dMR
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -105698,7 +105700,7 @@ dMR
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -105955,7 +105957,7 @@ aaa
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -106212,7 +106214,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -106469,7 +106471,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -106726,12 +106728,12 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
-cFp
-cFp
-cFp
+tKt
+tKt
+tKt
+tKt
+tKt
+tKt
 akw
 akw
 akw
@@ -106988,7 +106990,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -107245,7 +107247,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -107502,7 +107504,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -107759,7 +107761,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -108016,7 +108018,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -108273,7 +108275,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -108530,7 +108532,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -108787,7 +108789,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -109044,7 +109046,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -109301,7 +109303,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -109558,7 +109560,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -109815,7 +109817,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -110072,7 +110074,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -110329,7 +110331,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -110586,7 +110588,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -110843,7 +110845,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -111100,7 +111102,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -111357,8 +111359,8 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
+tKt
+tKt
 akw
 akw
 akw
@@ -111615,7 +111617,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -111872,7 +111874,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -112129,8 +112131,8 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
+tKt
+tKt
 akw
 akw
 akw
@@ -112387,7 +112389,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -112644,9 +112646,9 @@ cFp
 cFp
 cFp
 cFp
-cFp
-cFp
-cFp
+tKt
+tKt
+tKt
 akw
 akw
 akw
@@ -112903,7 +112905,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -113160,7 +113162,7 @@ cFp
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -113417,7 +113419,7 @@ aaa
 cFp
 cFp
 cFp
-cFp
+tKt
 akw
 akw
 akw
@@ -113674,7 +113676,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+tKt
 akw
 akw
 akw
@@ -113931,7 +113933,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+tKt
 akw
 akw
 akw
@@ -114188,7 +114190,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+tKt
 akw
 akw
 akw
@@ -114445,10 +114447,10 @@ aac
 aaa
 aaa
 aaa
-aaa
-akw
-akw
-akw
+tKt
+tKt
+tKt
+tKt
 tKt
 qNn
 qNn
@@ -120652,7 +120654,7 @@ aKk
 aKZ
 aLX
 aNa
-osK
+uWk
 aPb
 aQj
 aQR
