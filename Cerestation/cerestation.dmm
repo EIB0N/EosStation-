@@ -1910,15 +1910,12 @@
 	icon_state = "right";
 	name = "Reception Window"
 	},
-/obj/machinery/door/poddoor/preopen{
-	id = "frontdesk";
-	name = "Security front desk"
-	},
 /obj/item/newspaper,
 /obj/effect/turf_decal/siding/red,
 /obj/effect/turf_decal/siding/red{
 	dir = 1
 	},
+/obj/machinery/door/poddoor/shutters/window/preopen,
 /turf/open/floor/carpet/red,
 /area/security/brig)
 "asi" = (
@@ -1944,6 +1941,9 @@
 	},
 /obj/effect/turf_decal/siding/red{
 	dir = 5
+	},
+/obj/item/radio/intercom{
+	pixel_y = 26
 	},
 /turf/open/floor/plasteel,
 /area/security/execution/transfer)
@@ -2734,7 +2734,6 @@
 /obj/item/storage/secure/safe{
 	pixel_x = -28
 	},
-/obj/effect/landmark/start/head_of_security,
 /turf/open/floor/carpet{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -26435,7 +26434,7 @@
 "cAI" = (
 /obj/machinery/power/apc{
 	areastring = "/area/security/courtroom";
-	dir = 0;
+	dir = 1;
 	name = "Security Courtroom APC";
 	pixel_y = 25
 	},
@@ -30565,14 +30564,14 @@
 /turf/open/floor/plasteel/dark,
 /area/janitor)
 "ddn" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/red{
 	dir = 4
+	},
+/obj/item/radio/intercom{
+	pixel_x = 24
 	},
 /turf/open/floor/carpet/red,
 /area/crew_quarters/heads/hos)
@@ -35507,9 +35506,6 @@
 /area/maintenance/starboard/aft)
 "eUm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/newscaster{
-	pixel_x = -30
-	},
 /obj/machinery/light{
 	dir = 8
 	},
@@ -36425,10 +36421,6 @@
 "fjT" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/poddoor/preopen{
-	id = "Warden front desk";
-	name = "Warden front desk"
-	},
 /obj/machinery/door/window/brigdoor{
 	dir = 8;
 	name = "Warden Office Desk";
@@ -36444,6 +36436,10 @@
 /obj/effect/turf_decal/siding/red,
 /obj/effect/turf_decal/siding/red{
 	dir = 1
+	},
+/obj/machinery/door/poddoor/shutters/window/preopen{
+	id = "Warden front desk";
+	name = "Warden windowed shutters"
 	},
 /turf/open/floor/plasteel,
 /area/security/warden)
@@ -39136,6 +39132,7 @@
 /obj/effect/turf_decal/siding/red{
 	dir = 1
 	},
+/obj/item/modular_computer/laptop/preset/civilian,
 /turf/open/floor/carpet/red,
 /area/crew_quarters/heads/hos)
 "gls" = (
@@ -40055,9 +40052,6 @@
 /area/maintenance/starboard/aft)
 "gCt" = (
 /obj/structure/cable,
-/obj/machinery/newscaster{
-	pixel_x = -30
-	},
 /obj/effect/turf_decal/siding/red{
 	dir = 8
 	},
@@ -48420,11 +48414,6 @@
 /area/crew_quarters/heads/hos)
 "jBE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/door/airlock/security/glass{
-	id_tag = "innerbrig";
-	name = "Brig";
-	req_access_txt = "63"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
@@ -48436,6 +48425,10 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/security/glass{
+	name = "Security Office";
+	req_one_access_txt = "1;4"
+	},
 /turf/open/floor/carpet/red,
 /area/security/brig)
 "jBQ" = (
@@ -49875,9 +49868,6 @@
 	dir = 10
 	},
 /obj/structure/cable,
-/obj/item/radio/intercom{
-	pixel_y = 26
-	},
 /obj/machinery/light{
 	dir = 1
 	},
@@ -52012,6 +52002,9 @@
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/red{
 	dir = 8
+	},
+/obj/machinery/newscaster{
+	pixel_x = -30
 	},
 /turf/open/floor/carpet/red,
 /area/security/brig)
@@ -55102,6 +55095,10 @@
 	},
 /obj/effect/turf_decal/siding/red{
 	dir = 8
+	},
+/obj/machinery/door/poddoor/preopen{
+	id = "Warden front desk";
+	name = "Warden front desk"
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -62855,9 +62852,6 @@
 /turf/open/floor/plasteel,
 /area/security/courtroom)
 "orG" = (
-/obj/item/radio/intercom{
-	pixel_x = 24
-	},
 /obj/effect/turf_decal/siding/red{
 	dir = 4
 	},
@@ -62903,17 +62897,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/disposal)
-"osK" = (
-/obj/structure/cable,
-/obj/machinery/bounty_board{
-	dir = 4;
-	pixel_x = -32
-	},
-/obj/effect/turf_decal/siding/red{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
-/area/security/brig)
 "osZ" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/reagent_containers/glass/bucket,
@@ -68926,6 +68909,10 @@
 /obj/effect/turf_decal/siding/red{
 	dir = 8
 	},
+/obj/machinery/bounty_board{
+	dir = 4;
+	pixel_x = -32
+	},
 /turf/open/floor/plasteel,
 /area/security/brig)
 "qzf" = (
@@ -69727,6 +69714,9 @@
 	},
 /obj/effect/turf_decal/siding/red{
 	dir = 8
+	},
+/obj/machinery/newscaster{
+	pixel_x = -30
 	},
 /turf/open/floor/carpet/red,
 /area/crew_quarters/heads/hos)
@@ -73362,7 +73352,7 @@
 /obj/structure/cable,
 /obj/machinery/power/apc{
 	areastring = "/area/security/execution/transfer";
-	dir = 0;
+	dir = 1;
 	name = "Security Transferring APC";
 	pixel_y = 25
 	},
@@ -80115,7 +80105,7 @@
 	},
 /obj/machinery/button/door{
 	desc = "A door remote control switch for the exterior brig doors.";
-	id = "frontdesk";
+	id = sec_front_door;
 	name = "Front desk shutter";
 	normaldoorcontrol = 1;
 	pixel_x = -1;
@@ -88291,8 +88281,8 @@
 	},
 /area/medical/virology)
 "xGQ" = (
-/turf/closed/wall/r_wall,
 /turf/open/space/basic,
+/turf/closed/wall/r_wall,
 /area/security/prison)
 "xGW" = (
 /obj/structure/cable{
@@ -88771,11 +88761,6 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/door/airlock/security/glass{
-	id_tag = "innerbrig";
-	name = "Brig";
-	req_access_txt = "63"
-	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/effect/turf_decal/siding/red{
 	dir = 4
@@ -88784,6 +88769,10 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/security/glass{
+	name = "Security Office";
+	req_one_access_txt = "1;4"
+	},
 /turf/open/floor/plasteel,
 /area/security/brig)
 "xOj" = (
@@ -102635,7 +102624,7 @@ faW
 gnG
 jpg
 cIh
-osK
+cIh
 qyX
 joi
 dlC
