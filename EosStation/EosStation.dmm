@@ -5737,11 +5737,6 @@
 	},
 /area/engine/atmos)
 "aYp" = (
-/obj/machinery/camera{
-	c_tag = "Medbay - Center";
-	name = "Medbay Janitor Camra";
-	network = list("ss13","medbay")
-	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
 	},
@@ -8289,19 +8284,17 @@
 	},
 /area/janitor)
 "biJ" = (
-/obj/machinery/camera{
-	c_tag = "Medbay Atmospherics Checkpoint";
-	dir = 5;
-	icon_state = "camera"
+/obj/structure/disposalpipe/segment,
+/obj/machinery/light{
+	dir = 4
 	},
-/obj/machinery/vending/wardrobe/jani_wardrobe,
-/obj/effect/turf_decal/siding/purple{
-	dir = 8
+/obj/machinery/airalarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
 	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/janitor)
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "biK" = (
 /obj/structure/cable,
 /obj/machinery/power/apc{
@@ -14342,25 +14335,6 @@
 /obj/item/soap/nanotrasen,
 /turf/open/floor/plasteel,
 /area/security/prison)
-"csT" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/cable,
-/obj/effect/turf_decal/siding/yellow{
-	dir = 1
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/engine/lobby)
 "cth" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
@@ -50513,17 +50487,24 @@
 /turf/open/floor/plasteel,
 /area/storage/tech)
 "mIz" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/light{
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/airalarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/yellow{
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/hallway/primary/central)
+/area/engine/lobby)
 "mIF" = (
 /turf/closed/wall/r_wall,
 /area/security/warden)
@@ -63692,16 +63673,6 @@
 /obj/effect/turf_decal/siding/purple,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/hor)
-"qkM" = (
-/obj/structure/sign/poster/random{
-	pixel_y = -32
-	},
-/obj/effect/turf_decal/siding/yellow,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plasteel,
-/area/engine/lobby)
 "qkO" = (
 /obj/structure/sign/directions/engineering{
 	dir = 8;
@@ -71619,17 +71590,6 @@
 	},
 /turf/open/floor/carpet,
 /area/quartermaster/storage)
-"sCs" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 6
-	},
-/obj/machinery/light_switch{
-	pixel_x = 23
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/maintenance/port/fore)
 "sCx" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/door/airlock/maintenance_hatch{
@@ -85038,6 +84998,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"wyT" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 6
+	},
+/obj/machinery/light_switch{
+	pixel_x = 23
+	},
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/maintenance/port/fore)
 "wyU" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
 /obj/structure/cable,
@@ -86857,6 +86828,16 @@
 /obj/structure/grille,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
+"xbc" = (
+/obj/structure/sign/poster/random{
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/siding/yellow,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/engine/lobby)
 "xbf" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -113911,7 +113892,7 @@ huW
 vdv
 gup
 iBZ
-sCs
+wyT
 vdv
 aXR
 duv
@@ -125444,9 +125425,9 @@ nEq
 qFY
 tAs
 apQ
-aLK
-bep
 tFi
+bep
+aLK
 dDd
 tFi
 fQW
@@ -125976,7 +125957,7 @@ vUg
 tFi
 buk
 tFi
-mIz
+biJ
 bLF
 hFv
 pzU
@@ -126481,7 +126462,7 @@ fVU
 gtt
 oaN
 lsb
-biJ
+bwA
 bgI
 eVf
 blr
@@ -129584,8 +129565,8 @@ hMN
 hMN
 hMN
 hMN
-csT
-qkM
+mIz
+xbc
 hMN
 aYn
 aYn
