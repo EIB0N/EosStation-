@@ -11159,14 +11159,19 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/random{
-	pixel_y = 32
-	},
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/turf_decal/siding/yellow{
 	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/northleft{
+	dir = 2;
+	name = "Engineering Delivery";
+	req_access_txt = "32"
 	},
 /turf/open/floor/plasteel,
 /area/engine/break_room)
@@ -16444,7 +16449,6 @@
 /obj/machinery/light_switch{
 	pixel_x = -22
 	},
-/obj/structure/closet/toolcloset,
 /obj/effect/turf_decal/siding/yellow{
 	dir = 8
 	},
@@ -16917,8 +16921,14 @@
 "cJR" = (
 /obj/effect/turf_decal/delivery,
 /mob/living/simple_animal/bot/mulebot{
-	home_destination = "QM #3";
-	suffix = "#3"
+	home_destination = "QM #1";
+	suffix = "#1"
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=4";
+	dir = 4;
+	freq = 1400;
+	location = "QM #1"
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/disposal)
@@ -26873,6 +26883,12 @@
 	home_destination = "QM #3";
 	suffix = "#3"
 	},
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=4";
+	dir = 4;
+	freq = 1400;
+	location = "QM #3"
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -27770,6 +27786,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
+"fJL" = (
+/obj/structure/plasticflaps/opaque,
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=1";
+	dir = 1;
+	freq = 1400;
+	location = "Engineering"
+	},
+/turf/open/floor/plasteel,
+/area/engine/lobby)
 "fJV" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -27835,12 +27861,10 @@
 	dir = 4;
 	pixel_x = -22
 	},
-/obj/structure/tank_dispenser{
-	pixel_x = -1
-	},
 /obj/effect/turf_decal/siding/yellow{
 	dir = 9
 	},
+/obj/structure/closet/toolcloset,
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "fLm" = (
@@ -35017,6 +35041,22 @@
 "hMN" = (
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
+"hMO" = (
+/obj/effect/turf_decal/delivery,
+/mob/living/simple_animal/bot/mulebot{
+	home_destination = "QM #2";
+	suffix = "#2"
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=4";
+	dir = 4;
+	freq = 1400;
+	location = "QM #2"
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/maintenance/disposal)
 "hMP" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/brute,
@@ -41742,6 +41782,12 @@
 	dir = 6
 	},
 /obj/effect/turf_decal/siding/yellow{
+	dir = 1
+	},
+/obj/structure/sign/poster/official/random{
+	pixel_y = 32
+	},
+/obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -75738,6 +75784,9 @@
 "sqW" = (
 /obj/machinery/light,
 /obj/effect/turf_decal/siding/yellow,
+/obj/structure/tank_dispenser{
+	pixel_x = -1
+	},
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "sqX" = (
@@ -85723,13 +85772,19 @@
 	},
 /area/hallway/primary/starboard)
 "vbU" = (
-/mob/living/simple_animal/bot/mulebot{
-	home_destination = "QM #3";
-	suffix = "#3"
-	},
 /obj/effect/turf_decal/delivery,
 /obj/structure/window/reinforced/spawner{
 	dir = 1
+	},
+/mob/living/simple_animal/bot/mulebot{
+	home_destination = "QM #4";
+	suffix = "#4"
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=4";
+	dir = 4;
+	freq = 1400;
+	location = "QM #4"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -126984,7 +127039,7 @@ sIe
 ePe
 qNf
 ePe
-vqr
+fJL
 bVp
 cJZ
 cdX
@@ -152338,7 +152393,7 @@ rZu
 wGC
 vbU
 fyS
-fyS
+hMO
 cJR
 euK
 rqN
