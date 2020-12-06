@@ -6172,10 +6172,6 @@
 	},
 /obj/structure/altar_of_gods,
 /obj/item/storage/book/bible,
-/obj/machinery/camera{
-	c_tag = "Service- Chapel 3 ";
-	name = "Camera"
-	},
 /turf/open/floor/plasteel/chapel,
 /area/chapel)
 "aZe" = (
@@ -15846,6 +15842,11 @@
 /obj/effect/turf_decal/siding/yellow{
 	dir = 5
 	},
+/obj/machinery/camera{
+	c_tag = "Atmospheric- Entrance 2";
+	dir = 6;
+	name = "Camera"
+	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "czt" = (
@@ -17615,19 +17616,18 @@
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/server)
 "cTz" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/machinery/camera{
-	c_tag = "Command- Bridge 2";
-	dir = 1;
-	name = "Camera"
+	c_tag = "AI Bridge 1";
+	dir = 8;
+	name = "Camera";
+	pixel_x = -6
 	},
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/engine,
+/area/hallway/primary/fore)
 "cTB" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 9
@@ -17958,18 +17958,16 @@
 /turf/open/floor/plating/beach/sand,
 /area/hallway/secondary/entry)
 "cXW" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /obj/machinery/camera{
-	c_tag = "AI Bridge 2";
-	dir = 8;
-	name = "Camera";
-	pixel_x = -6
+	c_tag = "Command- Bridge 1";
+	dir = 1;
+	name = "Camera"
 	},
-/turf/open/floor/engine,
-/area/hallway/primary/fore)
+/turf/open/floor/plasteel/dark,
+/area/bridge)
 "cYa" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -18556,6 +18554,9 @@
 	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 5
+	},
+/obj/machinery/light_switch{
+	pixel_x = 38
 	},
 /turf/open/floor/plasteel/white,
 /area/science/xenobiology)
@@ -19166,11 +19167,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
 /obj/effect/turf_decal/siding/yellow{
 	dir = 8
-	},
-/obj/machinery/camera{
-	c_tag = "Atmospheric- Entrance 2";
-	dir = 4;
-	name = "Camera"
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
@@ -21240,7 +21236,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/camera{
-	c_tag = "Supply west Birdge";
+	c_tag = "Supply West Birdge";
 	name = "Camera"
 	},
 /turf/open/floor/plasteel{
@@ -21909,11 +21905,6 @@
 	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
-	},
-/obj/machinery/camera{
-	c_tag = "Science - Toxin Mix Lab 4";
-	dir = 6;
-	network = list("ss13","rd")
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
@@ -23139,15 +23130,18 @@
 	},
 /area/hallway/primary/starboard)
 "exG" = (
-/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4;
+	pixel_x = 0
+	},
 /obj/machinery/camera{
-	c_tag = "AI/Supply Bridge 2";
-	dir = 1;
+	c_tag = "AI Bridge 2";
+	dir = 8;
 	name = "Camera";
-	pixel_y = 6
+	pixel_x = -6
 	},
 /turf/open/floor/engine,
-/area/hallway/primary/starboard)
+/area/hallway/primary/fore)
 "exH" = (
 /obj/machinery/light{
 	dir = 8
@@ -26760,15 +26754,12 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/storage_shared)
 "fxt" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
+/obj/structure/window/reinforced,
 /obj/machinery/camera{
-	c_tag = "AI Bridge 1";
-	dir = 8;
+	c_tag = "AI/Command Bridge ";
+	dir = 1;
 	name = "Camera";
-	pixel_x = -6
+	pixel_y = 6
 	},
 /turf/open/floor/engine,
 /area/hallway/primary/fore)
@@ -26956,13 +26947,15 @@
 	},
 /area/engine/atmos)
 "fzR" = (
-/obj/effect/landmark/start/clown,
+/obj/structure/window/reinforced,
 /obj/machinery/camera{
-	c_tag = "Service- Theater Room 1";
-	name = "Camera"
+	c_tag = "AI/Supply Bridge 2";
+	dir = 1;
+	name = "Camera";
+	pixel_y = 6
 	},
-/turf/open/floor/eighties,
-/area/crew_quarters/theatre)
+/turf/open/floor/engine,
+/area/hallway/primary/starboard)
 "fzU" = (
 /obj/machinery/light_switch{
 	pixel_x = 26;
@@ -33936,17 +33929,15 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/chief)
 "hvo" = (
-/obj/structure/closet/secure_closet,
-/obj/effect/turf_decal/siding/blue{
-	dir = 5
-	},
+/obj/structure/window/reinforced,
 /obj/machinery/camera{
-	c_tag = "Medbay - Virology Test Room 1";
-	name = "medbay camera";
-	network = list("ss13","medbay")
+	c_tag = "AI/Supply Bridge 1";
+	dir = 1;
+	name = "Camera";
+	pixel_y = 6
 	},
-/turf/open/floor/plating/grass,
-/area/medical/virology)
+/turf/open/floor/engine,
+/area/hallway/primary/starboard)
 "hvr" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrogen_output{
 	dir = 1
@@ -34577,9 +34568,6 @@
 	},
 /obj/machinery/light{
 	dir = 4
-	},
-/obj/machinery/light_switch{
-	pixel_x = 38
 	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 4
@@ -44080,18 +44068,13 @@
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "kfq" = (
-/obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
-	},
+/obj/effect/landmark/start/clown,
 /obj/machinery/camera{
-	c_tag = "Medbay/Evac Bridge 2";
-	dir = 8;
-	name = "Camera";
-	pixel_x = -6
+	c_tag = "Service- Theater Room 1";
+	name = "Camera"
 	},
-/turf/open/floor/engine,
-/area/hallway/primary/starboard)
+/turf/open/floor/eighties,
+/area/crew_quarters/theatre)
 "kft" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /turf/open/floor/plasteel/chapel{
@@ -44484,15 +44467,17 @@
 	},
 /area/janitor)
 "kjy" = (
-/obj/structure/window/reinforced,
-/obj/machinery/camera{
-	c_tag = "AI/Supply Bridge 1";
-	dir = 1;
-	name = "Camera";
-	pixel_y = 6
+/obj/structure/closet/secure_closet,
+/obj/effect/turf_decal/siding/blue{
+	dir = 5
 	},
-/turf/open/floor/engine,
-/area/hallway/primary/starboard)
+/obj/machinery/camera{
+	c_tag = "Medbay - Virology Test Room 1";
+	name = "medbay camera";
+	network = list("ss13","medbay")
+	},
+/turf/open/floor/plating/grass,
+/area/medical/virology)
 "kkc" = (
 /obj/effect/landmark/xeno_spawn,
 /turf/open/floor/carpet/royalblack,
@@ -45439,13 +45424,13 @@
 	pixel_x = 0
 	},
 /obj/machinery/camera{
-	c_tag = "Medbay/Evac Bridge 3";
+	c_tag = "Medbay/Evac Bridge 2";
 	dir = 8;
 	name = "Camera";
 	pixel_x = -6
 	},
 /turf/open/floor/engine,
-/area/hallway/secondary/entry)
+/area/hallway/primary/starboard)
 "kyb" = (
 /obj/structure/cable,
 /obj/machinery/power/apc{
@@ -50926,7 +50911,7 @@
 "lVp" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/paper{
-	info = "Special thanks to the people on fulp: Helianthus,Guillaume, the countless mentors helping me out. Many thanks to the Mapper guys: Cut The Lettuce,Mark Suckerberg, Dakka,Nivrak. Hope you guys enjoy the map.- Eibon";
+	info = "Special thanks to the people on fulp: Helianthus,Guillaume,Nasa, the countless mentors helping me out. Many thanks to the Mapper guys: Cut The Lettuce,Mark Suckerberg, Dakka,Nivrak. Hope you guys enjoy the map.- Eibon";
 	name = "Thank you for helping me make EosStation"
 	},
 /turf/open/floor/carpet/stellar,
@@ -55628,13 +55613,18 @@
 /turf/open/floor/plasteel,
 /area/science/storage)
 "nhW" = (
-/obj/machinery/camera{
-	c_tag = "Science Main Hall 6";
+/obj/structure/window/reinforced{
 	dir = 4;
-	name = "Camera"
+	pixel_x = 0
 	},
-/turf/open/floor/plasteel/white,
-/area/hallway/primary/aft)
+/obj/machinery/camera{
+	c_tag = "Medbay/Evac Bridge 3";
+	dir = 8;
+	name = "Camera";
+	pixel_x = -6
+	},
+/turf/open/floor/engine,
+/area/hallway/secondary/entry)
 "nid" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -56535,6 +56525,11 @@
 /obj/machinery/airalarm{
 	dir = 8;
 	pixel_x = 24
+	},
+/obj/machinery/camera{
+	c_tag = "Command- Bridge 4";
+	dir = 8;
+	name = "Camera"
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
@@ -59359,16 +59354,13 @@
 	},
 /area/hallway/primary/fore)
 "oek" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/camera{
-	c_tag = "Command- Bridge 1";
-	dir = 1;
+	c_tag = "Science Main Hall 6";
+	dir = 4;
 	name = "Camera"
 	},
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/plasteel/white,
+/area/hallway/primary/aft)
 "oeu" = (
 /obj/machinery/status_display/ai{
 	pixel_x = -32
@@ -73428,11 +73420,6 @@
 	name = "Bridge RC";
 	pixel_x = 32
 	},
-/obj/machinery/camera{
-	c_tag = "Command- Bridge 4";
-	dir = 8;
-	name = "Camera"
-	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "rIe" = (
@@ -75523,11 +75510,6 @@
 /obj/effect/turf_decal/siding/yellow{
 	dir = 8
 	},
-/obj/machinery/camera{
-	c_tag = "Atmospheric- Entrance 3";
-	dir = 4;
-	name = "Camera"
-	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "snN" = (
@@ -77416,13 +77398,6 @@
 	},
 /turf/open/floor/wood,
 /area/library)
-"sQL" = (
-/obj/machinery/camera{
-	c_tag = "Science Main Hall 4";
-	name = "Camera"
-	},
-/turf/open/floor/plasteel/white,
-/area/hallway/primary/aft)
 "sQN" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/turf_decal/stripes/line{
@@ -77972,15 +77947,13 @@
 /turf/open/floor/plasteel,
 /area/security/prison)
 "sYu" = (
-/obj/structure/window/reinforced,
 /obj/machinery/camera{
-	c_tag = "AI/Command Bridge ";
-	dir = 1;
-	name = "Camera";
-	pixel_y = 6
+	c_tag = "Science Main Hall 5";
+	dir = 4;
+	name = "Camera"
 	},
-/turf/open/floor/engine,
-/area/hallway/primary/fore)
+/turf/open/floor/plasteel/white,
+/area/hallway/primary/aft)
 "sYC" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk,
@@ -82903,16 +82876,12 @@
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "uol" = (
-/obj/effect/turf_decal/siding/purple{
-	dir = 4
-	},
 /obj/machinery/camera{
-	c_tag = "Science - Toxin Mix Lab 3";
-	dir = 9;
-	network = list("ss13","rd")
+	c_tag = "Science Main Hall 4";
+	name = "Camera"
 	},
-/turf/open/floor/plasteel,
-/area/science/mixing)
+/turf/open/floor/plasteel/white,
+/area/hallway/primary/aft)
 "uor" = (
 /obj/structure/girder,
 /obj/structure/grille,
@@ -86041,6 +86010,11 @@
 /obj/structure/fireaxecabinet{
 	pixel_y = -32
 	},
+/obj/machinery/camera{
+	c_tag = "Command- Bridge 2";
+	dir = 1;
+	name = "Camera"
+	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "vgj" = (
@@ -88630,11 +88604,6 @@
 	pixel_y = -25
 	},
 /obj/effect/turf_decal/siding/purple,
-/obj/machinery/camera{
-	c_tag = "Science - Toxin Mix Lab 1";
-	dir = 1;
-	network = list("ss13","rd")
-	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "vQR" = (
@@ -92045,11 +92014,6 @@
 	},
 /obj/item/grenade/chem_grenade/antiweed,
 /obj/item/grenade/chem_grenade/antiweed,
-/obj/machinery/camera{
-	c_tag = "Service- Botany 3 ";
-	dir = 1;
-	name = "Camera"
-	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
 "wPP" = (
@@ -95714,14 +95678,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/robotics/mechbay)
-"xIz" = (
-/obj/machinery/camera{
-	c_tag = "Science Main Hall 5";
-	dir = 4;
-	name = "Camera"
-	},
-/turf/open/floor/plasteel/white,
-/area/hallway/primary/aft)
 "xIH" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
@@ -96262,6 +96218,11 @@
 	},
 /obj/effect/turf_decal/siding/yellow{
 	dir = 5
+	},
+/obj/machinery/camera{
+	c_tag = "Atmospheric- Entrance 3";
+	dir = 6;
+	name = "Camera"
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
@@ -110569,7 +110530,7 @@ qMO
 tmw
 bwD
 yei
-fzR
+kfq
 rXI
 rXI
 rXI
@@ -112681,7 +112642,7 @@ jDv
 jDv
 heS
 cfV
-nhW
+oek
 jvE
 vtS
 hxU
@@ -112692,7 +112653,7 @@ nQk
 jvE
 lpL
 heS
-xIz
+sYu
 jvE
 vTY
 gnD
@@ -115776,7 +115737,7 @@ tmw
 iYB
 urF
 dKv
-sQL
+uol
 tKT
 jvE
 aJz
@@ -121723,7 +121684,7 @@ biC
 biF
 biF
 ozF
-uol
+biF
 frN
 biF
 ozF
@@ -131063,7 +131024,7 @@ lpI
 bOf
 fMk
 qkr
-cQj
+cXW
 bYF
 xzP
 bTM
@@ -131577,7 +131538,7 @@ iCu
 vDA
 vDA
 qkr
-oek
+cQj
 bYF
 ilQ
 bTM
@@ -133633,7 +133594,7 @@ xvk
 eZO
 vDA
 cQj
-cTz
+qkr
 bYF
 hVg
 inu
@@ -137243,7 +137204,7 @@ kmm
 jkk
 uCE
 anm
-ciw
+fxt
 kee
 kmm
 cFp
@@ -137757,7 +137718,7 @@ kmm
 jkk
 uCE
 anm
-sYu
+ciw
 kee
 kmm
 cFp
@@ -139539,16 +139500,16 @@ gRP
 gRP
 bbA
 oGD
-fxt
+cTz
 gRP
 gRP
 gRP
 gRP
 gRP
 oGD
-cXW
 gRP
 gRP
+exG
 lKM
 gRP
 oGD
@@ -140584,7 +140545,7 @@ bmM
 tTS
 sGO
 uyz
-exG
+eWZ
 kee
 kmm
 cFp
@@ -141098,7 +141059,7 @@ bmM
 tTS
 sGO
 uyz
-eWZ
+fzR
 kee
 kmm
 aaa
@@ -143154,7 +143115,7 @@ kmm
 jkk
 ffv
 uyz
-kjy
+eWZ
 kee
 kmm
 jdZ
@@ -143668,7 +143629,7 @@ kmm
 jkk
 sGO
 uyz
-eWZ
+hvo
 kee
 kmm
 aaa
@@ -145042,7 +145003,7 @@ iVu
 iVu
 jSC
 iVu
-kfq
+kxY
 iVu
 cQF
 jSC
@@ -145053,7 +145014,7 @@ nXW
 amI
 nXW
 nXW
-kxY
+nhW
 nXW
 amI
 nXW
@@ -150690,7 +150651,7 @@ foJ
 pck
 dUq
 hdS
-hvo
+kjy
 nbz
 vQo
 hdS
