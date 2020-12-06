@@ -21954,16 +21954,6 @@
 	},
 /turf/open/floor/engine,
 /area/hallway/primary/port)
-"edR" = (
-/obj/structure/plasticflaps/opaque,
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=8";
-	dir = 8;
-	freq = 1400;
-	location = "Atmospherics"
-	},
-/turf/open/floor/plasteel,
-/area/engine/lobby)
 "edZ" = (
 /obj/machinery/light{
 	dir = 8
@@ -23371,16 +23361,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
-"ezU" = (
-/obj/structure/plasticflaps/opaque,
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=1";
-	dir = 1;
-	freq = 1400;
-	location = "Engineering"
-	},
-/turf/open/floor/plasteel,
-/area/engine/lobby)
 "eAc" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 8
@@ -42464,6 +42444,9 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/machinery/light_switch{
+	pixel_x = -23
+	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
 "jMG" = (
@@ -48435,6 +48418,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/janitor)
+"lmi" = (
+/obj/structure/plasticflaps/opaque,
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=1";
+	dir = 1;
+	freq = 1400;
+	location = "Engineering"
+	},
+/turf/open/floor/plasteel,
+/area/engine/lobby)
 "lmk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
@@ -55350,6 +55343,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/hallway/primary/starboard)
+"ncL" = (
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=8";
+	dir = 8;
+	freq = 1400;
+	location = "Hydroponics"
+	},
+/obj/structure/plasticflaps/opaque,
+/turf/open/floor/plasteel,
+/area/hydroponics)
 "ncN" = (
 /obj/machinery/smartfridge/organ,
 /turf/closed/wall,
@@ -72373,6 +72376,16 @@
 	icon_state = "platingdmg2"
 	},
 /area/maintenance/starboard/aft)
+"rrA" = (
+/obj/structure/plasticflaps/opaque,
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=8";
+	dir = 8;
+	freq = 1400;
+	location = "Atmospherics"
+	},
+/turf/open/floor/plasteel,
+/area/engine/lobby)
 "rrE" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
@@ -81549,6 +81562,12 @@
 	dir = 10
 	},
 /obj/structure/cable,
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=4";
+	dir = 4;
+	freq = 1400;
+	location = "Medbay"
+	},
 /turf/open/floor/plasteel/white{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -82253,6 +82272,9 @@
 	c_tag = "Service- Botany 2 ";
 	dir = 4;
 	name = "Camera"
+	},
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -90180,12 +90202,15 @@
 /turf/open/floor/carpet/royalblue,
 /area/lawoffice)
 "woh" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/structure/disposalpipe/segment,
-/obj/machinery/light_switch{
-	pixel_x = -23
+/obj/machinery/door/window/westleft{
+	dir = 4;
+	name = "Hydroponics Delivery";
+	req_access_txt = "35"
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -113447,7 +113472,7 @@ bZJ
 pIi
 bZJ
 bZJ
-bZJ
+ncL
 aGD
 aGD
 aGD
@@ -127051,7 +127076,7 @@ sIe
 ePe
 qNf
 ePe
-ezU
+lmi
 bVp
 cJZ
 cdX
@@ -130135,7 +130160,7 @@ run
 rAm
 sxu
 ePe
-edR
+rrA
 sRB
 dex
 hIH
