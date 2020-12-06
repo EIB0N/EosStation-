@@ -21954,6 +21954,16 @@
 	},
 /turf/open/floor/engine,
 /area/hallway/primary/port)
+"edR" = (
+/obj/structure/plasticflaps/opaque,
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=8";
+	dir = 8;
+	freq = 1400;
+	location = "Atmospherics"
+	},
+/turf/open/floor/plasteel,
+/area/engine/lobby)
 "edZ" = (
 /obj/machinery/light{
 	dir = 8
@@ -23361,6 +23371,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"ezU" = (
+/obj/structure/plasticflaps/opaque,
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=1";
+	dir = 1;
+	freq = 1400;
+	location = "Engineering"
+	},
+/turf/open/floor/plasteel,
+/area/engine/lobby)
 "eAc" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
 	dir = 8
@@ -27786,16 +27806,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
-"fJL" = (
-/obj/structure/plasticflaps/opaque,
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=1";
-	dir = 1;
-	freq = 1400;
-	location = "Engineering"
-	},
-/turf/open/floor/plasteel,
-/area/engine/lobby)
 "fJV" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -31229,14 +31239,21 @@
 /turf/open/floor/holofloor/hyperspace,
 /area/security/prison)
 "gIf" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/effect/turf_decal/delivery,
+/mob/living/simple_animal/bot/mulebot{
+	home_destination = "QM #2";
+	suffix = "#2"
 	},
-/obj/item/radio/intercom{
-	pixel_y = -32
+/obj/machinery/navbeacon{
+	codes_txt = "delivery;dir=4";
+	dir = 4;
+	freq = 1400;
+	location = "QM #2"
 	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/central)
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/maintenance/disposal)
 "gIg" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/plasteel{
@@ -35041,22 +35058,6 @@
 "hMN" = (
 /turf/closed/wall/r_wall,
 /area/engine/atmos)
-"hMO" = (
-/obj/effect/turf_decal/delivery,
-/mob/living/simple_animal/bot/mulebot{
-	home_destination = "QM #2";
-	suffix = "#2"
-	},
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=4";
-	dir = 4;
-	freq = 1400;
-	location = "QM #2"
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/maintenance/disposal)
 "hMP" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/firstaid/brute,
@@ -77521,6 +77522,17 @@
 /obj/effect/turf_decal/siding/yellow{
 	dir = 1
 	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/eastright{
+	dir = 2;
+	name = "Atmospherics Delivery";
+	req_access_txt = "24"
+	},
 /turf/open/floor/plasteel,
 /area/engine/lobby)
 "sRV" = (
@@ -85693,7 +85705,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/sign/poster/random{
+/obj/item/radio/intercom{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel,
@@ -127039,7 +127051,7 @@ sIe
 ePe
 qNf
 ePe
-fJL
+ezU
 bVp
 cJZ
 cdX
@@ -130122,8 +130134,8 @@ wfA
 run
 rAm
 sxu
-gIf
-vqr
+ePe
+edR
 sRB
 dex
 hIH
@@ -152393,7 +152405,7 @@ rZu
 wGC
 vbU
 fyS
-hMO
+gIf
 cJR
 euK
 rqN
