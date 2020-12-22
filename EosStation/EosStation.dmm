@@ -4128,16 +4128,13 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/structure/disposalpipe/sorting{
-	dir = 2;
-	icon_state = "pipe-j2s";
-	name = "disposal pipe - Genetics";
-	sortType = 23
-	},
 /obj/effect/turf_decal/siding/purple/corner{
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/purple/corner,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "aKA" = (
@@ -26266,11 +26263,11 @@
 /turf/open/floor/plasteel,
 /area/security/prison/safe)
 "fjn" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/plasteel,
-/area/hallway/primary/port)
+/obj/structure/disposalpipe/segment{
+	dir = 10
+	},
+/turf/open/floor/plasteel/white,
+/area/science/research)
 "fjp" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -37288,12 +37285,6 @@
 /area/janitor)
 "ilv" = (
 /obj/machinery/rnd/production/circuit_imprinter/department/science,
-/obj/machinery/power/apc{
-	areastring = "/area/science/lab";
-	dir = 8;
-	name = "Research and Development Lab APC";
-	pixel_y = 25
-	},
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/purple{
 	dir = 1
@@ -40340,7 +40331,6 @@
 /turf/open/floor/plasteel,
 /area/maintenance/starboard/aft)
 "jbX" = (
-/obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/siding/purple{
 	dir = 4
 	},
@@ -40348,6 +40338,9 @@
 	c_tag = "Science - Interior Hall 7 ";
 	dir = 9;
 	network = list("ss13","rd")
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 10
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
@@ -46496,6 +46489,9 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "kFk" = (
@@ -55627,6 +55623,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/ore_box,
 /obj/structure/cable,
+/obj/machinery/power/apc{
+	name = "Exploration Room 2 Apc";
+	pixel_x = 25;
+	pixel_y = null
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -65141,9 +65142,8 @@
 /obj/effect/turf_decal/siding/purple/corner{
 	dir = 8
 	},
-/obj/structure/disposalpipe/junction{
-	dir = 1;
-	icon_state = "pipe-j2"
+/obj/structure/disposalpipe/junction/flip{
+	dir = 1
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
@@ -75386,6 +75386,13 @@
 /obj/effect/turf_decal/siding/purple{
 	dir = 5
 	},
+/obj/machinery/power/apc{
+	areastring = "/area/science/lab";
+	dir = 8;
+	name = "Research and Development Lab APC";
+	pixel_y = 25
+	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "rVY" = (
@@ -75778,9 +75785,6 @@
 	name = "Common Channel";
 	pixel_x = 27;
 	pixel_y = 5
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 10
 	},
 /obj/effect/turf_decal/siding/purple{
 	dir = 4
@@ -78877,6 +78881,12 @@
 	dir = 6
 	},
 /obj/structure/cable,
+/obj/structure/disposalpipe/sorting{
+	dir = 2;
+	icon_state = "pipe-j2s";
+	name = "disposal pipe - Genetics";
+	sortType = 23
+	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "sVh" = (
@@ -82271,18 +82281,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/courtroom)
-"tRS" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/structure/cable,
-/obj/machinery/power/apc{
-	name = "Exploration Room 2 Apc";
-	pixel_x = 25;
-	pixel_y = null
-	},
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/maintenance/starboard/aft)
 "tRV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/fluff/broken_flooring{
@@ -113348,7 +113346,7 @@ nYZ
 kRS
 tgW
 mYn
-tRS
+oFu
 oFu
 oZa
 oFu
@@ -114010,7 +114008,7 @@ pmB
 pmB
 gyi
 pmB
-fjn
+pmB
 iRZ
 ccJ
 aWX
@@ -122355,7 +122353,7 @@ ckv
 jvE
 jAt
 dSK
-jti
+fjn
 sVf
 kFj
 leC
