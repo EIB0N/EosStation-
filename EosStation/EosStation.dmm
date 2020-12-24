@@ -9219,8 +9219,10 @@
 	},
 /area/security/main)
 "bme" = (
+/obj/machinery/processor{
+	pixel_y = 9
+	},
 /obj/structure/table/reinforced,
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/kitchen)
 "bmm" = (
@@ -12351,10 +12353,6 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/plasteel,
 /area/engine/lobby)
-"cdY" = (
-/obj/machinery/deepfryer,
-/turf/open/floor/plasteel/white,
-/area/crew_quarters/kitchen)
 "ceg" = (
 /obj/machinery/holopad,
 /obj/effect/landmark/event_spawn,
@@ -50616,7 +50614,19 @@
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "lIO" = (
-/obj/structure/closet/secure_closet/freezer/meat,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/storage/box/papersack{
+	icon_state = "paperbag_NanotrasenStandard_closed"
+	},
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/storage/box/papersack{
+	icon_state = "paperbag_NanotrasenStandard_closed"
+	},
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/kitchen)
 "lIX" = (
@@ -53122,21 +53132,9 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "mpH" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
-/obj/item/storage/box/papersack{
-	icon_state = "paperbag_NanotrasenStandard_closed"
-	},
-/obj/item/reagent_containers/food/condiment/milk,
-/obj/item/reagent_containers/food/condiment/soymilk,
-/obj/item/storage/box/papersack{
-	icon_state = "paperbag_NanotrasenStandard_closed"
-	},
-/obj/item/reagent_containers/food/condiment/enzyme{
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/food/condiment/flour,
-/obj/item/reagent_containers/food/condiment/enzyme{
-	pixel_y = 5
+/obj/structure/table/reinforced,
+/obj/machinery/processor{
+	pixel_y = 9
 	},
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/kitchen)
@@ -54424,13 +54422,23 @@
 /turf/open/floor/plasteel,
 /area/storage/tech)
 "mIy" = (
-/obj/structure/table/reinforced,
-/obj/item/book/granter/crafting_recipe/cooking_sweets_101,
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = -3
 	},
 /obj/item/reagent_containers/food/condiment/peppermill{
 	pixel_x = -8
+	},
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_y = 5
+	},
+/obj/item/storage/box/papersack{
+	icon_state = "paperbag_NanotrasenStandard_closed"
+	},
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/storage/box/papersack{
+	icon_state = "paperbag_NanotrasenStandard_closed"
 	},
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/kitchen)
@@ -62415,6 +62423,7 @@
 "oDo" = (
 /obj/structure/table/reinforced,
 /obj/item/kitchen/rollingpin,
+/obj/item/book/granter/crafting_recipe/cooking_sweets_101,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/kitchen)
 "oDz" = (
@@ -64768,6 +64777,7 @@
 	pixel_y = -30
 	},
 /obj/item/kitchen/knife,
+/obj/item/book/granter/crafting_recipe/cooking_sweets_101,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/kitchen)
 "phm" = (
@@ -91242,10 +91252,7 @@
 	},
 /area/medical/chemistry)
 "wtQ" = (
-/obj/structure/table/reinforced,
-/obj/machinery/processor{
-	pixel_y = 9
-	},
+/obj/machinery/deepfryer,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/kitchen)
 "wtU" = (
@@ -115304,9 +115311,9 @@ mmG
 iGC
 bUh
 bUh
-wtQ
+bUh
 aYU
-bme
+hNf
 hNf
 qGV
 iUp
@@ -115561,8 +115568,8 @@ mmG
 wxZ
 bUh
 lOO
-vMp
-bUh
+wtQ
+bme
 wtQ
 bUh
 mIz
@@ -115818,9 +115825,9 @@ uOo
 ehs
 bUh
 bUh
-cdY
 bUh
-cdY
+bUh
+bUh
 bUh
 hly
 jVN
