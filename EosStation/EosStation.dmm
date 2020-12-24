@@ -2148,9 +2148,6 @@
 /obj/effect/turf_decal/siding/red{
 	dir = 5
 	},
-/obj/item/radio/intercom{
-	pixel_y = 26
-	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 30
 	},
@@ -5240,6 +5237,14 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel,
 /area/hydroponics/garden)
+"aUN" = (
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/quartermaster/storage)
 "aUV" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -18875,15 +18880,6 @@
 /area/maintenance/port{
 	name = "Port Asteroid Maintenance"
 	})
-"dhl" = (
-/obj/effect/decal/cleanable/oil,
-/obj/structure/disposalpipe/segment{
-	dir = 5
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/storage)
 "dhm" = (
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel{
@@ -26497,6 +26493,9 @@
 /obj/effect/turf_decal/siding/red{
 	dir = 4
 	},
+/obj/item/radio/intercom{
+	pixel_x = 28
+	},
 /turf/open/floor/plasteel,
 /area/security/execution/transfer)
 "fnP" = (
@@ -28879,18 +28878,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/mixing)
-"fUr" = (
-/obj/structure/rack,
-/obj/item/pickaxe,
-/obj/item/pickaxe,
-/obj/item/shovel,
-/obj/item/shovel,
-/obj/item/storage/toolbox/emergency,
-/obj/machinery/light/small,
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/maintenance/starboard/aft)
 "fUu" = (
 /obj/structure/sign/departments/restroom,
 /turf/closed/wall{
@@ -34368,11 +34355,14 @@
 /area/maintenance/port/fore)
 "hvR" = (
 /obj/structure/cable,
-/obj/machinery/firealarm{
-	pixel_y = 28
-	},
 /obj/effect/turf_decal/siding/red{
 	dir = 9
+	},
+/obj/machinery/power/apc{
+	areastring = "/area/security/execution/transfer";
+	dir = 1;
+	name = "Security Transferring APC";
+	pixel_y = 25
 	},
 /turf/open/floor/plasteel,
 /area/security/execution/transfer)
@@ -37237,6 +37227,15 @@
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/hallway/primary/fore)
+"ikZ" = (
+/obj/effect/decal/cleanable/oil,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/quartermaster/storage)
 "ile" = (
 /obj/effect/decal/cleanable/oil,
 /obj/machinery/holopad,
@@ -44283,8 +44282,8 @@
 /obj/effect/turf_decal/siding/red{
 	dir = 1
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 30
+/obj/machinery/firealarm{
+	pixel_y = 28
 	},
 /turf/open/floor/plasteel,
 /area/security/execution/transfer)
@@ -51003,6 +51002,18 @@
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"lPu" = (
+/obj/structure/rack,
+/obj/item/pickaxe,
+/obj/item/pickaxe,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/storage/toolbox/emergency,
+/obj/machinery/light/small,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/maintenance/starboard/aft)
 "lPD" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
@@ -52593,14 +52604,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/crew_quarters/heads/cmo)
-"mko" = (
-/obj/structure/disposalpipe/segment{
-	dir = 6
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/storage)
 "mkp" = (
 /obj/structure/table/glass,
 /obj/item/clothing/neck/petcollar,
@@ -54771,6 +54774,20 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/starboard/aft)
+"mOm" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/machinery/power/apc{
+	name = "Supply space suit room 1 APC";
+	pixel_x = -25
+	},
+/obj/structure/cable,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/maintenance/port/fore)
 "mOn" = (
 /obj/structure/sign/poster/random{
 	pixel_y = 32
@@ -66122,6 +66139,21 @@
 	},
 /turf/open/floor/wood,
 /area/bridge)
+"pzu" = (
+/obj/structure/cable,
+/obj/machinery/power/apc{
+	name = "Supply Hall 4 APC";
+	pixel_x = 23;
+	pixel_y = 23
+	},
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/hallway/primary/starboard)
 "pzw" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/visible{
 	dir = 1
@@ -74981,9 +75013,8 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "rQy" = (
-/obj/structure/disposalpipe/junction{
-	dir = 2;
-	icon_state = "pipe-j2"
+/obj/structure/disposalpipe/junction/flip{
+	dir = 2
 	},
 /turf/open/floor/plasteel/grimy,
 /area/hallway/primary/upper)
@@ -76168,12 +76199,6 @@
 /area/crew_quarters/bar)
 "sjX" = (
 /obj/structure/cable,
-/obj/machinery/power/apc{
-	areastring = "/area/security/execution/transfer";
-	dir = 1;
-	name = "Security Transferring APC";
-	pixel_y = 25
-	},
 /obj/machinery/light{
 	dir = 1
 	},
@@ -86388,21 +86413,6 @@
 "uVL" = (
 /turf/closed/wall/r_wall,
 /area/maintenance/disposal/incinerator)
-"uWg" = (
-/obj/structure/cable,
-/obj/machinery/power/apc{
-	name = "Supply Hall 4 APC";
-	pixel_x = 23;
-	pixel_y = 23
-	},
-/obj/machinery/airalarm{
-	dir = 8;
-	pixel_x = 24
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/hallway/primary/starboard)
 "uWt" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2{
@@ -87310,6 +87320,13 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
+"vix" = (
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/quartermaster/storage)
 "viy" = (
 /obj/structure/table/wood,
 /obj/machinery/light{
@@ -95952,20 +95969,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
-"xAk" = (
-/obj/structure/reagent_dispensers/fueltank,
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/obj/machinery/power/apc{
-	name = "Supply space suit room 1 APC";
-	pixel_x = -25
-	},
-/obj/structure/cable,
-/turf/open/floor/plating{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/maintenance/port/fore)
 "xAq" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/line{
@@ -98492,13 +98495,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
-"yfZ" = (
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/quartermaster/storage)
 "ygf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -109977,7 +109973,7 @@ wtB
 nJx
 xkk
 xkk
-nJx
+xkk
 nJx
 nJx
 nJx
@@ -112427,7 +112423,7 @@ ccB
 qOb
 fCT
 giq
-fUr
+lPu
 cOg
 soZ
 kGA
@@ -149820,9 +149816,9 @@ dDH
 uJh
 oVg
 jSu
-mko
-yfZ
-dhl
+aUN
+vix
+ikZ
 fQm
 lff
 lff
@@ -150613,7 +150609,7 @@ rqZ
 nyL
 sqE
 tZS
-uWg
+pzu
 wqE
 sqE
 rra
@@ -151127,7 +151123,7 @@ pLn
 bBu
 sqE
 gCG
-xAk
+mOm
 enH
 eyA
 bzM
