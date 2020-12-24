@@ -14680,10 +14680,6 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "cpm" = (
-/obj/structure/disposalpipe/junction{
-	dir = 1;
-	icon_state = "pipe-j2"
-	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 4
 	},
@@ -14691,6 +14687,9 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/structure/disposalpipe/junction/flip{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "cpn" = (
@@ -22792,10 +22791,6 @@
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
-	},
-/obj/machinery/power/apc{
-	name = "Supply space suit room 1 APC";
-	pixel_x = -25
 	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -68297,6 +68292,21 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/storage)
+"qeb" = (
+/obj/structure/cable,
+/obj/machinery/power/apc{
+	name = "Supply Hall 4 APC";
+	pixel_x = 23;
+	pixel_y = 23
+	},
+/obj/machinery/airalarm{
+	dir = 8;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/hallway/primary/starboard)
 "qeo" = (
 /turf/closed/wall/r_wall,
 /area/science/storage)
@@ -91293,16 +91303,7 @@
 	},
 /area/ai_monitored/turret_protected/ai)
 "wqE" = (
-/obj/machinery/airalarm{
-	dir = 8;
-	pixel_x = 24
-	},
 /obj/structure/cable,
-/obj/machinery/power/apc{
-	name = "Supply Hall 4 APC";
-	pixel_x = 23;
-	pixel_y = 23
-	},
 /obj/machinery/light/dim{
 	dir = 4
 	},
@@ -97224,6 +97225,20 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"xPN" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/effect/turf_decal/stripes/line{
+	dir = 9
+	},
+/obj/machinery/power/apc{
+	name = "Supply space suit room 1 APC";
+	pixel_x = -25
+	},
+/obj/structure/cable,
+/turf/open/floor/plating{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/maintenance/port/fore)
 "xPP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 6
@@ -150585,7 +150600,7 @@ rqZ
 nyL
 sqE
 tZS
-xYP
+qeb
 wqE
 sqE
 rra
@@ -151099,7 +151114,7 @@ pLn
 bBu
 sqE
 gCG
-bXh
+xPN
 enH
 eyA
 bzM
