@@ -900,17 +900,6 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
-"ahe" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/cable,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced,
-/turf/open/floor/wood,
-/area/crew_quarters/theatre)
 "ahl" = (
 /turf/closed/wall/rust,
 /area/crew_quarters/toilet/auxiliary)
@@ -4350,7 +4339,7 @@
 	location = "Hydroponics"
 	},
 /turf/open/floor/plasteel,
-/area/hydroponics)
+/area/hallway/primary/port)
 "aFK" = (
 /obj/structure/tank_dispenser/oxygen,
 /obj/effect/turf_decal/stripes/line{
@@ -5386,18 +5375,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
-"aOG" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/cable,
-/obj/machinery/door/window/westleft{
-	dir = 4;
-	name = "Theater Delivery";
-	req_access_txt = "35"
-	},
-/turf/open/floor/wood,
-/area/crew_quarters/theatre)
 "aOR" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -8217,6 +8194,18 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/security/prison)
+"bbr" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/machinery/door/window/westleft{
+	name = "Hydroponics Delivery";
+	req_access_txt = "35"
+	},
+/turf/open/floor/plasteel,
+/area/hydroponics)
 "bbt" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
@@ -15668,8 +15657,7 @@
 	pixel_x = -26
 	},
 /obj/machinery/power/smes{
-	capacity = 9e+006;
-	charge = 10000
+	charge = 20000
 	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -20016,6 +20004,11 @@
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
+"cDD" = (
+/obj/structure/cable,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
 "cDG" = (
 /obj/machinery/status_display{
 	density = 0;
@@ -26552,8 +26545,7 @@
 	dir = 8
 	},
 /obj/machinery/power/smes{
-	capacity = 9e+006;
-	charge = 10000
+	charge = 20000
 	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -41663,7 +41655,7 @@
 "htl" = (
 /obj/effect/turf_decal/tile/yellow,
 /obj/machinery/power/smes{
-	charge = 5e+006
+	charge = 20000
 	},
 /obj/effect/turf_decal/siding/yellow{
 	dir = 10
@@ -45376,7 +45368,7 @@
 	location = "Kitchen"
 	},
 /turf/open/floor/plasteel/white,
-/area/crew_quarters/kitchen)
+/area/hallway/primary/port)
 "iiO" = (
 /obj/machinery/button/door{
 	id = "Cargo Shipment";
@@ -50870,6 +50862,7 @@
 	sortType = 21
 	},
 /obj/effect/turf_decal/tile/green,
+/obj/item/beacon,
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "juW" = (
@@ -56349,7 +56342,7 @@
 	location = "Theatre"
 	},
 /turf/open/floor/wood,
-/area/crew_quarters/theatre)
+/area/hallway/primary/port)
 "kyK" = (
 /obj/machinery/computer/atmos_alert{
 	dir = 8
@@ -56360,6 +56353,17 @@
 	},
 /turf/open/floor/wood,
 /area/bridge)
+"kyO" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced,
+/turf/open/floor/wood,
+/area/crew_quarters/theatre)
 "kyQ" = (
 /obj/effect/decal/cleanable/blood,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
@@ -60848,11 +60852,10 @@
 	dir = 5;
 	name = "Camera"
 	},
-/obj/machinery/power/smes{
-	capacity = 9e+006;
-	charge = 10000
-	},
 /obj/structure/cable,
+/obj/machinery/power/smes{
+	charge = 20000
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -64449,15 +64452,6 @@
 /obj/effect/turf_decal/tile/purple,
 /turf/open/floor/plasteel/white,
 /area/science/lab)
-"mjR" = (
-/obj/effect/turf_decal/tile/red,
-/obj/machinery/door/window/eastleft{
-	dir = 8;
-	name = "Kitchen Delivery";
-	req_access_txt = "28"
-	},
-/turf/open/floor/plasteel/white,
-/area/crew_quarters/kitchen)
 "mkd" = (
 /obj/machinery/computer/med_data{
 	dir = 1
@@ -65776,15 +65770,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
-"mzq" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/green,
-/obj/item/beacon,
-/turf/open/floor/plasteel,
-/area/hallway/primary/port)
 "mzr" = (
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/siding/purple{
@@ -70983,18 +70968,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/lobby)
-"nEP" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/machinery/door/window/westleft{
-	name = "Hydroponics Delivery";
-	req_access_txt = "35"
-	},
-/turf/open/floor/plasteel,
-/area/hydroponics)
 "nFe" = (
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
@@ -82881,6 +82854,14 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/medical/virology)
+"pWH" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "pWS" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 9
@@ -92280,11 +92261,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/power/smes{
-	capacity = 9e+006;
-	charge = 10000
-	},
 /obj/structure/cable,
+/obj/machinery/power/smes{
+	charge = 20000
+	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -93488,6 +93468,18 @@
 /obj/effect/turf_decal/tile,
 /turf/open/floor/plasteel/dark,
 /area/security/prison/safe)
+"spU" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/door/window/westleft{
+	dir = 4;
+	name = "Theater Delivery";
+	req_access_txt = "35"
+	},
+/turf/open/floor/wood,
+/area/crew_quarters/theatre)
 "spV" = (
 /obj/structure/closet/firecloset/full,
 /obj/machinery/firealarm{
@@ -101261,8 +101253,7 @@
 	dir = 9
 	},
 /obj/machinery/power/smes{
-	capacity = 9e+006;
-	charge = 10000
+	charge = 20000
 	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -101451,8 +101442,7 @@
 	dir = 8
 	},
 /obj/machinery/power/smes{
-	capacity = 9e+006;
-	charge = 10000
+	charge = 20000
 	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -106926,6 +106916,15 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/engine/atmos)
+"vny" = (
+/obj/effect/turf_decal/tile/red,
+/obj/machinery/door/window/eastleft{
+	dir = 8;
+	name = "Kitchen Delivery";
+	req_access_txt = "28"
+	},
+/turf/open/floor/plasteel/white,
+/area/crew_quarters/kitchen)
 "vnD" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/light/floor,
@@ -115850,7 +115849,6 @@
 /obj/structure/plasticflaps/opaque,
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=8";
-	dir = 8;
 	freq = 1400;
 	location = "Atmospherics"
 	},
@@ -116694,8 +116692,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/power/smes{
-	capacity = 9e+006;
-	charge = 10000
+	charge = 20000
 	},
 /turf/open/floor/plating{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -134582,7 +134579,7 @@ rXI
 rXI
 bYQ
 nOo
-aOG
+spU
 yei
 jmj
 pSg
@@ -134839,7 +134836,7 @@ kpO
 gwQ
 yei
 nOo
-ahe
+kyO
 yei
 kUX
 wsC
@@ -135353,7 +135350,7 @@ pFf
 hui
 hJY
 qbp
-uSY
+cDD
 nxh
 pFf
 pQT
@@ -135622,7 +135619,7 @@ oZr
 cag
 ovW
 uOp
-mzq
+ovW
 rGC
 juU
 dps
@@ -136648,14 +136645,14 @@ bUh
 bUh
 bUh
 kAA
-mjR
+vny
 rpQ
 pjx
 lfU
 hrZ
 wak
 lKU
-nEP
+bbr
 wak
 pqi
 btS
@@ -149744,7 +149741,7 @@ rgY
 sIe
 ptC
 kVw
-sqX
+pWH
 sLG
 bVp
 cJZ
@@ -152828,7 +152825,7 @@ wfA
 run
 rAm
 sxu
-sqX
+pWH
 xov
 sRB
 dex
