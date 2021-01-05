@@ -347,6 +347,20 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
+"abR" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall23";
+	location = "hall22"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "abU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -3406,6 +3420,11 @@
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/green,
 /obj/effect/turf_decal/tile/blue,
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "ayS" = (
@@ -4413,6 +4432,11 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/engine/atmos)
+"aGm" = (
+/obj/effect/turf_decal/siding/green,
+/obj/structure/closet/firecloset,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "aGo" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -4732,6 +4756,11 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
+	},
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
@@ -9058,6 +9087,10 @@
 /obj/effect/turf_decal/tile{
 	dir = 1
 	},
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/upper)
 "beE" = (
@@ -12398,6 +12431,11 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "bvu" = (
@@ -14810,6 +14848,10 @@
 	dir = 4
 	},
 /obj/effect/landmark/event_spawn,
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/upper)
 "ccq" = (
@@ -15318,6 +15360,11 @@
 /obj/machinery/navbeacon{
 	codes_txt = "patrol;next_patrol=hall1";
 	location = "hall0"
+	},
+/mob/living/simple_animal/bot/medbot{
+	auto_patrol = 1;
+	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	name = "Wilhelm"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -16484,6 +16531,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+"chV" = (
+/obj/effect/turf_decal/siding/green,
+/obj/structure/closet/emcloset/anchored,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "chY" = (
 /obj/machinery/airalarm{
 	pixel_y = 23
@@ -17971,7 +18023,7 @@
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
 	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	name = "Wilhelm"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/upper)
@@ -18043,11 +18095,6 @@
 /area/hallway/secondary/entry)
 "cpK" = (
 /obj/structure/closet/emcloset/anchored,
-/obj/effect/turf_decal/siding/green,
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
-"cpL" = (
-/obj/structure/closet/firecloset,
 /obj/effect/turf_decal/siding/green,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -20618,6 +20665,30 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/upper)
+"cJg" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall25";
+	location = "hall24"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "cJl" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 8
@@ -21728,13 +21799,34 @@
 /turf/closed/mineral,
 /area/space)
 "cVj" = (
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/red{
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	pixel_y = 8
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall6";
+	location = "hall5"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/primary/fore)
+/area/hallway/primary/upper)
 "cVo" = (
 /obj/machinery/door/airlock/external/glass{
 	cyclelinkeddir = 4
@@ -22269,6 +22361,17 @@
 /obj/structure/cable,
 /turf/open/floor/carpet/red,
 /area/crew_quarters/heads/hos)
+"dcg" = (
+/obj/structure/sign/poster/random{
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/siding/green,
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "dcj" = (
 /obj/structure/sign/poster/official/space_cops,
 /turf/closed/wall/r_wall,
@@ -22445,7 +22548,7 @@
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
 	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	name = "Wilhelm"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/upper)
@@ -24612,26 +24715,12 @@
 	},
 /area/medical/medbay/central)
 "dCa" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/structure/cable,
-/obj/structure/sign/poster/random{
-	pixel_y = 32
-	},
-/obj/structure/chair,
-/obj/effect/landmark/start/assistant,
-/obj/effect/turf_decal/siding/green{
-	dir = 1
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall9";
+	location = "hall8"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/area/hallway/primary/upper)
 "dCf" = (
 /obj/machinery/airalarm{
 	dir = 8;
@@ -30535,6 +30624,9 @@
 /area/space/nearstation)
 "eVc" = (
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/red{
 	pixel_y = 8
 	},
@@ -30556,12 +30648,12 @@
 /obj/effect/turf_decal/tile/red{
 	pixel_y = 8
 	},
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall6";
-	location = "hall5"
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/primary/upper)
+/area/hallway/primary/fore)
 "eVf" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -31784,6 +31876,11 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/junction/flip,
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "fib" = (
@@ -32124,12 +32221,15 @@
 	},
 /area/maintenance/port/fore)
 "fmL" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 5
+	},
 /obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall9";
-	location = "hall8"
+	codes_txt = "patrol;next_patrol=hall11";
+	location = "hall10"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/primary/upper)
+/area/hallway/primary/fore)
 "fmO" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -34362,12 +34462,20 @@
 /turf/open/floor/plasteel/grimy,
 /area/security/brig)
 "fLs" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 5
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall11";
-	location = "hall10"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable,
+/mob/living/simple_animal/bot/medbot{
+	auto_patrol = 1;
+	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	name = "Wilhelm"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
@@ -34380,6 +34488,12 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/engine/atmos)
+"fLw" = (
+/obj/effect/turf_decal/siding/green,
+/obj/structure/table/reinforced,
+/obj/effect/spawner/lootdrop/maintenance/two,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "fLy" = (
 /obj/machinery/space_heater,
 /obj/structure/cable,
@@ -36030,11 +36144,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
-	},
 /turf/open/floor/engine,
 /area/hallway/primary/fore)
 "ggp" = (
@@ -37058,6 +37167,11 @@
 	codes_txt = "patrol;next_patrol=hall2";
 	location = "hall1"
 	},
+/mob/living/simple_animal/bot/medbot{
+	auto_patrol = 1;
+	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	name = "Wilhelm"
+	},
 /turf/open/floor/engine,
 /area/hallway/primary/port)
 "gsk" = (
@@ -37637,20 +37751,57 @@
 	},
 /area/quartermaster/storage)
 "gyE" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/structure/disposalpipe/segment{
+/obj/effect/landmark/event_spawn,
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile{
 	dir = 4
 	},
-/obj/structure/cable,
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall13";
+	location = "hall12"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
@@ -40013,6 +40164,11 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 4
 	},
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
@@ -41511,6 +41667,15 @@
 "hsN" = (
 /turf/closed/wall/r_wall,
 /area/crew_quarters/toilet/auxiliary)
+"hsW" = (
+/obj/effect/turf_decal/siding/green{
+	dir = 8
+	},
+/obj/structure/chair{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "htb" = (
 /obj/structure/table/wood,
 /obj/item/clothing/glasses/sunglasses,
@@ -42865,6 +43030,14 @@
 	icon_state = "chapel"
 	},
 /area/chapel)
+"hIV" = (
+/mob/living/simple_animal/bot/medbot{
+	auto_patrol = 1;
+	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	name = "Wilhelm"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "hJc" = (
 /obj/effect/turf_decal/tile/blue,
 /turf/open/floor/plasteel/white{
@@ -46445,7 +46618,7 @@
 	},
 /area/medical/virology)
 "ivz" = (
-/obj/item/kirbyplants/random,
+/obj/structure/closet/emcloset/anchored,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "ivC" = (
@@ -48552,7 +48725,7 @@
 	},
 /area/chapel)
 "iUX" = (
-/obj/structure/closet/firecloset,
+/obj/item/kirbyplants/random,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "iVg" = (
@@ -52934,17 +53107,22 @@
 	},
 /area/maintenance/starboard/aft)
 "jRc" = (
-/obj/machinery/light{
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/chair{
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/green{
-	dir = 4
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/area/hallway/primary/fore)
 "jRq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -53804,60 +53982,32 @@
 /turf/closed/wall/r_wall,
 /area/crew_quarters/bar)
 "jZW" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/obj/effect/landmark/event_spawn,
-/obj/effect/turf_decal/tile/red{
-	dir = 8;
-	pixel_y = 8
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
 	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8;
-	pixel_y = 8
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
 	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8;
-	pixel_y = 8
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
 	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8;
-	pixel_y = 8
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8;
-	pixel_y = 8
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8;
-	pixel_y = 8
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8;
-	pixel_y = 8
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8;
-	pixel_y = 8
-	},
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile{
+/obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
 /obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall13";
-	location = "hall12"
+	codes_txt = "patrol;next_patrol=hall17";
+	location = "hall16"
 	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/fore)
+/turf/open/floor/plasteel{
+	baseturf = /turf/open/floor/plating/asteroid/airless
+	},
+/area/hallway/primary/starboard)
 "jZY" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 4
@@ -53906,32 +54056,17 @@
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "kao" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
+/obj/structure/disposalpipe/segment,
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
 	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall17";
-	location = "hall16"
-	},
-/turf/open/floor/plasteel{
-	baseturf = /turf/open/floor/plating/asteroid/airless
-	},
-/area/hallway/primary/starboard)
+/turf/open/floor/engine,
+/area/hallway/primary/port)
 "kap" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
@@ -54048,7 +54183,7 @@
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
 	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	name = "Wilhelm"
 	},
 /turf/open/floor/engine,
 /area/hallway/primary/central)
@@ -55573,11 +55708,6 @@
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
-	},
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -59273,7 +59403,7 @@
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
 	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	name = "Wilhelm"
 	},
 /turf/open/floor/engine,
 /area/hallway/primary/starboard)
@@ -59371,23 +59501,15 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "lgS" = (
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
 	},
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
-	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/port)
+/turf/open/floor/engine,
+/area/hallway/primary/central)
 "lhb" = (
 /obj/machinery/camera{
 	c_tag = "Science- Xeno Euthanasia Chamber";
@@ -60040,14 +60162,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
-"lpd" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/effect/landmark/start/assistant,
-/obj/effect/turf_decal/siding/green,
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
 "lpg" = (
 /obj/machinery/firealarm{
 	pixel_y = 28
@@ -61159,26 +61273,23 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
 "lAE" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/green,
+/obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile{
+/obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall30";
-	location = "hall29"
+/mob/living/simple_animal/bot/medbot{
+	auto_patrol = 1;
+	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	name = "Wilhelm"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/primary/central)
+/area/hallway/primary/port)
 "lAH" = (
 /obj/effect/loot_site_spawner,
 /obj/item/holo/esword/red,
@@ -62977,6 +63088,11 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/mob/living/simple_animal/bot/medbot{
+	auto_patrol = 1;
+	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	name = "Wilhelm"
+	},
 /turf/open/floor/engine,
 /area/hallway/primary/fore)
 "lVd" = (
@@ -64140,6 +64256,17 @@
 /obj/effect/landmark/start/geneticist,
 /turf/open/floor/plasteel/white,
 /area/science/genetics)
+"mhg" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "mht" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -64952,21 +65079,26 @@
 	},
 /area/hallway/primary/starboard)
 "mqF" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
 	},
-/obj/structure/cable,
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	icon_state = "medibot1";
-	name = "Inspector Johnson"
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall30";
+	location = "hall29"
 	},
-/turf/open/floor/engine,
-/area/hallway/primary/port)
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "mqI" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/turf_decal/siding/blue/corner{
@@ -68424,18 +68556,24 @@
 	},
 /area/quartermaster/storage)
 "nff" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/green,
 /obj/effect/turf_decal/tile/blue,
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall0";
-	location = "hall30"
+/obj/effect/turf_decal/tile{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -71549,12 +71687,13 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/blue,
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall0";
+	location = "hall30"
 	},
-/turf/open/floor/engine,
+/turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "nMA" = (
 /obj/effect/turf_decal/siding/blue/corner{
@@ -73799,6 +73938,11 @@
 /obj/effect/turf_decal/tile{
 	dir = 4
 	},
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "oiF" = (
@@ -73867,8 +74011,10 @@
 	},
 /area/medical/chemistry)
 "ojm" = (
-/obj/effect/spawner/randomcolavend,
 /obj/effect/turf_decal/siding/green,
+/obj/structure/chair{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "ojn" = (
@@ -73990,6 +74136,11 @@
 /obj/machinery/navbeacon{
 	codes_txt = "patrol;next_patrol=hall3";
 	location = "hall2"
+	},
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
@@ -77817,6 +77968,21 @@
 /obj/machinery/recharge_station,
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet/restrooms)
+"oTz" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "oTK" = (
 /obj/machinery/camera{
 	c_tag = "Security- Prison Main Hall 1";
@@ -84805,27 +84971,12 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
 	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	name = "Wilhelm"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/engine,
 /area/hallway/primary/central)
 "qvD" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -87227,6 +87378,11 @@
 /obj/structure/reagent_dispensers/fueltank/large,
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"qXp" = (
+/obj/effect/turf_decal/siding/green,
+/obj/effect/spawner/randomcolavend,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "qXC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -87802,6 +87958,10 @@
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
 	dir = 9
+	},
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
@@ -90734,15 +90894,18 @@
 	},
 /area/engine/atmos)
 "rJC" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment,
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall21";
-	location = "hall20"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
 	},
-/turf/open/floor/engine,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable,
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
+	},
+/turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "rJH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -91765,6 +91928,10 @@
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
+	},
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
@@ -96733,6 +96900,15 @@
 	},
 /turf/open/floor/carpet,
 /area/quartermaster/qm)
+"teP" = (
+/obj/effect/turf_decal/siding/green{
+	dir = 4
+	},
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "teQ" = (
 /obj/effect/turf_decal/siding/purple{
 	dir = 10
@@ -96980,6 +97156,15 @@
 	},
 /turf/open/space/basic,
 /area/space/nearstation)
+"tiI" = (
+/obj/effect/turf_decal/tile/green,
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "tiX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/cable,
@@ -98992,20 +99177,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
-"tGX" = (
-/obj/effect/turf_decal/tile/green{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall23";
-	location = "hall22"
-	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
 "tGZ" = (
 /obj/machinery/light_switch{
 	pixel_x = 26;
@@ -99072,17 +99243,21 @@
 	},
 /area/medical/chemistry)
 "tIu" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment,
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
 	},
-/turf/open/floor/engine,
-/area/hallway/primary/starboard)
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/blue,
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "tIG" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4{
 	dir = 8
@@ -99432,6 +99607,11 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/upper)
 "tLJ" = (
@@ -99451,6 +99631,18 @@
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/open/floor/plating,
 /area/security/execution/education)
+"tLM" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/mob/living/simple_animal/bot/medbot{
+	auto_patrol = 1;
+	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	name = "Wilhelm"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "tLS" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -99499,11 +99691,6 @@
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile{
 	dir = 4
-	},
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
@@ -100771,7 +100958,7 @@
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
 	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	name = "Wilhelm"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
@@ -101737,7 +101924,7 @@
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
 	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	name = "Wilhelm"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -104564,12 +104751,16 @@
 	},
 /area/maintenance/starboard/aft)
 "uNa" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment,
 /obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall22";
-	location = "hall21"
+	codes_txt = "patrol;next_patrol=hall21";
+	location = "hall20"
 	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/turf/open/floor/engine,
+/area/hallway/primary/starboard)
 "uNc" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -105635,6 +105826,10 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue,
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "vaD" = (
@@ -105800,39 +105995,17 @@
 /turf/closed/wall/r_wall,
 /area/maintenance/port/fore)
 "vdE" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/structure/disposalpipe/segment,
+/mob/living/simple_animal/bot/medbot{
+	auto_patrol = 1;
+	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	name = "Wilhelm"
 	},
-/obj/effect/turf_decal/tile{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/purple,
-/obj/effect/turf_decal/tile/green{
-	dir = 4
-	},
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall27";
-	location = "hall26"
-	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/aft)
+/turf/open/floor/engine,
+/area/hallway/primary/starboard)
 "vdL" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/open/floor/engine/co2,
@@ -106142,33 +106315,20 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "vgz" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/effect/landmark/event_spawn,
-/obj/effect/turf_decal/tile/purple{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/purple{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/purple{
-	dir = 8
-	},
-/mob/living/simple_animal/bot/medbot{
+/obj/structure/disposalpipe/segment,
+/mob/living/simple_animal/bot/cleanbot{
 	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	icon_state = "cleanbot1";
+	name = "Wilson"
 	},
-/turf/open/floor/plasteel,
-/area/hallway/primary/aft)
+/turf/open/floor/engine{
+	baseturf = /turf/open/floor/plating/asteroid/airless;
+	name = "reinforced floor"
+	},
+/area/hallway/primary/port)
 "vgA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
@@ -108286,22 +108446,12 @@
 	},
 /area/maintenance/port/fore)
 "vFs" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall26";
-	location = "hall25"
+	codes_txt = "patrol;next_patrol=hall22";
+	location = "hall21"
 	},
-/turf/open/floor/engine,
-/area/hallway/primary/aft)
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "vFy" = (
 /obj/structure/table/reinforced,
 /obj/item/instrument/bikehorn,
@@ -108460,12 +108610,28 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/mob/living/simple_animal/bot/medbot{
-	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+/obj/effect/turf_decal/tile{
+	dir = 4
 	},
-/turf/open/floor/engine,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall27";
+	location = "hall26"
+	},
+/turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "vIk" = (
 /obj/structure/table/reinforced,
@@ -108853,6 +109019,10 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue,
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "vMz" = (
@@ -109036,6 +109206,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/blue,
+/mob/living/simple_animal/bot/cleanbot{
+	auto_patrol = 1;
+	icon_state = "cleanbot1";
+	name = "Wilson"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "vNK" = (
@@ -109168,6 +109343,10 @@
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
+	},
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
 	},
 /turf/open/floor/plasteel{
 	baseturf = /turf/open/floor/plating/asteroid/airless
@@ -110005,29 +110184,39 @@
 /turf/closed/wall/r_wall,
 /area/crew_quarters/heads/cmo)
 "vZm" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 8
-	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/green{
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall25";
-	location = "hall24"
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green,
+/mob/living/simple_animal/bot/secbot/beepsky{
+	desc = "It's Officer Walker! Powered by a potato and a shot of whiskey.";
+	name = "Walker"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/area/hallway/primary/aft)
 "vZq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 9
@@ -113229,7 +113418,6 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/structure/chair,
 /obj/effect/turf_decal/siding/green{
 	dir = 1
 	},
@@ -114250,13 +114438,32 @@
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/kitchen)
 "wZV" = (
-/mob/living/simple_animal/bot/medbot{
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/mob/living/simple_animal/bot/cleanbot{
 	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	icon_state = "cleanbot1";
+	name = "Wilson"
 	},
 /turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/area/hallway/primary/aft)
 "xad" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -115824,15 +116031,22 @@
 /turf/open/floor/carpet/royalblue,
 /area/bridge)
 "xpL" = (
-/obj/effect/turf_decal/tile/green{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=hall24";
-	location = "hall23"
+	codes_txt = "patrol;next_patrol=hall26";
+	location = "hall25"
 	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/turf/open/floor/engine,
+/area/hallway/primary/aft)
 "xpY" = (
 /obj/structure/table/reinforced,
 /obj/item/toy/figure/qm,
@@ -117964,17 +118178,23 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "xJo" = (
-/obj/effect/turf_decal/tile/green{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
+	dir = 8
 	},
-/obj/effect/turf_decal/tile/green,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
 	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
-	name = "Inspector Johnson"
+	name = "Wilhelm"
 	},
-/turf/open/floor/plasteel,
-/area/hallway/secondary/entry)
+/turf/open/floor/engine,
+/area/hallway/primary/aft)
 "xJv" = (
 /obj/effect/turf_decal/siding/purple{
 	dir = 9
@@ -118618,12 +118838,12 @@
 	},
 /area/engine/atmos)
 "xQO" = (
-/obj/structure/closet/emcloset/anchored,
 /obj/machinery/camera{
 	c_tag = "Evac Main Hall 3";
 	dir = 1;
 	name = "Camera"
 	},
+/obj/structure/closet/firecloset,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "xQX" = (
@@ -120192,6 +120412,16 @@
 	baseturf = /turf/open/floor/plating/asteroid/airless
 	},
 /area/maintenance/starboard/aft)
+"yjx" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/machinery/navbeacon{
+	codes_txt = "patrol;next_patrol=hall24";
+	location = "hall23"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "yjK" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer4,
@@ -129752,7 +129982,7 @@ cFp
 cFp
 uEc
 wKu
-eVc
+cVj
 fWO
 iXn
 ryR
@@ -135432,7 +135662,7 @@ aWX
 aWX
 aWX
 aWX
-aWX
+kao
 aWX
 ccP
 aWX
@@ -135449,7 +135679,7 @@ aWX
 ccQ
 blM
 gIw
-lgS
+lAE
 ovW
 rGC
 nFR
@@ -135495,7 +135725,7 @@ rGC
 juU
 dps
 ovW
-rGC
+tZi
 ovW
 rGC
 gIw
@@ -135505,14 +135735,14 @@ kLV
 ovW
 rGC
 wHA
-tZi
+rGC
 ovW
 gkd
 rQH
 ojO
 pmB
 rQB
-oMf
+vgz
 oMf
 oMf
 oMf
@@ -135797,7 +136027,7 @@ jvE
 wlS
 heS
 jvE
-vdE
+vIg
 jvE
 ori
 pQM
@@ -136178,7 +136408,7 @@ fcR
 oWG
 tLB
 uoO
-fmL
+dCa
 nKe
 sxY
 uIe
@@ -139529,7 +139759,7 @@ gJH
 gJH
 gJH
 osu
-gyE
+lMv
 lHQ
 jPN
 rWY
@@ -142356,7 +142586,7 @@ aVO
 aYt
 kWK
 kPC
-cKp
+fLs
 kPC
 aRV
 otJ
@@ -142993,7 +143223,7 @@ wwl
 cOg
 oGA
 jvE
-nYJ
+vZm
 jvE
 wpF
 rVI
@@ -143879,7 +144109,7 @@ msi
 aHe
 aIr
 sIP
-cVj
+kPC
 wCu
 kPC
 kPC
@@ -143897,7 +144127,7 @@ jCZ
 aEC
 kPC
 aGc
-fLs
+fmL
 jJb
 kPC
 ovJ
@@ -144147,7 +144377,7 @@ bTE
 aRZ
 bTE
 aSS
-bTE
+eVc
 aUb
 aUY
 aKl
@@ -144412,7 +144642,7 @@ iLH
 cFt
 plH
 rhm
-jZW
+gyE
 kPC
 ovJ
 aPL
@@ -146013,7 +146243,7 @@ adY
 adY
 adY
 xWy
-mqF
+sPk
 xor
 baO
 bmM
@@ -148647,7 +148877,7 @@ nLL
 uAh
 gJH
 oDJ
-vgz
+ftR
 gmu
 bUG
 aaK
@@ -149161,7 +149391,7 @@ wKj
 vnh
 aAC
 jvE
-kaX
+wZV
 gmu
 cga
 dud
@@ -150066,7 +150296,7 @@ jHn
 riW
 oaN
 tci
-aQs
+jRc
 kPC
 mKf
 dnW
@@ -151988,7 +152218,7 @@ aaa
 kmm
 jkk
 ooi
-vFs
+xpL
 ohz
 baO
 kmm
@@ -152438,7 +152668,7 @@ kgC
 dWT
 bdt
 ePe
-wzs
+tIu
 ePe
 vqr
 chz
@@ -154237,7 +154467,7 @@ tFi
 tFi
 tFi
 oza
-qvB
+qNf
 upy
 vqr
 cGc
@@ -154464,16 +154694,16 @@ hnD
 hnD
 hnD
 hnD
-hnD
+lgS
 cIo
 pwH
 ccT
 epL
 fpc
 epL
-lAE
+mqF
 epL
-fpc
+nff
 kNZ
 oBI
 oyK
@@ -156871,7 +157101,7 @@ aaa
 kmm
 jkk
 ooi
-vIg
+xJo
 xUR
 baO
 pOW
@@ -159111,7 +159341,7 @@ blA
 mux
 aYJ
 ylW
-nff
+nMw
 sdk
 hMx
 tGv
@@ -161008,7 +161238,7 @@ wao
 wdn
 riK
 wao
-wZV
+hIV
 riK
 wao
 wdn
@@ -161254,7 +161484,7 @@ coW
 cWa
 bZC
 cIw
-cWa
+oTz
 bZC
 cIw
 cre
@@ -161263,7 +161493,7 @@ wdn
 kxD
 iEV
 wdn
-xpL
+yjx
 ngN
 wdn
 kxD
@@ -161514,8 +161744,8 @@ vRR
 inK
 qYa
 cqa
-vRR
-vRR
+teP
+teP
 vRR
 vRR
 wFm
@@ -162023,7 +162253,7 @@ aYf
 dMW
 gRy
 eux
-cxF
+chV
 dMW
 cFp
 cFp
@@ -162280,7 +162510,7 @@ aYf
 dMW
 cFZ
 riK
-cxF
+fLw
 aRJ
 abC
 abC
@@ -162452,7 +162682,7 @@ cFp
 kmm
 jkk
 fZQ
-nMw
+qvB
 rDD
 baO
 kmm
@@ -162536,8 +162766,8 @@ dnW
 aYf
 dMW
 gRy
-xJj
-cxF
+mhg
+ojm
 dMW
 cFp
 cFp
@@ -163308,7 +163538,7 @@ aXR
 dMW
 cFZ
 xJj
-lpd
+ojm
 aRJ
 cFp
 cFp
@@ -163565,7 +163795,7 @@ vdv
 dMW
 cpk
 eux
-cxF
+qXp
 aRJ
 cFp
 cyw
@@ -163822,7 +164052,7 @@ tKw
 dMW
 cFY
 riK
-cpL
+ojm
 aRJ
 cFp
 cFp
@@ -164850,7 +165080,7 @@ xnY
 dMW
 cFZ
 xJj
-cpK
+aGm
 aRJ
 abC
 abC
@@ -165107,7 +165337,7 @@ fBr
 dMW
 gRy
 eux
-cpK
+gMr
 dMW
 cFp
 cFp
@@ -165536,7 +165766,7 @@ hMN
 xGq
 rvT
 uAo
-lJx
+rJC
 uAo
 aRV
 lsb
@@ -165609,7 +165839,7 @@ vMs
 wAt
 tdR
 ohy
-vZm
+cJg
 wdn
 nsK
 wIw
@@ -165634,10 +165864,10 @@ xml
 tds
 wdn
 psm
+hsW
 wIw
-wIw
-wIw
-wIw
+hsW
+hsW
 cBy
 rnN
 aRJ
@@ -165870,7 +166100,7 @@ coj
 wdn
 cpN
 wao
-wZV
+hIV
 sYg
 wao
 qFr
@@ -165881,7 +166111,7 @@ dZw
 wao
 wdn
 riK
-wao
+tiI
 wdn
 riK
 wao
@@ -165896,7 +166126,7 @@ riK
 wao
 wdn
 riK
-gMr
+ojm
 aRJ
 aXD
 dnW
@@ -166152,8 +166382,8 @@ cIw
 cWa
 bZC
 cBc
-xJj
-cJL
+mhg
+dcg
 aRJ
 aXR
 aYf
@@ -166405,12 +166635,12 @@ fCx
 eGT
 crg
 lav
-jRc
-crg
-crg
+cmh
+vRR
+vRR
 sYR
 eux
-gMr
+ojm
 aRJ
 aXR
 dnW
@@ -167150,7 +167380,7 @@ wdn
 wdn
 wdn
 wdn
-uNa
+vFs
 kHU
 xQO
 aRJ
@@ -167179,7 +167409,7 @@ cBp
 czo
 cqX
 aRJ
-dCa
+cFZ
 eux
 gMr
 aRJ
@@ -167371,8 +167601,8 @@ uDa
 uDa
 uDa
 uDa
-rJC
-tIu
+uNa
+vdE
 uDa
 uDa
 uDa
@@ -167436,7 +167666,7 @@ cyE
 cqd
 cqX
 aRJ
-wsd
+gRy
 riK
 gMr
 aRJ
@@ -169236,7 +169466,7 @@ cBt
 cra
 aRJ
 cBs
-xJo
+tLM
 gMr
 cBT
 cCi
@@ -170521,7 +170751,7 @@ cFV
 cqg
 aRJ
 xvD
-tGX
+abR
 gMr
 aRJ
 aRJ
@@ -177571,7 +177801,7 @@ gyc
 arF
 qHE
 xIo
-kao
+jZW
 omz
 lpm
 idL
